@@ -11,12 +11,12 @@ $enable-prefers-reduced-motion-media-query: true !default;
 // - Font, line-height, and color for body text, headings, and more.
 // ------------------------------------------
 $font-path: '../fonts/' !default;
-$tt-norms-path: "$font-path}tt_norms/" !default;
-$rustico-path: "$font-path}rustico/" !default;
+$tt-norms-path: "#{$font-path}tt_norms/" !default;
+$rustico-path: "#{$font-path}rustico/" !default;
 
-@include font-face("Rustico", "$rustico-path}rustico-v2-regular-webfont", null, null, woff2 woff);
-@include font-face("TT Norms Medium", "$tt-norms-path}tt_norms_medium", null, null, otf ttf woff2 woff);
-@include font-face("TT Norms Bold", "$tt-norms-path}tt_norms_bold", null, null, otf ttf woff2 woff);
+@include font-face("Rustico", "#{$rustico-path}rustico-v2-regular-webfont", null, null, woff2 woff);
+@include font-face("TT Norms Medium", "#{$tt-norms-path}tt_norms_medium", null, null, otf ttf woff2 woff);
+@include font-face("TT Norms Bold", "#{$tt-norms-path}tt_norms_bold", null, null, otf ttf woff2 woff);
 
 $font-family-heading: "Rustico", Arial, sans-serif !default;
 $font-family-small-heading: "TT Norms Bold", Arial, sans-serif !default;
