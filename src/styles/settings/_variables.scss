@@ -11,12 +11,12 @@ $enable-prefers-reduced-motion-media-query: true !default;
 // - Font, line-height, and color for body text, headings, and more.
 // ------------------------------------------
 $font-path: '../fonts/' !default;
-$tt-norms-path: "#{$font-path}tt_norms/" !default;
-$rustico-path: "#{$font-path}rustico/" !default;
+$tt-norms-path: "$font-path}tt_norms/" !default;
+$rustico-path: "$font-path}rustico/" !default;
 
-@include font-face("Rustico", "#{$rustico-path}rustico-v2-regular-webfont", null, null, woff2 woff);
-@include font-face("TT Norms Medium", "#{$tt-norms-path}tt_norms_medium", null, null, otf ttf woff2 woff);
-@include font-face("TT Norms Bold", "#{$tt-norms-path}tt_norms_bold", null, null, otf ttf woff2 woff);
+@include font-face("Rustico", "$rustico-path}rustico-v2-regular-webfont", null, null, woff2 woff);
+@include font-face("TT Norms Medium", "$tt-norms-path}tt_norms_medium", null, null, otf ttf woff2 woff);
+@include font-face("TT Norms Bold", "$tt-norms-path}tt_norms_bold", null, null, otf ttf woff2 woff);
 
 $font-family-heading: "Rustico", Arial, sans-serif !default;
 $font-family-small-heading: "TT Norms Bold", Arial, sans-serif !default;
@@ -56,23 +56,23 @@ $h6-font-size: $font-size-base !default;
 // - Shared variables that are reassigned `$btn-` specific variables. Define text, background, and border color
 // ------------------------------------------
 $btn-color: $black;
-$btn-padding-y: #{$buttons-padding-y}px !default;
-$btn-padding-x: #{$buttons-padding-x}px !default;
+$btn-padding-y: $buttons-padding-y !default;
+$btn-padding-x: $buttons-padding-x !default;
 $btn-font-family: $sans-serif !default;
-$btn-font-size: #{$buttons-font-size}px !default;
-$btn-line-height: #{$buttons-line-height}px !default;
+$btn-font-size: $buttons-font-size !default;
+$btn-line-height: $buttons-line-height !default;
 $btn-white-space: null !default; // Set to `nowrap` to prevent text wrapping
 
 $btn-border-color: $buttons-primary-border !default;
-$btn-border-radius: #{$buttons-radius}px;
+$btn-border-radius: $buttons-radius;
 $btn-border-radius-lg: 50px !default;
-$btn-border-radius-sm: #{$radius-sm}px !default;
-$btn-border-width: #{$buttons-border-width}px !default;
+$btn-border-radius-sm: $radius-sm !default;
+$btn-border-width: $buttons-border-width !default;
 
-$btn-padding-y-sm: #{$buttons-sm-padding-y}px !default;
-$btn-padding-x-sm: #{$buttons-sm-padding-x}px !default;
-$btn-font-size-sm: #{$buttons-sm-font-size}px !default;
-$btn-line-height-sm: #{$buttons-sm-line-height}px !default;
+$btn-padding-y-sm: $buttons-sm-padding-y !default;
+$btn-padding-x-sm: $buttons-sm-padding-x !default;
+$btn-font-size-sm: $buttons-sm-font-size !default;
+$btn-line-height-sm: $buttons-sm-line-height !default;
 
 $btn-padding-y-lg: .725rem !default;
 $btn-padding-x-lg: 1.5rem !default;
