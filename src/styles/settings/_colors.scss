@@ -1,0 +1,30 @@
+$black: #111;
+$dark-grey: #242831;
+$light-grey: #EBEBEB;
+$yellow: #FFFAA6;
+$white: #fff;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "black": $black,
+    "dark-grey": $dark-grey,
+    "light-grey": $light-grey,
+    "yellow": $yellow,
+    "white": $white,
+  ),
+  $colors
+);
+
+$primary: $yellow;
+$secondary: $dark-grey;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $dark-grey,
+    "white": $white,
+  ),
+  $theme-colors
+);

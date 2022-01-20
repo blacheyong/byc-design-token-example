@@ -1,0 +1,95 @@
+// ------------------------------------------
+// Options
+// - Quickly modify global styling by enabling or disabling optional features.
+// ------------------------------------------
+$enable-rounded: true !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+
+// ------------------------------------------
+// Typography
+// - Font, line-height, and color for body text, headings, and more.
+// ------------------------------------------
+$font-path: '../fonts/' !default;
+$tt-norms-path: "#{$font-path}tt_norms/" !default;
+$rustico-path: "#{$font-path}rustico/" !default;
+
+@include font-face("Rustico", "#{$rustico-path}rustico-v2-regular-webfont", null, null, woff2 woff);
+@include font-face("TT Norms Medium", "#{$tt-norms-path}tt_norms_medium", null, null, otf ttf woff2 woff);
+@include font-face("TT Norms Bold", "#{$tt-norms-path}tt_norms_bold", null, null, otf ttf woff2 woff);
+
+$font-family-sans-serif: "TT Norms Medium", Helvetica, Arial, sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-family-heading: "Rustico", Arial, sans-serif !default;
+$font-family-small-heading: "TT Norms Bold", Arial, sans-serif !default;
+
+$h1-font-family: $font-family-heading !default;
+$h2-font-family: $font-family-heading !default;
+$h3-font-family: $font-family-heading !default;
+$h4-font-family: $font-family-small-heading !default;
+$h5-font-family: $font-family-small-heading !default;
+$h6-font-family: $font-family-small-heading !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.5 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
+$headings-line-height: 1.2 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// ------------------------------------------
+// Buttons
+// - Shared variables that are reassigned `$btn-` specific variables. Define text, background, and border color
+// ------------------------------------------
+$btn-color: $black;
+$btn-padding-y: 0.625rem !default; // 10px / 16px
+$btn-padding-x: 1.25rem !default; // 20px / 16px
+$btn-font-family: $font-family-sans-serif !default;
+$btn-font-size: 20px !default;
+$btn-line-height: 1.15 !default;
+$btn-white-space: null !default; // Set to `nowrap` to prevent text wrapping
+
+$btn-border-color: transparent !default;
+$btn-border-radius: 50px;
+$btn-border-radius-lg: 50px !default;
+$btn-border-radius-sm: 50px !default;
+$btn-border-width: 2px !default;
+
+$btn-padding-y-sm: .25rem !default;
+$btn-padding-x-sm: .5rem !default;
+$btn-font-size-sm: $font-size-sm !default;
+$btn-line-height-sm: $line-height-sm !default;
+
+$btn-padding-y-lg: .725rem !default;
+$btn-padding-x-lg: 1.5rem !default;
+$btn-font-size-lg: $font-size-lg !default;
+$btn-line-height-lg: $line-height-lg !default;
+
+$btn-disabled-opacity: .65;
+
+$btn-transition: all .4s cubic-bezier(0.25, 0.1, 0.25, 1) !default;
+
+// ------------------------------------------
+// Links
+// ------------------------------------------
+$link-color: theme-color("white") !default;
+$link-decoration: none !default;
+$link-hover-color: theme-color("primary") !default;
+$link-hover-decoration: none !default;
