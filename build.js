@@ -27,7 +27,7 @@ StyleDictionaryPackage.registerTransform({
 function getStyleDictionaryConfig(theme) {
   return {
     "source": [
-      `data/${theme}.json`,
+      `tokens/${theme}.json`,
     ],
     "platforms": {
       /* "web": {
@@ -41,7 +41,7 @@ function getStyleDictionaryConfig(theme) {
       }, */
       "scss": {
         "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px"],
-        "buildPath": `src/scss/`,
+        "buildPath": `src/styles/settings/`,
         "files": [{
           "destination": `${theme}.scss`,
           "format": "scss/variables"
@@ -55,7 +55,7 @@ console.log('Build started...');
 
 // PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS
 
-['global', 'buttons'].map(function (theme) {
+['_tokens'].map(function (theme) {
 
     console.log('\n==============================================');
     console.log(`\nProcessing: [${theme}]`);
