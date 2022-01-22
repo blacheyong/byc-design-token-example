@@ -1,6 +1,7 @@
 .btn {
     background-color: transparent;
     border: $btn-border-width solid $btn-border-color;
+    border-radius: map-get($buttons, border-radius);
     color: $btn-color;
     display: inline-block;
     font-family: $btn-font-family;
@@ -71,4 +72,9 @@ fieldset:disabled a.btn {
 }
 .btn-sm {
     @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+}
+
+// SASS map tests
+.btn-secondary {
+    @include button-secondary($buttons);
 }

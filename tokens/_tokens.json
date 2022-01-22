@@ -122,6 +122,14 @@
     "sm-padding-y": {
       "value": 5,
       "type": "spacing"
+    },
+    "secondary-bg": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "secondary-text": {
+      "value": "#003778",
+      "type": "color"
     }
   },
   "_radius": {

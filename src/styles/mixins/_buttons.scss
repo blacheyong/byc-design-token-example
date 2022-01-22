@@ -1,29 +1,118 @@
-@mixin button-variant( $background, $border ) {
-    border-color: $border;
-    @include color-contrast($background);
-    @include gradient-bg($background);
+// @mixin button-variant( $background, $border ) {
+//     border-color: $border;
+//     @include color-contrast($background);
+//     @include gradient-bg($background);
 
+//     &:hover {
+//         background: darken($background, 15%);
+//     }
+// }
+
+// @mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+//     padding: $padding-y $padding-x;
+//     // @include font-size($font-size);
+//     // Manually declare to provide an override to the browser default
+//     @include border-radius($border-radius, 0);
+
+//     // Temporary
+//     font-size: $font-size;
+// }
+
+// $my-button-variant: () !default;
+// $my-button-variant: map-merge((
+// 	bg: #fff,
+//     // border-color: #00549A,
+// 	// border-width: 2px,
+//     border: 2px solid #00549A,
+//     border-radius: 20px,
+// 	color: #003778,
+// 	font-size: 15px,
+// 	line-height: 17px,
+// 	padding-bottom: 7px,
+// 	padding-left: 30px,
+// 	padding-right: 30px,
+// 	padding-top: 7px,
+//     text-decoration: none,
+//     transition: all .3s ease-in-out,
+// 	hover-bg: #fff,
+// 	hover-color: #00549A,
+// 	active-bg: rgba(0,84,154,0.1),
+// ), $my-button-variant);
+
+// @mixin button-secondary($my-button-variant) {
+//     background: map-get($my-button-variant, bg);
+//     border: map-get($my-button-variant, border);
+//     border-radius: map-get($my-button-variant, border-radius);
+//     color: map-get($my-button-variant, color);
+//     font-size: map-get($my-button-variant, font-size);
+//     line-height: map-get($my-button-variant, line-height);
+//     padding-bottom: map-get($my-button-variant, padding-bottom);
+//     padding-left: map-get($my-button-variant, padding-left);
+//     padding-right: map-get($my-button-variant, padding-right);
+//     padding-top: map-get($my-button-variant, padding-top);
+//     text-decoration: map-get($my-button-variant, text-decoration);
+//     transition: map-get($my-button-variant, transition);
+//     &:hover {
+//         background: map-get($my-button-variant, hover-bg);
+//         color: map-get($my-button-variant, hover-color);
+//     }
+//     &:active {
+//         background: map-get($my-button-variant, active-bg);
+//     }
+// }
+
+$buttons: (
+    border-radius: $buttons-radius,
+    font-size: $buttons-font-size,
+    line-height: $buttons-line-height,
+
+    primary: (
+        bg: #fff,
+        border: 2px solid #{$buttons-primary-border},
+        color: #003778,
+        padding-bottom: 7px,
+        padding-left: 30px,
+        padding-right: 30px,
+        padding-top: 7px,
+        text-decoration: none,
+        transition: all .3s ease-in-out,
+        hover-bg: #fff,
+        hover-color: #00549A,
+        active-bg: rgba(0,84,154,0.1),
+    ),
+
+    secondary: (
+        bg: $buttons-secondary-bg,
+        border: 2px solid #{$buttons-secondary-border},
+        color: $buttons-secondary-text,
+        padding-bottom: 7px,
+        padding-left: 30px,
+        padding-right: 30px,
+        padding-top: 7px,
+        text-decoration: none,
+        transition: all .3s ease-in-out,
+        hover-bg: #fff,
+        hover-color: #00549A,
+        active-bg: rgba(0,84,154,0.1),
+    )
+);
+
+@mixin button-secondary($buttons) {
+    background: map-get(map-get($buttons, secondary), bg);
+    border: map-get(map-get($buttons, secondary), border);
+    color: map-get(map-get($buttons, secondary), color);
+    padding-bottom: map-get(map-get($buttons, secondary), padding-bottom);
+    padding-left: map-get(map-get($buttons, secondary), padding-left);
+    padding-right: map-get(map-get($buttons, secondary), padding-right);
+    padding-top: map-get(map-get($buttons, secondary), padding-top);
+    text-decoration: map-get(map-get($buttons, secondary), text-decoration);
+    transition: map-get(map-get($buttons, secondary), transition);
     &:hover {
-        background: darken($background, 15%);
+        background: map-get($buttons, hover-bg);
+        color: map-get($buttons, hover-color);
     }
-}
-
-@mixin button-outline-variant( $color ) {
-    border-color: $color;
-    color: $color;
-
-    &:hover {
-        border-color: darken($color, 15%);
-        color: darken($color, 15%);
+    &:active {
+        background: map-get(map-get($buttons, secondary), active-bg);
     }
-}
-
-@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
-    padding: $padding-y $padding-x;
-    // @include font-size($font-size);
-    // Manually declare to provide an override to the browser default
-    @include border-radius($border-radius, 0);
-
-    // Temporary
-    font-size: $font-size;
+    
 }
