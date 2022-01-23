@@ -1,21 +1,32 @@
 .btn {
     background-color: transparent;
-    border: $btn-border-width solid $btn-border-color;
+    border: 0;
     border-radius: map-get($buttons, border-radius);
-    color: $btn-color;
+    color: #fff;
     display: inline-block;
     font-family: $btn-font-family;
-    font-size: $btn-font-size;
-    line-height: $btn-line-height;
-    text-decoration: if($link-decoration == none, none, null);
-    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
-    @include transition($btn-transition);
+    font-size: map-get($buttons, font-size);
+    line-height: map-get($buttons, line-height);
+    padding: map-get($buttons, padding);
+    text-decoration: map-get($buttons, text-decoration);
+    transition: map-get($buttons, transition);
 
     // Disabled comes first so active can properly restyle
     &.disabled,
     &:disabled {
         opacity: $btn-disabled-opacity;
     }
+}
+.btn:not(.disabled):not(:disabled) {
+    cursor: pointer;
+}
+
+// SASS map tests
+.btn-primary {
+    @include button-primary($buttons);
+}
+.btn-secondary {
+    @include button-secondary($buttons);
 }
 
 // Future-proof disabling of clicks on `<a>` elements
@@ -25,17 +36,12 @@ fieldset:disabled a.btn {
 }
 
 // Variants
-@each $color, $value in $theme-colors {
-    .btn-#{$color} {
-        @include button-variant($value, $value);
-    }
-}
-// Variants outline
-@each $color, $value in $theme-colors {
-    .btn-outline-#{$color} {
-      @include button-outline-variant($value);
-    }
-}
+// @each $color, $value in $theme-colors {
+//     .btn-#{$color} {
+//         @include button-variant($value, $value);
+//     }
+// }
+
 // Link variant
 .btn-link {
     color: $link-color;
@@ -72,9 +78,4 @@ fieldset:disabled a.btn {
 }
 .btn-sm {
     @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
-}
-
-// SASS map tests
-.btn-secondary {
-    @include button-secondary($buttons);
 }
