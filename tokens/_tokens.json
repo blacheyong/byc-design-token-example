@@ -75,7 +75,7 @@
       "type": "borderRadius"
     },
     "font-size": {
-      "value": 13,
+      "value": 15,
       "type": "fontSizes"
     },
     "sm-font-size": {
@@ -102,9 +102,9 @@
       "value": {
         "x": 0,
         "y": 0,
-        "blur": 0,
+        "blur": 30,
         "spread": 0,
-        "color": "#000000",
+        "color": "#00000033",
         "type": "dropShadow"
       },
       "type": "boxShadow"
@@ -191,5 +191,9 @@
   "headings": {
     "value": "'bellslim_font_black', Helvetica, Arial, sans-serif",
     "type": "fontFamilies"
+  },
+  "Enable shadow": {
+    "value": "false",
+    "type": "other"
   }
 }

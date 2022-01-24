@@ -9,7 +9,7 @@ export default {
     primary: { control: 'boolean' },
     size: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: ['sm', 'md', 'lg'],
     },
   },
 };

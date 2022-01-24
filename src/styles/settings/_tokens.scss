@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Mon, 24 Jan 2022 18:27:24 GMT
+// Generated on Mon, 24 Jan 2022 21:24:54 GMT
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -19,13 +19,13 @@ $buttons-radius: 8px;
 $buttons-padding-x: 20px;
 $buttons-padding-y: 10px;
 $buttons-sm-radium: 6px;
-$buttons-font-size: 13px;
+$buttons-font-size: 15px;
 $buttons-sm-font-size: 12px;
 $buttons-line-height: 14px;
 $buttons-sm-line-height: 12px;
 $buttons-font-family: Arial, Helvetica, sans-serif;;
 $buttons-font-weight: 400;
-$buttons-drop-shadow: 0px 0px 0px 0px #000000;
+$buttons-drop-shadow: 0px 0px 30px 0px #00000033;
 $buttons-text-transform: none;
 $buttons-text-decoration: none;
 $buttons-sm-padding-x: 15px;
@@ -45,3 +45,4 @@ $radius-default: 8px;
 $radius-sm: 6px;
 $sans-serif: Arial, Helvetica, sans-serif;;
 $headings: 'bellslim_font_black', Helvetica, Arial, sans-serif;
+$enable-shadow: false;

@@ -60,26 +60,38 @@ $buttons-text-decoration: none !default;
 // Primary
 $buttons-primary-bg: null !default;
 $buttons-primary-bg-hover: null !default;
+$buttons-primary-bg-focus: null !default;
+$buttons-primary-bg-active: null !default;
 $buttons-primary-border: null !default;
 $buttons-primary-border-hover: null !default;
 $buttons-primary-border-width: null !default;
 $buttons-primary-text: null !default;
 $buttons-primary-text-hover: null !default;
+$buttons-primary-text-focus: null !default;
+$buttons-primary-text-active: null !default;
 $buttons-primary-padding-x: null !default;
 $buttons-primary-padding-y: null !default;
+$buttons-primary-lg-padding-x: null !default;
+$buttons-primary-lg-padding-y: null !default;
 
 // Secondary
 $buttons-secondary-bg: null !default;
 $buttons-secondary-bg-hover: null !default;
+$buttons-secondary-bg-focus: null !default;
+$buttons-secondary-bg-active: null !default;
 $buttons-secondary-border: null !default;
 $buttons-secondary-border-hover: null !default;
 $buttons-secondary-border-width: null !default;
-$buttons-secondary-text-hover: null !default;
 $buttons-secondary-padding-x: null !default;
 $buttons-secondary-padding-y: null !default;
 $buttons-secondary-sm-padding-x: null !default;
 $buttons-secondary-sm-padding-y: null !default;
 $buttons-secondary-text: null !default;
+$buttons-secondary-text-hover: null !default;
+$buttons-secondary-text-focus: null !default;
+$buttons-secondary-text-active: null !default;
+$buttons-secondary-lg-padding-x: null !default;
+$buttons-secondary-lg-padding-y: null !default;
 
 // Size
 $buttons-sm-font-size: null !default; // 12px
