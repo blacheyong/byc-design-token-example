@@ -1,15 +1,14 @@
 .btn {
     background-color: transparent;
-    border: 0;
-    border-radius: map-get($buttons, border-radius);
-    color: #fff;
+    border: $buttons-default-border-width solid transparent;
+    color: #fff; // TODO should not be hardcoded - $body-color like Bootstrap?
     display: inline-block;
     font-family: $btn-font-family;
-    font-size: map-get($buttons, font-size);
-    line-height: map-get($buttons, line-height);
-    padding: map-get($buttons, padding);
-    text-decoration: map-get($buttons, text-decoration);
+    line-height: $buttons-line-height;
+    text-decoration: $buttons-text-decoration;
     transition: map-get($buttons, transition);
+
+    @include button-size($buttons-padding-y, $buttons-padding-x, $buttons-font-size, $buttons-radius);
 
     // Disabled comes first so active can properly restyle
     &.disabled,
@@ -17,16 +16,18 @@
         opacity: $btn-disabled-opacity;
     }
 }
+
 .btn:not(.disabled):not(:disabled) {
     cursor: pointer;
 }
 
 // SASS map tests
 .btn-primary {
-    @include button-primary($buttons);
+    @include button-variants(map-get($buttons,primary));
 }
+
 .btn-secondary {
-    @include button-secondary($buttons);
+    @include button-variants(map-get($buttons,secondary));
 }
 
 // Future-proof disabling of clicks on `<a>` elements

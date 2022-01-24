@@ -52,6 +52,10 @@
       "text-hover": {
         "value": "#ffffff",
         "type": "color"
+      },
+      "border-width": {
+        "value": 0,
+        "type": "borderWidth"
       }
     },
     "radius": {
@@ -93,10 +97,6 @@
     "font-weight": {
       "value": 400,
       "type": "fontWeights"
-    },
-    "border-width": {
-      "value": 0,
-      "type": "borderWidth"
     },
     "drop-shadow": {
       "value": {
@@ -145,6 +145,16 @@
       "text-hover": {
         "value": "#00549A",
         "type": "color"
+      },
+      "border-width": {
+        "value": 2,
+        "type": "borderWidth"
+      }
+    },
+    "default": {
+      "border-width": {
+        "value": 0,
+        "type": "borderWidth"
       }
     }
   },

@@ -8,16 +8,19 @@ $buttons: (
 
     primary: (
         bg: $buttons-primary-bg,
-        border: 2px solid #{$buttons-primary-border},
+        border-color: $buttons-primary-border,
+        border-width: $buttons-primary-border-width,
         color: $buttons-primary-text,
         hover-bg: $buttons-primary-bg-hover,
+        hover-border-color: $buttons-primary-border-hover,
         hover-color: $buttons-primary-text-hover,
         // active-bg: rgba(0,84,154,0.1),
     ),
 
     secondary: (
         bg: $buttons-secondary-bg,
-        border: 2px solid #{$buttons-secondary-border},
+        border-color: $buttons-secondary-border,
+        border-width: $buttons-secondary-border-width,
         color: $buttons-secondary-text,
         hover-bg: #fff,
         hover-color: #00549A,
@@ -25,7 +28,21 @@ $buttons: (
     )
 );
 
-@mixin button-primary($buttons) {
+
+@mixin button-variants($button) {
+    background: map-get($button, bg);
+    border-color: map-get($button, border-color);
+    border-width: map-get($button, border-width);
+    color: map-get($button, color);
+    
+    &:hover {
+        background: map-get($button, hover-bg);
+        border-color: map-get($button, hover-border-color);
+        color: map-get($button, hover-color);
+    }
+}
+
+/* @mixin button-primary($buttons) {
     background: map-get(map-get($buttons, primary), bg);
     border: map-get(map-get($buttons, primary), border);
     color: map-get(map-get($buttons, primary), color);
@@ -42,7 +59,7 @@ $buttons: (
     // &:active {
     //     background: map-get(map-get($buttons, primary), active-bg);
     // }
-}
+} */
 
 @mixin button-secondary($buttons) {
     background: map-get(map-get($buttons, secondary), bg);
