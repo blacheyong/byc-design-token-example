@@ -127,7 +127,7 @@
     },
     "secondary": {
       "bg": {
-        "value": "#ffffff",
+        "value": "#ffffff00",
         "type": "color"
       },
       "text": {
@@ -135,7 +135,7 @@
         "type": "color"
       },
       "bg-hover": {
-        "value": "#ffffff",
+        "value": "#e6f1fa4d",
         "type": "color"
       },
       "border": {
@@ -149,6 +149,14 @@
       "border-width": {
         "value": 2,
         "type": "borderWidth"
+      },
+      "padding-x": {
+        "value": 18,
+        "type": "spacing"
+      },
+      "padding-y": {
+        "value": 8,
+        "type": "spacing"
       }
     },
     "default": {

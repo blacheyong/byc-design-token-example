@@ -83,6 +83,26 @@ $btn-disabled-opacity: .65;
 
 $btn-transition: all .4s cubic-bezier(0.25, 0.1, 0.25, 1) !default;
 
+// Base Variables, overriden by tokens
+$buttons-default-border-width: 0 !default;
+$buttons-font-size: 1em !default;
+$buttons-line-height: 1 !default;
+
+// Primary
+$buttons-primary-padding-x: null !default;
+$buttons-primary-padding-y: null !default;
+
+// Secondary
+$buttons-secondary-border-hover: null !default;
+$buttons-secondary-padding-x: null !default;
+$buttons-secondary-padding-y: null !default;
+
+// TODO: Add missing defaults
+
+
+
+
+
 // ------------------------------------------
 // Links
 // ------------------------------------------

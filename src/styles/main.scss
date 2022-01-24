@@ -1,22 +1,25 @@
+// @import "settings/tokens";
+
+@import "mixins/font-face"; // TODO: Should be called after _variables, move @font-face declaration in another file.
+
+// ------------------------------------------
+// Settings
+//-------------------------------------------
 @import "settings/tokens";
+@import "settings/colors";
+@import "settings/variables";
+
 
 // ------------------------------------------
 // Mixins
 //-------------------------------------------
 @import "mixins/buttons";
-@import "mixins/font-face";
+
 
 // ------------------------------------------
 // Utilities
 //-------------------------------------------
 @import "utilities/functions";
-
-// ------------------------------------------
-// Settings
-//-------------------------------------------
-// @import "settings/tokens";
-@import "settings/colors";
-@import "settings/variables";
 
 // ------------------------------------------
 // Bootstrap

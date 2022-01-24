@@ -14,6 +14,7 @@ $buttons: (
         hover-bg: $buttons-primary-bg-hover,
         hover-border-color: $buttons-primary-border-hover,
         hover-color: $buttons-primary-text-hover,
+        // padding: #{$buttons-primary-padding-y} #{$buttons-primary-padding-x}
         // active-bg: rgba(0,84,154,0.1),
     ),
 
@@ -22,8 +23,10 @@ $buttons: (
         border-color: $buttons-secondary-border,
         border-width: $buttons-secondary-border-width,
         color: $buttons-secondary-text,
-        hover-bg: #fff,
-        hover-color: #00549A,
+        hover-bg: $buttons-secondary-bg-hover,
+        hover-color: $buttons-secondary-text-hover,
+        hover-border-color: $buttons-secondary-border-hover,
+        padding: #{$buttons-secondary-padding-y} #{$buttons-secondary-padding-x},
         active-bg: rgba(0,84,154,0.1),
     )
 );
@@ -34,6 +37,8 @@ $buttons: (
     border-color: map-get($button, border-color);
     border-width: map-get($button, border-width);
     color: map-get($button, color);
+
+    padding: map-get($button, padding);
     
     &:hover {
         background: map-get($button, hover-bg);
