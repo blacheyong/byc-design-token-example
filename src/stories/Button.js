@@ -1,8 +1,6 @@
-import './button.css';
-
 export const createButton = ({
-  primary = false,
-  size = 'medium',
+  primary = true,
+  size = 'md',
   backgroundColor,
   label,
   onClick,
@@ -12,8 +10,8 @@ export const createButton = ({
   btn.innerText = label;
   btn.addEventListener('click', onClick);
 
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  btn.className = ['storybook-button', `storybook-button--${size}`, mode].join(' ');
+  const mode = primary ? 'btn-primary' : 'btn-secondary';
+  btn.className = ['btn', `btn-${size}`, mode].join(' ');
 
   btn.style.backgroundColor = backgroundColor;
 
