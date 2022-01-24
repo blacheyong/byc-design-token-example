@@ -1,0 +1,7 @@
+$font-path: '../fonts/' !default;
+$tt-norms-path: "#{$font-path}tt_norms/" !default;
+$rustico-path: "#{$font-path}rustico/" !default;
+
+@include font-face("Rustico", "#{$rustico-path}rustico-v2-regular-webfont", null, null, woff2 woff);
+@include font-face("TT Norms Medium", "#{$tt-norms-path}tt_norms_medium", null, null, otf ttf woff2 woff);
+@include font-face("TT Norms Bold", "#{$tt-norms-path}tt_norms_bold", null, null, otf ttf woff2 woff);

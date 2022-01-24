@@ -1,7 +1,5 @@
 // @import "settings/tokens";
 
-@import "mixins/font-face"; // TODO: Should be called after _variables, move @font-face declaration in another file.
-
 // ------------------------------------------
 // Settings
 //-------------------------------------------
@@ -9,12 +7,11 @@
 @import "settings/colors";
 @import "settings/variables";
 
-
 // ------------------------------------------
 // Mixins
 //-------------------------------------------
 @import "mixins/buttons";
-
+@import "mixins/font-face";
 
 // ------------------------------------------
 // Utilities
@@ -33,6 +30,11 @@
 
 // Optional
 @import "~bootstrap/scss/grid";
+
+// ------------------------------------------
+// Base
+//-------------------------------------------
+@import "base/typography";
 
 // ------------------------------------------
 // Components

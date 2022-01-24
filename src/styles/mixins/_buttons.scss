@@ -81,22 +81,22 @@ $buttons: (
     // }
 } */
 
-@mixin button-secondary($buttons) {
-    background: map-get(map-get($buttons, secondary), bg);
-    border: map-get(map-get($buttons, secondary), border);
-    color: map-get(map-get($buttons, secondary), color);
-    padding-bottom: map-get(map-get($buttons, secondary), padding-bottom);
-    padding-left: map-get(map-get($buttons, secondary), padding-left);
-    padding-right: map-get(map-get($buttons, secondary), padding-right);
-    padding-top: map-get(map-get($buttons, secondary), padding-top);
-    text-decoration: map-get(map-get($buttons, secondary), text-decoration);
-    transition: map-get(map-get($buttons, secondary), transition);
-    &:hover {
-        background: map-get(map-get($buttons, secondary), hover-bg);
-        color: map-get(map-get($buttons, secondary), hover-color);
-        border-color: map-get(map-get($buttons, secondary), hover-color);
-    }
-    &:active {
-        background: map-get(map-get($buttons, secondary), active-bg);
-    }
-}
+// @mixin button-secondary($buttons) {
+//     background: map-get(map-get($buttons, secondary), bg);
+//     border: map-get(map-get($buttons, secondary), border);
+//     color: map-get(map-get($buttons, secondary), color);
+//     padding-bottom: map-get(map-get($buttons, secondary), padding-bottom);
+//     padding-left: map-get(map-get($buttons, secondary), padding-left);
+//     padding-right: map-get(map-get($buttons, secondary), padding-right);
+//     padding-top: map-get(map-get($buttons, secondary), padding-top);
+//     text-decoration: map-get(map-get($buttons, secondary), text-decoration);
+//     transition: map-get(map-get($buttons, secondary), transition);
+//     &:hover {
+//         background: map-get(map-get($buttons, secondary), hover-bg);
+//         color: map-get(map-get($buttons, secondary), hover-color);
+//         border-color: map-get(map-get($buttons, secondary), hover-color);
+//     }
+//     &:active {
+//         background: map-get(map-get($buttons, secondary), active-bg);
+//     }
+// }
