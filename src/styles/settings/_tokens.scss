@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Mon, 24 Jan 2022 21:24:54 GMT
+// Generated on Mon, 24 Jan 2022 22:09:52 GMT
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -15,6 +15,7 @@ $buttons-primary-border: #003778;
 $buttons-primary-border-hover: #003778;
 $buttons-primary-text-hover: #ffffff;
 $buttons-primary-border-width: 0px;
+$buttons-primary-bg-disabled: #BABEC2;
 $buttons-radius: 8px;
 $buttons-padding-x: 20px;
 $buttons-padding-y: 10px;
@@ -40,7 +41,15 @@ $buttons-secondary-padding-x: 19px;
 $buttons-secondary-padding-y: 9px;
 $buttons-secondary-sm-padding-x: 14px;
 $buttons-secondary-sm-padding-y: 4px;
+$buttons-secondary-lg-padding-x: 23px;
+$buttons-secondary-lg-padding-y: 9px;
+$buttons-secondary-text-disabled: #BABEC2;
+$buttons-secondary-border-disabled: #BABEC2;
 $buttons-default-border-width: 0px;
+$buttons-lg-padding-x: 24px;
+$buttons-lg-padding-y: 10px;
+$buttons-lg-line-height: 20px;
+$buttons-lg-font-size: 18px;
 $radius-default: 8px;
 $radius-sm: 6px;
 $sans-serif: Arial, Helvetica, sans-serif;;

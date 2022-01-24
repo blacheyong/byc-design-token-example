@@ -8,7 +8,7 @@
     text-decoration: $buttons-text-decoration;
     transition: map-get($buttons, transition);
 
-    @include button-size($buttons-padding-y, $buttons-padding-x, $buttons-font-size, $buttons-radius);
+    @include button-sizes($buttons-padding-y, $buttons-padding-x, $buttons-font-size, $buttons-radius, $buttons-line-height);
 
     // Disabled comes first so active can properly restyle
     &.disabled,
@@ -75,8 +75,8 @@ fieldset:disabled a.btn {
 
 // Button sizes
 .btn-lg {
-    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+    @include button-sizes($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg, $buttons-lg-line-height);
 }
 .btn-sm {
-    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+    @include button-sizes($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm, $buttons-sm-line-height);
 }

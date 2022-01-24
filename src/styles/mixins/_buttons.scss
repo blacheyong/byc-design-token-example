@@ -10,57 +10,40 @@
         border-color: map-get($button, hover-border-color);
         color: map-get($button, hover-color);
     }
-
-    @if(map-get($button, padding-sm-x) != null) {
-        &.btn-sm {
-            padding-right: map-get($button, padding-sm-x);
-            padding-left: map-get($button, padding-sm-x);
-        }
+    &:active {
+        background: map-get($button, active-bg);
+        color: map-get($button, active-color);
+    }
+    &:focus {
+        background: map-get($button, focus-bg);
+        color: map-get($button, focus-color);
+    }
+    &:disabled, &.disabled {
+        background: map-get($button, disabled-bg);
+        border-color: map-get($button, disabled-border-color);
+        color: map-get($button, disabled-color);
     }
 
-    @if(map-get($button, padding-sm-y) != null) {
-        &.btn-sm {
-            padding-top: map-get($button, padding-sm-y);
-            padding-bottom: map-get($button, padding-sm-y);
-        }
-    }
+    // @if(map-get($button, padding-sm-x) != null) {
+    //     &.btn-sm {
+    //         padding-right: map-get($button, padding-sm-x);
+    //         padding-left: map-get($button, padding-sm-x);
+    //     }
+    // }
+
+    // @if(map-get($button, padding-sm-y) != null) {
+    //     &.btn-sm {
+    //         padding-top: map-get($button, padding-sm-y);
+    //         padding-bottom: map-get($button, padding-sm-y);
+    //     }
+    // }
 }
 
-/* @mixin button-primary($buttons) {
-    background: map-get(map-get($buttons, primary), bg);
-    border: map-get(map-get($buttons, primary), border);
-    color: map-get(map-get($buttons, primary), color);
-    padding-bottom: map-get(map-get($buttons, primary), padding-bottom);
-    padding-left: map-get(map-get($buttons, primary), padding-left);
-    padding-right: map-get(map-get($buttons, primary), padding-right);
-    padding-top: map-get(map-get($buttons, primary), padding-top);
-    text-decoration: map-get(map-get($buttons, primary), text-decoration);
-    transition: map-get(map-get($buttons, primary), transition);
-    &:hover {
-        background: map-get(map-get($buttons, primary), hover-bg);
-        color: map-get(map-get($buttons, primary), hover-color);
-    }
-    // &:active {
-    //     background: map-get(map-get($buttons, primary), active-bg);
-    // }
-} */
-
-// @mixin button-secondary($buttons) {
-//     background: map-get(map-get($buttons, secondary), bg);
-//     border: map-get(map-get($buttons, secondary), border);
-//     color: map-get(map-get($buttons, secondary), color);
-//     padding-bottom: map-get(map-get($buttons, secondary), padding-bottom);
-//     padding-left: map-get(map-get($buttons, secondary), padding-left);
-//     padding-right: map-get(map-get($buttons, secondary), padding-right);
-//     padding-top: map-get(map-get($buttons, secondary), padding-top);
-//     text-decoration: map-get(map-get($buttons, secondary), text-decoration);
-//     transition: map-get(map-get($buttons, secondary), transition);
-//     &:hover {
-//         background: map-get(map-get($buttons, secondary), hover-bg);
-//         color: map-get(map-get($buttons, secondary), hover-color);
-//         border-color: map-get(map-get($buttons, secondary), hover-color);
-//     }
-//     &:active {
-//         background: map-get(map-get($buttons, secondary), active-bg);
-//     }
-// }
+@mixin button-sizes($padding-y, $padding-x, $font-size, $border-radius, $line-height) {
+    border-radius: $border-radius;
+    font-size: $font-size;
+    line-height: $line-height;
+    padding: $padding-y $padding-x;
+    // Manually declare to provide an override to the browser default
+    // @include border-radius($border-radius, 0);
+}
