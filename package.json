@@ -6,7 +6,9 @@
   "scripts": {
     "tokens": "token-transformer data/tokens.json tokens/_tokens.json global && node ./build.js",
     "start": "webpack --watch --config webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,10 @@
     "@babel/core": "^7.14.0",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.14.1",
+    "@storybook/addon-actions": "^6.4.14",
+    "@storybook/addon-essentials": "^6.4.14",
+    "@storybook/addon-links": "^6.4.14",
+    "@storybook/html": "^6.4.14",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
