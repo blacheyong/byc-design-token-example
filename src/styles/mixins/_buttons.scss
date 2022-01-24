@@ -14,7 +14,7 @@ $buttons: (
         hover-bg: $buttons-primary-bg-hover,
         hover-border-color: $buttons-primary-border-hover,
         hover-color: $buttons-primary-text-hover,
-        // padding: #{$buttons-primary-padding-y} #{$buttons-primary-padding-x}
+        padding: #{$buttons-primary-padding-y} #{$buttons-primary-padding-x}
         // active-bg: rgba(0,84,154,0.1),
     ),
 
@@ -27,6 +27,8 @@ $buttons: (
         hover-color: $buttons-secondary-text-hover,
         hover-border-color: $buttons-secondary-border-hover,
         padding: #{$buttons-secondary-padding-y} #{$buttons-secondary-padding-x},
+        padding-sm-x: $buttons-secondary-sm-padding-x,
+        padding-sm-y: $buttons-secondary-sm-padding-y,
         active-bg: rgba(0,84,154,0.1),
     )
 );
@@ -37,13 +39,26 @@ $buttons: (
     border-color: map-get($button, border-color);
     border-width: map-get($button, border-width);
     color: map-get($button, color);
-
     padding: map-get($button, padding);
     
     &:hover {
         background: map-get($button, hover-bg);
         border-color: map-get($button, hover-border-color);
         color: map-get($button, hover-color);
+    }
+
+    @if(map-get($button, padding-sm-x) != null) {
+        &.btn-sm {
+            padding-right: map-get($button, padding-sm-x);
+            padding-left: map-get($button, padding-sm-x);
+        }
+    }
+
+    @if(map-get($button, padding-sm-y) != null) {
+        &.btn-sm {
+            padding-top: map-get($button, padding-sm-y);
+            padding-bottom: map-get($button, padding-sm-y);
+        }
     }
 }
 
