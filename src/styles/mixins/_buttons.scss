@@ -1,39 +1,3 @@
-$buttons: (
-    border-radius: $buttons-radius,
-    font-size: $buttons-font-size,
-    line-height: $buttons-line-height,
-    padding: #{$buttons-padding-y} #{$buttons-padding-x},
-    text-decoration: $buttons-text-decoration,
-    transition: all .3s ease-in-out,
-
-    primary: (
-        bg: $buttons-primary-bg,
-        border-color: $buttons-primary-border,
-        border-width: $buttons-primary-border-width,
-        color: $buttons-primary-text,
-        hover-bg: $buttons-primary-bg-hover,
-        hover-border-color: $buttons-primary-border-hover,
-        hover-color: $buttons-primary-text-hover,
-        padding: #{$buttons-primary-padding-y} #{$buttons-primary-padding-x}
-        // active-bg: rgba(0,84,154,0.1),
-    ),
-
-    secondary: (
-        bg: $buttons-secondary-bg,
-        border-color: $buttons-secondary-border,
-        border-width: $buttons-secondary-border-width,
-        color: $buttons-secondary-text,
-        hover-bg: $buttons-secondary-bg-hover,
-        hover-color: $buttons-secondary-text-hover,
-        hover-border-color: $buttons-secondary-border-hover,
-        padding: #{$buttons-secondary-padding-y} #{$buttons-secondary-padding-x},
-        padding-sm-x: $buttons-secondary-sm-padding-x,
-        padding-sm-y: $buttons-secondary-sm-padding-y,
-        active-bg: rgba(0,84,154,0.1),
-    )
-);
-
-
 @mixin button-variants($button) {
     background: map-get($button, bg);
     border-color: map-get($button, border-color);

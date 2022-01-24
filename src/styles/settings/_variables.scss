@@ -62,13 +62,16 @@ $buttons-primary-bg: null !default;
 $buttons-primary-bg-hover: null !default;
 $buttons-primary-bg-focus: null !default;
 $buttons-primary-bg-active: null !default;
+$buttons-primary-bg-disabled: null !default;
 $buttons-primary-border: null !default;
 $buttons-primary-border-hover: null !default;
+$buttons-primary-border-disabled: null !default;
 $buttons-primary-border-width: null !default;
 $buttons-primary-text: null !default;
 $buttons-primary-text-hover: null !default;
 $buttons-primary-text-focus: null !default;
 $buttons-primary-text-active: null !default;
+$buttons-primary-text-disabled: null !default;
 $buttons-primary-padding-x: null !default;
 $buttons-primary-padding-y: null !default;
 $buttons-primary-lg-padding-x: null !default;
@@ -79,8 +82,10 @@ $buttons-secondary-bg: null !default;
 $buttons-secondary-bg-hover: null !default;
 $buttons-secondary-bg-focus: null !default;
 $buttons-secondary-bg-active: null !default;
+$buttons-secondary-bg-disabled: null !default;
 $buttons-secondary-border: null !default;
 $buttons-secondary-border-hover: null !default;
+$buttons-secondary-border-disabled: null !default;
 $buttons-secondary-border-width: null !default;
 $buttons-secondary-padding-x: null !default;
 $buttons-secondary-padding-y: null !default;
@@ -90,6 +95,7 @@ $buttons-secondary-text: null !default;
 $buttons-secondary-text-hover: null !default;
 $buttons-secondary-text-focus: null !default;
 $buttons-secondary-text-active: null !default;
+$buttons-secondary-text-disabled: null !default;
 $buttons-secondary-lg-padding-x: null !default;
 $buttons-secondary-lg-padding-y: null !default;
 
@@ -99,6 +105,56 @@ $buttons-sm-line-height: null !default; // 12px
 $buttons-sm-padding-x: null !default; // 15px
 $buttons-sm-padding-y: null !default; // 5px
 $buttons-sm-radium: null !default; // 6px
+
+$buttons: (
+    border-radius: $buttons-radius,
+    font-size: $buttons-font-size,
+    line-height: $buttons-line-height,
+    padding: #{$buttons-padding-y} #{$buttons-padding-x},
+    text-decoration: $buttons-text-decoration,
+    transition: all .3s ease-in-out,
+
+    primary: (
+        active-bg: $buttons-primary-bg-active,
+        active-color: $buttons-primary-text-active,
+        bg: $buttons-primary-bg,
+        border-color: $buttons-primary-border,
+        border-width: $buttons-primary-border-width,
+        color: $buttons-primary-text,
+        disabled-bg: $buttons-primary-bg-disabled,
+        disabled-border: $buttons-primary-border-disabled,
+        disabled-color: $buttons-primary-text-disabled,
+        focus-bg: $buttons-primary-bg-focus,
+        focus-color: $buttons-primary-text-focus,
+        hover-bg: $buttons-primary-bg-hover,
+        hover-border-color: $buttons-primary-border-hover,
+        hover-color: $buttons-primary-text-hover,
+        padding: #{$buttons-primary-padding-y} #{$buttons-primary-padding-x},
+        padding-lg: #{$buttons-primary-lg-padding-y} #{$buttons-primary-lg-padding-x},
+    ),
+
+    secondary: (
+        active-bg: $buttons-secondary-bg-active,
+        active-color: $buttons-secondary-text-active,
+        bg: $buttons-secondary-bg,
+        border-color: $buttons-secondary-border,
+        border-width: $buttons-secondary-border-width,
+        color: $buttons-secondary-text,
+        disabled-bg: $buttons-secondary-bg-disabled,
+        disabled-border: $buttons-secondary-border-disabled,
+        disabled-color: $buttons-secondary-text-disabled,
+        focus-bg: $buttons-secondary-bg-focus,
+        focus-color: $buttons-secondary-text-focus,
+        hover-bg: $buttons-secondary-bg-hover,
+        hover-color: $buttons-secondary-text-hover,
+        hover-border-color: $buttons-secondary-border-hover,
+        padding: #{$buttons-secondary-padding-y} #{$buttons-secondary-padding-x},
+        padding-sm-x: $buttons-secondary-sm-padding-x,
+        padding-sm-y: $buttons-secondary-sm-padding-y,
+        padding-lg-x: $buttons-secondary-lg-padding-x,
+        padding-lg-y: $buttons-secondary-lg-padding-y,
+    )
+);
 
 
 // ------------------------------------------
