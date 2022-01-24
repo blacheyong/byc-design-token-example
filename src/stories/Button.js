@@ -1,6 +1,7 @@
 export const createButton = ({
   primary = true,
   size = 'md',
+  disabled = false,
   backgroundColor,
   label,
   onClick,
@@ -11,7 +12,8 @@ export const createButton = ({
   btn.addEventListener('click', onClick);
 
   const mode = primary ? 'btn-primary' : 'btn-secondary';
-  btn.className = ['btn', `btn-${size}`, mode].join(' ');
+  const isDisabled = disabled ? 'disabled' : '';
+  btn.className = ['btn', `btn-${size}`, isDisabled, mode].join(' ');
 
   btn.style.backgroundColor = backgroundColor;
 
