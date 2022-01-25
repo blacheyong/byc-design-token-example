@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Mon, 24 Jan 2022 22:09:52 GMT
+// Generated on Tue, 25 Jan 2022 14:50:29 GMT
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -8,18 +8,18 @@ $colors-blue-medium: #003778;
 $colors-blue-light: #C2CEDF;
 $colors-primary: #00549A;
 $colors-white: #ffffff;
-$buttons-primary-bg: #003778;
+$buttons-primary-bg: linear-gradient(180deg, #003778e6 0%, #003778 100%);
 $buttons-primary-text: #ffffff;
-$buttons-primary-bg-hover: #00549A;
+$buttons-primary-bg-hover: linear-gradient(180deg, #00549ae6 0%, #00549A 100%);
 $buttons-primary-border: #003778;
 $buttons-primary-border-hover: #003778;
 $buttons-primary-text-hover: #ffffff;
-$buttons-primary-border-width: 0px;
+$buttons-primary-border-width: 1px;
 $buttons-primary-bg-disabled: #BABEC2;
 $buttons-radius: 8px;
 $buttons-padding-x: 20px;
 $buttons-padding-y: 10px;
-$buttons-sm-radium: 6px;
+$buttons-sm-radius: 6px;
 $buttons-font-size: 15px;
 $buttons-sm-font-size: 12px;
 $buttons-line-height: 14px;
@@ -31,6 +31,8 @@ $buttons-text-transform: none;
 $buttons-text-decoration: none;
 $buttons-sm-padding-x: 15px;
 $buttons-sm-padding-y: 5px;
+$buttons-lg-padding-x: 24px;
+$buttons-lg-padding-y: 10px;
 $buttons-secondary-bg: #ffffff00;
 $buttons-secondary-text: #003778;
 $buttons-secondary-bg-hover: #e6f1fa4d;
@@ -45,9 +47,7 @@ $buttons-secondary-lg-padding-x: 23px;
 $buttons-secondary-lg-padding-y: 9px;
 $buttons-secondary-text-disabled: #BABEC2;
 $buttons-secondary-border-disabled: #BABEC2;
-$buttons-default-border-width: 0px;
-$buttons-lg-padding-x: 24px;
-$buttons-lg-padding-y: 10px;
+$buttons-default-border-width: 1px;
 $buttons-lg-line-height: 20px;
 $buttons-lg-font-size: 18px;
 $radius-default: 8px;

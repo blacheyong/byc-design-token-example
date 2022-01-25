@@ -30,7 +30,7 @@
   "_buttons": {
     "primary": {
       "bg": {
-        "value": "#003778",
+        "value": "linear-gradient(180deg, #003778e6 0%, #003778 100%)",
         "type": "color"
       },
       "text": {
@@ -38,7 +38,7 @@
         "type": "color"
       },
       "bg-hover": {
-        "value": "#00549A",
+        "value": "linear-gradient(180deg, #00549ae6 0%, #00549A 100%)",
         "type": "color"
       },
       "border": {
@@ -54,7 +54,7 @@
         "type": "color"
       },
       "border-width": {
-        "value": 0,
+        "value": 1,
         "type": "borderWidth"
       },
       "bg-disabled": {
@@ -74,7 +74,7 @@
       "value": 10,
       "type": "spacing"
     },
-    "sm-radium": {
+    "sm-radius": {
       "value": 6,
       "type": "borderRadius"
     },
@@ -127,6 +127,14 @@
     },
     "sm-padding-y": {
       "value": 5,
+      "type": "spacing"
+    },
+    "lg-padding-x": {
+      "value": 24,
+      "type": "spacing"
+    },
+    "lg-padding-y": {
+      "value": 10,
       "type": "spacing"
     },
     "secondary": {
@@ -189,17 +197,9 @@
     },
     "default": {
       "border-width": {
-        "value": 0,
+        "value": 1,
         "type": "borderWidth"
       }
-    },
-    "lg-padding-x": {
-      "value": 24,
-      "type": "spacing"
-    },
-    "lg-padding-y": {
-      "value": 10,
-      "type": "spacing"
     },
     "lg-line-height": {
       "value": 20,
