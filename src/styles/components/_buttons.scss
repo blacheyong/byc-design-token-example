@@ -21,6 +21,12 @@
     cursor: pointer;
 }
 
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
 // SASS map tests
 .btn-primary {
     @include button-variants(map-get($buttons,primary));
@@ -28,49 +34,6 @@
 
 .btn-secondary {
     @include button-variants(map-get($buttons,secondary));
-}
-
-// Future-proof disabling of clicks on `<a>` elements
-a.btn.disabled,
-fieldset:disabled a.btn {
-  pointer-events: none;
-}
-
-// Variants
-// @each $color, $value in $theme-colors {
-//     .btn-#{$color} {
-//         @include button-variant($value, $value);
-//     }
-// }
-
-// Link variant
-.btn-link {
-    color: $link-color;
-    font-weight: $font-weight-normal;
-    padding: 0;
-    position: relative;
-    text-decoration: $link-decoration;
-
-    &:hover {
-        color: $link-hover-color;
-        text-decoration: $link-hover-decoration;
-        &::after {
-            transform: scaleX(1);
-        }
-    }
-
-    &::after {
-        background: $link-hover-color;
-        bottom: 0;
-        content: '';
-        height: 2px;
-        left: 1px;
-        position: absolute;
-        transform: scaleX(0);
-        transform-origin: left center;
-        width: calc(100% - 1px);
-        @include transition($btn-transition);
-    }
 }
 
 // Button sizes

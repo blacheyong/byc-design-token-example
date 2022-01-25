@@ -110,7 +110,9 @@ $buttons: (
     border-radius: $buttons-radius,
     font-size: $buttons-font-size,
     line-height: $buttons-line-height,
-    padding: #{$buttons-padding-y} #{$buttons-padding-x},
+    // padding: #{$buttons-padding-y} #{$buttons-padding-x},
+    padding-x: $buttons-padding-x,
+    padding-y: $buttons-padding-y,
     text-decoration: $buttons-text-decoration,
     transition: all .3s ease-in-out,
 
@@ -129,8 +131,12 @@ $buttons: (
         hover-bg: $buttons-primary-bg-hover,
         hover-border-color: $buttons-primary-border-hover,
         hover-color: $buttons-primary-text-hover,
-        padding: #{$buttons-primary-padding-y} #{$buttons-primary-padding-x},
-        padding-lg: #{$buttons-primary-lg-padding-y} #{$buttons-primary-lg-padding-x},
+        padding-x: $buttons-padding-x,
+        padding-y: $buttons-padding-y,
+        padding-sm-x: $buttons-sm-padding-x,
+        padding-sm-y: $buttons-sm-padding-y,
+        padding-lg-x: $buttons-lg-padding-x,
+        padding-lg-y: $buttons-lg-padding-y,
     ),
 
     secondary: (
@@ -148,11 +154,12 @@ $buttons: (
         hover-bg: $buttons-secondary-bg-hover,
         hover-color: $buttons-secondary-text-hover,
         hover-border-color: $buttons-secondary-border-hover,
-        padding: #{$buttons-secondary-padding-y} #{$buttons-secondary-padding-x},
-        padding-sm-x: $buttons-secondary-sm-padding-x,
-        padding-sm-y: $buttons-secondary-sm-padding-y,
-        padding-lg-x: $buttons-secondary-lg-padding-x,
-        padding-lg-y: $buttons-secondary-lg-padding-y,
+        padding-x: $buttons-padding-x,
+        padding-y: $buttons-padding-y,
+        padding-sm-x: $buttons-sm-padding-x,
+        padding-sm-y: $buttons-sm-padding-y,
+        padding-lg-x: $buttons-lg-padding-x,
+        padding-lg-y: $buttons-lg-padding-y,
     )
 );
 

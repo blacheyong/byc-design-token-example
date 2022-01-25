@@ -3,7 +3,10 @@
     border-color: map-get($button, border-color);
     border-width: map-get($button, border-width);
     color: map-get($button, color);
-    padding: map-get($button, padding);
+    padding-left: map-get($button, padding-x) - map-get($button, border-width);
+    padding-right: map-get($button, padding-x) - map-get($button, border-width);
+    padding-bottom: map-get($button, padding-y) - map-get($button, border-width);
+    padding-top: map-get($button, padding-y) - map-get($button, border-width);
     
     &:hover {
         background: map-get($button, hover-bg);
@@ -24,26 +27,35 @@
         color: map-get($button, disabled-color);
     }
 
-    // @if(map-get($button, padding-sm-x) != null) {
-    //     &.btn-sm {
-    //         padding-right: map-get($button, padding-sm-x);
-    //         padding-left: map-get($button, padding-sm-x);
-    //     }
-    // }
-
-    // @if(map-get($button, padding-sm-y) != null) {
-    //     &.btn-sm {
-    //         padding-top: map-get($button, padding-sm-y);
-    //         padding-bottom: map-get($button, padding-sm-y);
-    //     }
-    // }
+    @if(map-get($button, padding-sm-x) != null) {
+        &.btn-sm {
+            padding-right: map-get($button, padding-sm-x) - map-get($button, border-width);
+            padding-left: map-get($button, padding-sm-x) - map-get($button, border-width);
+        }
+    }
+    @if(map-get($button, padding-sm-y) != null) {
+        &.btn-sm {
+            padding-top: map-get($button, padding-sm-y) - map-get($button, border-width);
+            padding-bottom: map-get($button, padding-sm-y) - map-get($button, border-width);
+        }
+    }
+    @if(map-get($button, padding-lg-x) != null) {
+        &.btn-lg {
+            padding-right: map-get($button, padding-lg-x) - map-get($button, border-width);
+            padding-left: map-get($button, padding-lg-x) - map-get($button, border-width);
+        }
+    }
+    @if(map-get($button, padding-lg-y) != null) {
+        &.btn-lg {
+            padding-top: map-get($button, padding-lg-y) - map-get($button, border-width);
+            padding-bottom: map-get($button, padding-lg-y) - map-get($button, border-width);
+        }
+    }
 }
 
 @mixin button-sizes($padding-y, $padding-x, $font-size, $border-radius, $line-height) {
     border-radius: $border-radius;
     font-size: $font-size;
     line-height: $line-height;
-    padding: $padding-y $padding-x;
-    // Manually declare to provide an override to the browser default
-    // @include border-radius($border-radius, 0);
+    // padding: $padding-y $padding-x;
 }

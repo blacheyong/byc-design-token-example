@@ -74,7 +74,7 @@
       "value": 10,
       "type": "spacing"
     },
-    "sm-radium": {
+    "sm-radius": {
       "value": 6,
       "type": "borderRadius"
     },
@@ -127,6 +127,14 @@
     },
     "sm-padding-y": {
       "value": 5,
+      "type": "spacing"
+    },
+    "lg-padding-x": {
+      "value": 24,
+      "type": "spacing"
+    },
+    "lg-padding-y": {
+      "value": 10,
       "type": "spacing"
     },
     "secondary": {
@@ -192,14 +200,6 @@
         "value": 0,
         "type": "borderWidth"
       }
-    },
-    "lg-padding-x": {
-      "value": 24,
-      "type": "spacing"
-    },
-    "lg-padding-y": {
-      "value": 10,
-      "type": "spacing"
     },
     "lg-line-height": {
       "value": 20,
