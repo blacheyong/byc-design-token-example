@@ -1,6 +1,10 @@
 
 // Do not edit directly
+<<<<<<< HEAD
 // Generated on Tue, 25 Jan 2022 14:13:28 GMT
+=======
+// Generated on Tue, 25 Jan 2022 14:50:29 GMT
+>>>>>>> 21c996d3421869941c0588eca58d000e258d916f
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -8,13 +12,13 @@ $colors-blue-medium: #003778;
 $colors-blue-light: #C2CEDF;
 $colors-primary: #00549A;
 $colors-white: #ffffff;
-$buttons-primary-bg: #003778;
+$buttons-primary-bg: linear-gradient(180deg, #003778e6 0%, #003778 100%);
 $buttons-primary-text: #ffffff;
-$buttons-primary-bg-hover: #00549A;
+$buttons-primary-bg-hover: linear-gradient(180deg, #00549ae6 0%, #00549A 100%);
 $buttons-primary-border: #003778;
 $buttons-primary-border-hover: #003778;
 $buttons-primary-text-hover: #ffffff;
-$buttons-primary-border-width: 0px;
+$buttons-primary-border-width: 1px;
 $buttons-primary-bg-disabled: #BABEC2;
 $buttons-radius: 8px;
 $buttons-padding-x: 20px;
@@ -47,7 +51,11 @@ $buttons-secondary-lg-padding-x: 23px;
 $buttons-secondary-lg-padding-y: 9px;
 $buttons-secondary-text-disabled: #BABEC2;
 $buttons-secondary-border-disabled: #BABEC2;
+<<<<<<< HEAD
 $buttons-default-border-width: 0px;
+=======
+$buttons-default-border-width: 1px;
+>>>>>>> 21c996d3421869941c0588eca58d000e258d916f
 $buttons-lg-line-height: 20px;
 $buttons-lg-font-size: 18px;
 $radius-default: 8px;

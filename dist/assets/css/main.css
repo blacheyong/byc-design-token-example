@@ -1,36 +1,3 @@
-@font-face {
-  font-family: "Rustico";
-  src: url(../fonts/rustico/rustico-v2-regular-webfont.woff2) format("woff2"), url(../fonts/rustico/rustico-v2-regular-webfont.woff) format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms Medium";
-  src: url(../fonts/tt_norms/tt_norms_medium.otf) format("opentype"), url(../fonts/tt_norms/tt_norms_medium.ttf) format("truetype"), url(../fonts/tt_norms/tt_norms_medium.woff2) format("woff2"), url(../fonts/tt_norms/tt_norms_medium.woff) format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms Bold";
-  src: url(../fonts/tt_norms/tt_norms_bold.otf) format("opentype"), url(../fonts/tt_norms/tt_norms_bold.ttf) format("truetype"), url(../fonts/tt_norms/tt_norms_bold.woff2) format("woff2"), url(../fonts/tt_norms/tt_norms_bold.woff) format("woff");
-}
-
-/* @mixin button-primary($buttons) {
-    background: map-get(map-get($buttons, primary), bg);
-    border: map-get(map-get($buttons, primary), border);
-    color: map-get(map-get($buttons, primary), color);
-    padding-bottom: map-get(map-get($buttons, primary), padding-bottom);
-    padding-left: map-get(map-get($buttons, primary), padding-left);
-    padding-right: map-get(map-get($buttons, primary), padding-right);
-    padding-top: map-get(map-get($buttons, primary), padding-top);
-    text-decoration: map-get(map-get($buttons, primary), text-decoration);
-    transition: map-get(map-get($buttons, primary), transition);
-    &:hover {
-        background: map-get(map-get($buttons, primary), hover-bg);
-        color: map-get(map-get($buttons, primary), hover-color);
-    }
-    // &:active {
-    //     background: map-get(map-get($buttons, primary), active-bg);
-    // }
-} */
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -1108,18 +1075,32 @@
   }
 }
 
+@font-face {
+  font-family: "Rustico";
+  src: url(../fonts/rustico/rustico-v2-regular-webfont.woff2) format("woff2"), url(../fonts/rustico/rustico-v2-regular-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Norms Medium";
+  src: url(../fonts/tt_norms/tt_norms_medium.otf) format("opentype"), url(../fonts/tt_norms/tt_norms_medium.ttf) format("truetype"), url(../fonts/tt_norms/tt_norms_medium.woff2) format("woff2"), url(../fonts/tt_norms/tt_norms_medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "TT Norms Bold";
+  src: url(../fonts/tt_norms/tt_norms_bold.otf) format("opentype"), url(../fonts/tt_norms/tt_norms_bold.ttf) format("truetype"), url(../fonts/tt_norms/tt_norms_bold.woff2) format("woff2"), url(../fonts/tt_norms/tt_norms_bold.woff) format("woff");
+}
+
 .btn {
   background-color: transparent;
   border: 0px solid transparent;
   color: #fff;
   display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 14px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  padding: 10px 20px;
-  font-size: 0.8125rem;
   border-radius: 8px;
+  font-size: 15px;
+  line-height: 14px;
 }
 
 .btn.disabled, .btn:disabled {
@@ -1130,11 +1111,20 @@
   cursor: pointer;
 }
 
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
 .btn-primary {
   background: #003778;
   border-color: #003778;
   border-width: 0px;
   color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .btn-primary:hover {
@@ -1143,17 +1133,48 @@
   color: #ffffff;
 }
 
+.btn-primary:disabled, .btn-primary.disabled {
+  background: #BABEC2;
+}
+
+.btn-primary.btn-sm {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn-primary.btn-sm {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-primary.btn-lg {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.btn-primary.btn-lg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .btn-secondary {
   background: #ffffff00;
   border-color: #00549A;
   border-width: 1px;
   color: #003778;
-  padding: 9px 19px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 9px;
+  padding-top: 9px;
 }
 
 .btn-secondary:hover {
   background: #e6f1fa4d;
   color: #00549A;
+}
+
+.btn-secondary:disabled, .btn-secondary.disabled {
+  color: #BABEC2;
 }
 
 .btn-secondary.btn-sm {
@@ -1166,63 +1187,26 @@
   padding-bottom: 4px;
 }
 
-a.btn.disabled,
-fieldset:disabled a.btn {
-  pointer-events: none;
+.btn-secondary.btn-lg {
+  padding-right: 23px;
+  padding-left: 23px;
 }
 
-.btn-link {
-  color: theme-color("white");
-  font-weight: 400;
-  padding: 0;
-  position: relative;
-  text-decoration: none;
-}
-
-.btn-link:hover {
-  color: theme-color("primary");
-  text-decoration: none;
-}
-
-.btn-link:hover::after {
-  transform: scaleX(1);
-}
-
-.btn-link::after {
-  background: theme-color("primary");
-  bottom: 0;
-  content: '';
-  height: 2px;
-  left: 1px;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: left center;
-  width: calc(100% - 1px);
-  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .btn-link::after {
-    transition: none;
-  }
+.btn-secondary.btn-lg {
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .btn-lg {
-  padding: 0.725rem 1.5rem;
-  font-size: calc(1.275rem + 0.3vw);
-  border-radius: 50px;
-}
-
-@media (min-width: 1200px) {
-  .btn-lg {
-    font-size: 1.5rem;
-  }
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  line-height: 20px;
 }
 
 .btn-sm {
-  padding: 5px 15px;
-  font-size: 0.75rem;
-  border-radius: 6px;
+  border-radius: 0.2rem;
+  font-size: 0.875rem;
+  line-height: 12px;
 }
 
 
