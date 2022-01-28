@@ -8,7 +8,7 @@
     text-decoration: $buttons-text-decoration;
     transition: map-get($buttons, transition);
 
-    @include button-sizes($buttons-padding-y, $buttons-padding-x, $buttons-font-size, $buttons-radius, $buttons-line-height);
+    @include btn-sizes($buttons-padding-y, $buttons-padding-x, $buttons-font-size, $buttons-radius, $buttons-line-height);
 
     // Disabled comes first so active can properly restyle
     &.disabled,
@@ -30,17 +30,17 @@ fieldset:disabled a.btn {
 
 // SASS map tests
 .btn-primary {
-    @include button-variants(map-get($buttons,primary));
+    @include btn-variants(map-get($buttons,primary));
 }
 
 .btn-secondary {
-    @include button-variants(map-get($buttons,secondary));
+    @include btn-variants(map-get($buttons,secondary));
 }
 
 // Button sizes
 .btn-lg {
-    @include button-sizes($buttons-lg-padding-y, $buttons-lg-padding-x, $buttons-lg-font-size, $buttons-lg-radius, $buttons-lg-line-height);
+    @include btn-sizes($buttons-lg-padding-y, $buttons-lg-padding-x, $buttons-lg-font-size, $buttons-lg-radius, $buttons-lg-line-height);
 }
 .btn-sm {
-    @include button-sizes($buttons-sm-padding-y, $buttons-sm-padding-x, $buttons-sm-font-size, $buttons-sm-radius, $buttons-sm-line-height);
+    @include btn-sizes($buttons-sm-padding-y, $buttons-sm-padding-x, $buttons-sm-font-size, $buttons-sm-radius, $buttons-sm-line-height);
 }

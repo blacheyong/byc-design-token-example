@@ -1,4 +1,4 @@
-@mixin button-variants($button) {
+@mixin btn-variants($button) {
 
     $borderWidth: map-get($button, border-width);
 
@@ -49,7 +49,7 @@
     }
 }
 
-@mixin button-sizes($padding-y, $padding-x, $font-size, $border-radius, $line-height) {
+@mixin btn-sizes($padding-y, $padding-x, $font-size, $border-radius, $line-height) {
     border-radius: $border-radius;
     font-size: $font-size;
     line-height: $line-height;

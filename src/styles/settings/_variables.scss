@@ -96,11 +96,16 @@ $buttons-secondary-text-disabled: null !default;
 
 
 // Size
-$buttons-sm-font-size: null !default; // 12px
-$buttons-sm-line-height: null !default; // 12px
-$buttons-sm-padding-x: null !default; // 15px
-$buttons-sm-padding-y: null !default; // 5px
-$buttons-sm-radium: null !default; // 6px
+$buttons-sm-font-size: null !default;
+$buttons-sm-line-height: null !default;
+$buttons-sm-padding-x: null !default;
+$buttons-sm-padding-y: null !default;
+$buttons-sm-radius: null !default;
+$buttons-lg-font-size: null !default;
+$buttons-lg-line-height: null !default;
+$buttons-lg-padding-x: null !default;
+$buttons-lg-padding-y: null !default;
+$buttons-lg-radius: null !default;
 
 $buttons: (
     border-radius: $buttons-radius,
