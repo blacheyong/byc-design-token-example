@@ -3,7 +3,7 @@
     border: $buttons-default-border-width solid transparent;
     color: #fff; // TODO should not be hardcoded - $body-color like Bootstrap?
     display: inline-block;
-    font-family: $btn-font-family;
+    font-family: $buttons-font-family;
     line-height: $buttons-line-height;
     text-decoration: $buttons-text-decoration;
     transition: map-get($buttons, transition);
@@ -13,7 +13,8 @@
     // Disabled comes first so active can properly restyle
     &.disabled,
     &:disabled {
-        opacity: $btn-disabled-opacity;
+        // opacity: $buttons-disabled-opacity;
+        pointer-events: none;
     }
 }
 
@@ -38,8 +39,8 @@ fieldset:disabled a.btn {
 
 // Button sizes
 .btn-lg {
-    @include button-sizes($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg, $buttons-lg-line-height);
+    @include button-sizes($buttons-lg-padding-y, $buttons-lg-padding-x, $buttons-lg-font-size, $buttons-lg-radius, $buttons-lg-line-height);
 }
 .btn-sm {
-    @include button-sizes($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm, $buttons-sm-line-height);
+    @include button-sizes($buttons-sm-padding-y, $buttons-sm-padding-x, $buttons-sm-font-size, $buttons-sm-radius, $buttons-sm-line-height);
 }

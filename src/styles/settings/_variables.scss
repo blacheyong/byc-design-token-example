@@ -41,7 +41,7 @@ $h6-font-size: $font-size-base !default;
 
 // ------------------------------------------
 // Buttons
-// - Shared variables that are reassigned `$btn-` specific variables. Define text, background, and border color
+// - Shared variables that are reassigned `$buttons-` specific variables. Define text, background, and border color
 // ------------------------------------------
 
 // Base Variables, overriden by tokens
@@ -54,6 +54,8 @@ $buttons-line-height: 1 !default;
 $buttons-padding-x: 20px !default;
 $buttons-padding-y: 10px !default;
 $buttons-radius: 8px !default;
+$buttons-lg-radius: $buttons-radius !default;
+$buttons-sm-radius: $buttons-radius !default;
 $buttons-text-transform: none !default;
 $buttons-text-decoration: none !default;
 
@@ -72,10 +74,7 @@ $buttons-primary-text-hover: null !default;
 $buttons-primary-text-focus: null !default;
 $buttons-primary-text-active: null !default;
 $buttons-primary-text-disabled: null !default;
-$buttons-primary-padding-x: null !default;
-$buttons-primary-padding-y: null !default;
-$buttons-primary-lg-padding-x: null !default;
-$buttons-primary-lg-padding-y: null !default;
+
 
 // Secondary
 $buttons-secondary-bg: null !default;
@@ -89,15 +88,12 @@ $buttons-secondary-border-disabled: null !default;
 $buttons-secondary-border-width: null !default;
 $buttons-secondary-padding-x: null !default;
 $buttons-secondary-padding-y: null !default;
-$buttons-secondary-sm-padding-x: null !default;
-$buttons-secondary-sm-padding-y: null !default;
 $buttons-secondary-text: null !default;
 $buttons-secondary-text-hover: null !default;
 $buttons-secondary-text-focus: null !default;
 $buttons-secondary-text-active: null !default;
 $buttons-secondary-text-disabled: null !default;
-$buttons-secondary-lg-padding-x: null !default;
-$buttons-secondary-lg-padding-y: null !default;
+
 
 // Size
 $buttons-sm-font-size: null !default; // 12px
@@ -130,13 +126,7 @@ $buttons: (
         focus-color: $buttons-primary-text-focus,
         hover-bg: $buttons-primary-bg-hover,
         hover-border-color: $buttons-primary-border-hover,
-        hover-color: $buttons-primary-text-hover,
-        padding-x: $buttons-padding-x,
-        padding-y: $buttons-padding-y,
-        padding-sm-x: $buttons-sm-padding-x,
-        padding-sm-y: $buttons-sm-padding-y,
-        padding-lg-x: $buttons-lg-padding-x,
-        padding-lg-y: $buttons-lg-padding-y,
+        hover-color: $buttons-primary-text-hover
     ),
 
     secondary: (
@@ -153,13 +143,7 @@ $buttons: (
         focus-color: $buttons-secondary-text-focus,
         hover-bg: $buttons-secondary-bg-hover,
         hover-color: $buttons-secondary-text-hover,
-        hover-border-color: $buttons-secondary-border-hover,
-        padding-x: $buttons-padding-x,
-        padding-y: $buttons-padding-y,
-        padding-sm-x: $buttons-sm-padding-x,
-        padding-sm-y: $buttons-sm-padding-y,
-        padding-lg-x: $buttons-lg-padding-x,
-        padding-lg-y: $buttons-lg-padding-y,
+        hover-border-color: $buttons-secondary-border-hover
     )
 );
 
