@@ -4,7 +4,7 @@
   "description": "More to come...",
   "main": "webpack.config.js",
   "scripts": {
-    "tokens": "token-transformer data/tokens.json tokens/_tokens.json global && node ./build.js",
+    "tokens": "token-transformer data/tokens.json tokens/_tokens.json global --expandTypography && node ./build.js",
     "start": "webpack --watch --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production",
     "storybook": "start-storybook -p 6006",

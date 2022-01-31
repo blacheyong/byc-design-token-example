@@ -25,6 +25,52 @@ StyleDictionaryPackage.registerTransform({
 });
 
 StyleDictionaryPackage.registerTransform({
+    name: 'typography/fontWeight',
+    type: 'value',
+    matcher: function (prop) {
+        // console.log(prop)
+        // You can be more specific here if you only want 'em' units for font sizes    
+        return prop.path.includes('fontWeight')
+    },
+    transformer: function (prop) {
+        const thisValue = prop.value
+        switch (thisValue) {
+            case 'Regular':
+                return '400'
+                break
+            case 'Bold': 
+                return '700'
+                break
+            case 'Medium':
+                return '500'
+                break
+            case 'Thin':
+                return '100'
+                break
+            case 'Extra Light':
+                return '200'
+            case 'Light':
+                return '300'
+                break
+            case 'Semi Bold':
+                return '600'
+                break
+            case 'Extra Bold':
+                return '800'
+                break
+            case 'Black':
+                return '900'
+                break
+            case 'Heavy':
+                return '900'
+                break
+            default:
+                return 'normal'
+        }
+    }
+});
+
+StyleDictionaryPackage.registerTransform({
     name: 'shadow/spreadShadow',
     type: 'value',
     matcher: function (prop) {
@@ -53,7 +99,7 @@ function getStyleDictionaryConfig(theme) {
                 }]
             }, */
             "scss": {
-                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow"],
+                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow", "typography/fontWeight"],
                 "buildPath": `src/styles/settings/`,
                 "files": [{
                     "destination": `${theme}.scss`,
