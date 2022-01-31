@@ -1090,6 +1090,41 @@
   src: url(../fonts/tt_norms/tt_norms_bold.otf) format("opentype"), url(../fonts/tt_norms/tt_norms_bold.ttf) format("truetype"), url(../fonts/tt_norms/tt_norms_bold.woff2) format("woff2"), url(../fonts/tt_norms/tt_norms_bold.woff) format("woff");
 }
 
+@font-face {
+  font-family: 'bell-slim';
+  src: url(../fonts/bellslim/bellslim_regular-webfont.eot);
+  src: url(../fonts/bellslim/bellslim_regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/bellslim/bellslim_regular-webfont.woff) format("woff"), url(../fonts/bellslim/bellslim_regular-webfont.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bell-slim';
+  src: url(../fonts/bellslim/bellslim_medium-webfont.eot);
+  src: url(../fonts/bellslim/bellslim_medium-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/bellslim/bellslim_medium-webfont.woff) format("woff"), url(../fonts/bellslim/bellslim_medium-webfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bell-slim';
+  src: url(../fonts/bellslim/bellslim_semibold-webfont.eot);
+  src: url(../fonts/bellslim/bellslim_semibold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/bellslim/bellslim_semibold-webfont.woff) format("woff"), url(../fonts/bellslim/bellslim_semibold-webfont.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bellslim_font_black';
+  src: url(../fonts/bellslim/bellslim_black-webfont.woff) format("woff"), url(../fonts/bellslim/bellslim_black-webfont.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "bellslim_font_black", Helvetica, Arial, sans-serif;
+}
+
 .btn {
   background-color: transparent;
   border: 0 solid transparent;

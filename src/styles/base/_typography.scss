@@ -5,3 +5,49 @@ $rustico-path: "#{$font-path}rustico/" !default;
 @include font-face("Rustico", "#{$rustico-path}rustico-v2-regular-webfont", null, null, woff2 woff);
 @include font-face("TT Norms Medium", "#{$tt-norms-path}tt_norms_medium", null, null, otf ttf woff2 woff);
 @include font-face("TT Norms Bold", "#{$tt-norms-path}tt_norms_bold", null, null, otf ttf woff2 woff);
+
+// Define bell-slim font
+@font-face {
+    font-family: 'bell-slim';
+    src: url('#{$font-path}bellslim/bellslim_regular-webfont.eot');
+    src: url('#{$font-path}bellslim/bellslim_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}bellslim/bellslim_regular-webfont.woff') format('woff'),
+    url('#{$font-path}bellslim/bellslim_regular-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'bell-slim';
+    src: url('#{$font-path}bellslim/bellslim_medium-webfont.eot');
+    src: url('#{$font-path}bellslim/bellslim_medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}bellslim/bellslim_medium-webfont.woff') format('woff'),
+    url('#{$font-path}bellslim/bellslim_medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'bell-slim';
+    src: url('#{$font-path}bellslim/bellslim_semibold-webfont.eot');
+    src: url('#{$font-path}bellslim/bellslim_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}bellslim/bellslim_semibold-webfont.woff') format('woff'),
+    url('#{$font-path}bellslim/bellslim_semibold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+  
+// Bell Slim Black
+@font-face {
+    font-family: 'bellslim_font_black';
+    src: url('#{$font-path}bellslim/bellslim_black-webfont.woff') format('woff'), url('#{$font-path}bellslim/bellslim_black-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+$bell-slim: 'bell-slim', Helvetica, Arial, sans-serif;
+$bell-slim-black: 'bellslim_font_black', Helvetica, Arial, sans-serif;
+  
+h1 {
+    font-family: $bell-slim-black;
+}
