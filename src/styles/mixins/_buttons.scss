@@ -1,7 +1,5 @@
 @mixin btn-variants($button) {
-
     $borderWidth: map-get($button, border-width);
-
     background: map-get($button, bg);
     border-color: map-get($button, border-color);
     border-width: $borderWidth;

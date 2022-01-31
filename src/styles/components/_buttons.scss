@@ -42,5 +42,5 @@ fieldset:disabled a.btn {
     @include btn-sizes($buttons-lg-padding-y, $buttons-lg-padding-x, $buttons-lg-font-size, $buttons-lg-radius, $buttons-lg-line-height);
 }
 .btn-sm {
-    @include btn-sizes($buttons-sm-padding-y, $buttons-sm-padding-x, $buttons-sm-font-size, $buttons-sm-radius, $buttons-sm-line-height);
+    @include btn-sizes($buttons-sm-padding-y, $buttons-sm-padding-x, $buttons-sm-text-font-size, $buttons-sm-radius, $buttons-sm-line-height);
 }
