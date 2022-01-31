@@ -3,12 +3,12 @@
     border: $buttons-default-border-width solid transparent;
     color: #fff; // TODO should not be hardcoded - $body-color like Bootstrap?
     display: inline-block;
-    font-family: $buttons-font-family;
-    line-height: $buttons-line-height;
-    text-decoration: $buttons-text-decoration;
+    font-family: $buttons-text-font-family;
+    line-height: $buttons-text-line-height;
+    text-decoration: $buttons-text-text-decoration;
     transition: map-get($buttons, transition);
 
-    @include btn-sizes($buttons-padding-y, $buttons-padding-x, $buttons-font-size, $buttons-radius, $buttons-line-height);
+    @include btn-sizes($buttons-padding-y, $buttons-padding-x, $buttons-text-font-size, $buttons-radius, $buttons-text-line-height);
 
     // Disabled comes first so active can properly restyle
     &.disabled,
@@ -39,8 +39,8 @@ fieldset:disabled a.btn {
 
 // Button sizes
 .btn-lg {
-    @include btn-sizes($buttons-lg-padding-y, $buttons-lg-padding-x, $buttons-lg-font-size, $buttons-lg-radius, $buttons-lg-line-height);
+    @include btn-sizes($buttons-lg-padding-y, $buttons-lg-padding-x, $buttons-lg-text-font-size, $buttons-lg-radius, $buttons-lg-text-line-height);
 }
 .btn-sm {
-    @include btn-sizes($buttons-sm-padding-y, $buttons-sm-padding-x, $buttons-sm-text-font-size, $buttons-sm-radius, $buttons-sm-line-height);
+    @include btn-sizes($buttons-sm-padding-y, $buttons-sm-padding-x, $buttons-sm-text-font-size, $buttons-sm-radius, $buttons-sm-text-line-height);
 }

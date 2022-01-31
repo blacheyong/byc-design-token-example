@@ -45,25 +45,28 @@ $h6-font-size: $font-size-base !default;
 // ------------------------------------------
 
 // Base Variables, overriden by tokens
-$buttons-default-border-width: 0 !default;
+$buttons-default-border-width: 0 !default; // no token atm
 $buttons-drop-shadow: 0px 0px 0px 0px #000000 !default;
-$buttons-font-family: Arial, Helvetica, sans-serif !default;
-$buttons-font-size: 1em !default;
-$buttons-font-weight: 400 !default;
-$buttons-line-height: 1 !default;
+$buttons-text-font-family: Arial, Helvetica, sans-serif !default;
+$buttons-text-font-size: 1em !default;
+$buttons-text-font-weight: 400 !default;
+$buttons-text-line-height: 1 !default;
+$buttons-text-letter-spacing: 0 !default;
+$buttons-text-paragraph-spacing: 0 !default;
+$buttons-text-text-case: none !default;
+$buttons-text-text-decoration: none !default;
 $buttons-padding-x: 20px !default;
 $buttons-padding-y: 10px !default;
 $buttons-radius: 8px !default;
 $buttons-lg-radius: $buttons-radius !default;
 $buttons-sm-radius: $buttons-radius !default;
-$buttons-text-transform: none !default;
-$buttons-text-decoration: none !default;
+$buttons-text-transform: none !default; // no token atm
 
 // Primary
 $buttons-primary-bg: null !default;
 $buttons-primary-bg-hover: null !default;
-$buttons-primary-bg-focus: null !default;
-$buttons-primary-bg-active: null !default;
+$buttons-primary-bg-focus: null !default; // no token atm
+$buttons-primary-bg-active: null !default; // no token atm
 $buttons-primary-bg-disabled: null !default;
 $buttons-primary-border: null !default;
 $buttons-primary-border-hover: null !default;
@@ -71,50 +74,61 @@ $buttons-primary-border-disabled: null !default;
 $buttons-primary-border-width: null !default;
 $buttons-primary-text: null !default;
 $buttons-primary-text-hover: null !default;
-$buttons-primary-text-focus: null !default;
-$buttons-primary-text-active: null !default;
-$buttons-primary-text-disabled: null !default;
+$buttons-primary-text-focus: null !default; // no token atm
+$buttons-primary-text-active: null !default; // no token atm
+$buttons-primary-text-disabled: null !default; // no token atm
 
 
 // Secondary
 $buttons-secondary-bg: null !default;
 $buttons-secondary-bg-hover: null !default;
-$buttons-secondary-bg-focus: null !default;
-$buttons-secondary-bg-active: null !default;
-$buttons-secondary-bg-disabled: null !default;
+$buttons-secondary-bg-focus: null !default; // no token atm
+$buttons-secondary-bg-active: null !default; // no token atm
+$buttons-secondary-bg-disabled: null !default; // no token atm
 $buttons-secondary-border: null !default;
-$buttons-secondary-border-hover: null !default;
+$buttons-secondary-border-hover: null !default; // no token atm
 $buttons-secondary-border-disabled: null !default;
 $buttons-secondary-border-width: null !default;
-$buttons-secondary-padding-x: null !default;
-$buttons-secondary-padding-y: null !default;
+$buttons-secondary-padding-x: null !default; // no token atm
+$buttons-secondary-padding-y: null !default; // no token atm
 $buttons-secondary-text: null !default;
 $buttons-secondary-text-hover: null !default;
-$buttons-secondary-text-focus: null !default;
-$buttons-secondary-text-active: null !default;
+$buttons-secondary-text-focus: null !default; // no token atm
+$buttons-secondary-text-active: null !default; // no token atm
 $buttons-secondary-text-disabled: null !default;
 
 
 // Size
+$buttons-sm-text-font-family: null !default;
 $buttons-sm-text-font-size: null !default;
-$buttons-sm-line-height: null !default;
+$buttons-sm-text-font-weight: null !default;
+$buttons-sm-text-letter-spacing: null !default;
+$buttons-sm-text-line-height: null !default;
+$buttons-sm-text-text-decoration: null !default;
 $buttons-sm-padding-x: null !default;
 $buttons-sm-padding-y: null !default;
 $buttons-sm-radius: null !default;
-$buttons-lg-font-size: null !default;
-$buttons-lg-line-height: null !default;
+
+$buttons-lg-text-font-family: null !default;
+$buttons-lg-text-font-size: null !default;
+$buttons-lg-text-font-weight: null !default;
+$buttons-lg-text-letter-spacing: null !default;
+$buttons-lg-text-line-height: null !default;
+$buttons-lg-text-text-decoration: null !default;
 $buttons-lg-padding-x: null !default;
 $buttons-lg-padding-y: null !default;
 $buttons-lg-radius: null !default;
 
+
 $buttons: (
     border-radius: $buttons-radius,
-    font-size: $buttons-font-size,
-    line-height: $buttons-line-height,
-    // padding: #{$buttons-padding-y} #{$buttons-padding-x},
+    font-size: $buttons-text-font-size,
+    font-weight: $buttons-text-font-weight,
+    letter-spacing: $buttons-text-letter-spacing,
+    line-height: $buttons-text-line-height,
     padding-x: $buttons-padding-x,
     padding-y: $buttons-padding-y,
-    text-decoration: $buttons-text-decoration,
+    text-decoration: $buttons-text-text-decoration,
     transition: all .3s ease-in-out,
 
     primary: (

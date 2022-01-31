@@ -1092,19 +1092,21 @@
 
 .btn {
   background-color: transparent;
-  border: 0px solid transparent;
+  border: 0 solid transparent;
   color: #fff;
   display: inline-block;
-  line-height: 14px;
+  font-family: Arial;
+  line-height: 16px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   font-size: 15px;
-  line-height: 14px;
+  line-height: 16px;
+  padding: 10px 20px;
 }
 
 .btn.disabled, .btn:disabled {
-  opacity: 0.65;
+  pointer-events: none;
 }
 
 .btn:not(.disabled):not(:disabled) {
@@ -1117,18 +1119,23 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  background: #003778;
+  background: linear-gradient(180deg, #003778e6 0%, #003778 100%);
   border-color: #003778;
-  border-width: 0px;
+  border-width: 1px;
   color: #ffffff;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 9px 19px;
+}
+
+.btn-primary.btn-sm {
+  padding: 4px 14px;
+}
+
+.btn-primary.btn-lg {
+  padding: 9px 23px;
 }
 
 .btn-primary:hover {
-  background: #00549A;
+  background: linear-gradient(180deg, #00549ae6 0%, #00549A 100%);
   border-color: #003778;
   color: #ffffff;
 }
@@ -1137,35 +1144,20 @@ fieldset:disabled a.btn {
   background: #BABEC2;
 }
 
-.btn-primary.btn-sm {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.btn-primary.btn-sm {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.btn-primary.btn-lg {
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.btn-primary.btn-lg {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .btn-secondary {
   background: #ffffff00;
   border-color: #00549A;
   border-width: 1px;
   color: #003778;
-  padding-left: 19px;
-  padding-right: 19px;
-  padding-bottom: 9px;
-  padding-top: 9px;
+  padding: 9px 19px;
+}
+
+.btn-secondary.btn-sm {
+  padding: 4px 14px;
+}
+
+.btn-secondary.btn-lg {
+  padding: 9px 23px;
 }
 
 .btn-secondary:hover {
@@ -1177,36 +1169,18 @@ fieldset:disabled a.btn {
   color: #BABEC2;
 }
 
-.btn-secondary.btn-sm {
-  padding-right: 14px;
-  padding-left: 14px;
-}
-
-.btn-secondary.btn-sm {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.btn-secondary.btn-lg {
-  padding-right: 23px;
-  padding-left: 23px;
-}
-
-.btn-secondary.btn-lg {
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-
 .btn-lg {
-  border-radius: 0.3rem;
-  font-size: 1.5rem;
+  border-radius: 8px;
+  font-size: 18px;
   line-height: 20px;
+  padding: 10px 24px;
 }
 
 .btn-sm {
-  border-radius: 0.2rem;
-  font-size: 0.875rem;
+  border-radius: 6px;
+  font-size: 12px;
   line-height: 12px;
+  padding: 5px 15px;
 }
 
 
