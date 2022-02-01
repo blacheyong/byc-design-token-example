@@ -1,0 +1,8 @@
+@mixin heading-types($heading) {
+    font-family: map-get($heading, font-family);
+    font-weight: map-get($heading, font-weight);
+    line-height: map-get($heading, line-height);
+    font-size: map-get($heading, font-size);
+    letter-spacing: map-get($heading, letter-spacing);
+    text-decoration: map-get($heading, text-decoration);
+}

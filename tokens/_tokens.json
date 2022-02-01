@@ -115,6 +115,10 @@
       "bg-disabled": {
         "value": "#BABEC2",
         "type": "color"
+      },
+      "border-disabled": {
+        "value": "#BABEC2",
+        "type": "color"
       }
     },
     "secondary": {
@@ -148,6 +152,10 @@
       },
       "border-disabled": {
         "value": "#BABEC2",
+        "type": "color"
+      },
+      "border-hover": {
+        "value": "#00549A",
         "type": "color"
       }
     }
