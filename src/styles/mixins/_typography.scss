@@ -1,8 +1,8 @@
 @mixin heading-types($heading) {
-    font-family: map-get($heading, font-family);
-    font-weight: map-get($heading, font-weight);
-    line-height: map-get($heading, line-height);
-    font-size: map-get($heading, font-size);
-    letter-spacing: map-get($heading, letter-spacing);
-    text-decoration: map-get($heading, text-decoration);
+    font-family: map-get($heading, font-family) !important; // important is necessary for Storybook
+    font-weight: map-get($heading, font-weight) !important;
+    line-height: map-get($heading, line-height) !important;
+    font-size: map-get($heading, font-size) !important;
+    letter-spacing: map-get($heading, letter-spacing) !important;
+    text-decoration: map-get($heading, text-decoration) !important;
 }
