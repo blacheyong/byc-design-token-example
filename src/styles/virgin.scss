@@ -1,8 +1,6 @@
 // ------------------------------------------
 // Settings
 //-------------------------------------------
-// @import "settings/tokens";
-// @import "settings/colors";
 @import "settings/virgin";
 @import "settings/variables";
 
@@ -29,11 +27,15 @@
 // Include custom variable default overrides here
 
 // Optional
-@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/card";
+// @import "~bootstrap/scss/containers";
+// @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/bootstrap-grid";
 
 // ------------------------------------------
 // Base
 //-------------------------------------------
+@import "base/demo";
 @import "base/typography";
 
 // ------------------------------------------

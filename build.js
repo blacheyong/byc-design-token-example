@@ -80,6 +80,17 @@ StyleDictionaryPackage.registerTransform({
 });
 
 StyleDictionaryPackage.registerTransform({
+    name: 'typography/lineHeight',
+    type: 'value',
+    matcher: function (prop) {
+        return prop.path.includes('lineHeight')
+    },
+    transformer: function (prop) {
+        return parseFloat(prop.value) + 'px';
+    }
+})
+
+StyleDictionaryPackage.registerTransform({
     name: 'shadow/spreadShadow',
     type: 'value',
     matcher: function (prop) {
@@ -108,7 +119,7 @@ function getStyleDictionaryConfig(theme) {
                 }]
             }, */
             "scss": {
-                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow","typography/fontSize", "typography/fontWeight"],
+                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow","typography/fontSize", "typography/fontWeight", "typography/lineHeight"],
                 "buildPath": `src/styles/settings/`,
                 "files": [{
                     "destination": `${theme}.scss`,

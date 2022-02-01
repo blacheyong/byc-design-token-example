@@ -30,11 +30,15 @@
 // Include custom variable default overrides here
 
 // Optional
-@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/card";
+// @import "~bootstrap/scss/containers";
+// @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/bootstrap-grid";
 
 // ------------------------------------------
 // Base
 //-------------------------------------------
+@import "base/demo";
 @import "base/typography";
 
 // ------------------------------------------
