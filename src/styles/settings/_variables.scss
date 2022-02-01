@@ -66,67 +66,67 @@ $headings: (
     h1: (
         font-family: $headings-h1-font-family,
         font-weight: $headings-h1-font-weight,
-        line-height: #{$headings-h1-line-height}px,
-        font-size: #{$headings-h1-font-size}px,
+        line-height: $headings-h1-line-height,
+        font-size: $headings-h1-font-size,
         letter-spacing: $headings-h1-letter-spacing,
         // $headings-h1-paragraph-spacing,
         text-decoration: $headings-h1-text-decoration,
-        // $headings-h1-text-case,
+        text-transform: $headings-h1-text-case,
     ),
 
     h2: (
         font-family: $headings-h2-font-family,
         font-weight: $headings-h2-font-weight,
-        line-height: #{$headings-h2-line-height}px,
-        font-size: #{$headings-h2-font-size}px,
+        line-height: $headings-h2-line-height,
+        font-size: $headings-h2-font-size,
         letter-spacing: $headings-h2-letter-spacing,
         // $headings-h2-paragraph-spacing,
         text-decoration: $headings-h2-text-decoration,
-        // $headings-h2-text-case,
+        text-transform: $headings-h2-text-case,
     ),
 
     h3: (
         font-family: $headings-h3-font-family,
         font-weight: $headings-h3-font-weight,
-        line-height: #{$headings-h3-line-height}px,
-        font-size: #{$headings-h3-font-size}px,
+        line-height: $headings-h3-line-height,
+        font-size: $headings-h3-font-size,
         letter-spacing: $headings-h3-letter-spacing,
         // $headings-h3-paragraph-spacing,
         text-decoration: $headings-h3-text-decoration,
-        // $headings-h3-text-case,
+        text-transform: $headings-h3-text-case,
     ),
 
     h4: (
         font-family: $headings-h4-font-family,
         font-weight: $headings-h4-font-weight,
-        line-height: #{$headings-h4-line-height}px,
-        font-size: #{$headings-h4-font-size}px,
+        line-height: $headings-h4-line-height,
+        font-size: $headings-h4-font-size,
         letter-spacing: $headings-h4-letter-spacing,
         // $headings-h4-paragraph-spacing,
         text-decoration: $headings-h4-text-decoration,
-        // $headings-h4-text-case,
+        text-transform: $headings-h4-text-case,
     ),
 
     h5: (
         font-family: $headings-h5-font-family,
         font-weight: $headings-h5-font-weight,
-        line-height: #{$headings-h5-line-height}px,
-        font-size: #{$headings-h5-font-size}px,
+        line-height: $headings-h5-line-height,
+        font-size: $headings-h5-font-size,
         letter-spacing: $headings-h5-letter-spacing,
         // $headings-h5-paragraph-spacing,
         text-decoration: $headings-h5-text-decoration,
-        // $headings-h5-text-case,
+        text-transform: $headings-h5-text-case,
     ),
 
     h6: (
         font-family: $headings-h6-font-family,
         font-weight: $headings-h6-font-weight,
-        line-height: #{$headings-h6-line-height}px,
-        font-size: #{$headings-h6-font-size}px,
+        line-height: $headings-h6-line-height,
+        font-size: $headings-h6-font-size,
         letter-spacing: $headings-h6-letter-spacing,
         // $headings-h6-paragraph-spacing,
         text-decoration: $headings-h6-text-decoration,
-        // $headings-h6-text-case,
+        text-transform: $headings-h6-text-case,
     ),
 );
 
@@ -140,7 +140,7 @@ $buttons-default-border-width: 0 !default; // no token atm
 $buttons-drop-shadow: 0px 0px 0px 0px #000000 !default;
 $buttons-text-font-family: Arial, Helvetica, sans-serif !default;
 $buttons-text-font-size: 1em !default;
-$buttons-text-font-weight: 400 !default;
+$buttons-text-font-weight: null !default;
 $buttons-text-line-height: 1 !default;
 $buttons-text-letter-spacing: 0 !default;
 $buttons-text-paragraph-spacing: 0 !default;

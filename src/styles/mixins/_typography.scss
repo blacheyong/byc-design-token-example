@@ -5,4 +5,5 @@
     font-size: map-get($heading, font-size);
     letter-spacing: map-get($heading, letter-spacing);
     text-decoration: map-get($heading, text-decoration);
+    text-transform: map-get($heading, text-transform);
 }

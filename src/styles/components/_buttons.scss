@@ -4,6 +4,7 @@
     color: #fff; // TODO should not be hardcoded - $body-color like Bootstrap?
     display: inline-block;
     font-family: $buttons-text-font-family;
+    font-weight: $buttons-text-font-weight;
     line-height: $buttons-text-line-height;
     text-decoration: $buttons-text-text-decoration;
     transition: map-get($buttons, transition);
