@@ -88,7 +88,10 @@ const browserSync = new BrowserSyncPlugin({
 // Config
 //------------------------------------------
 module.exports = {
-  entry: srcPath + 'main.js',
+  entry: {
+    main: [srcPath + 'main.js'],
+    virgin: [srcPath + 'virgin.js'],
+  },
   output: {
     path: path.resolve(__dirname, outputPath),
     filename: outputName

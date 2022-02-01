@@ -1104,38 +1104,38 @@
 }
 
 h1 {
-  font-family: BellSlim Heavy !important;
+  font-family: Ultramagnetic Virgin-Regular !important;
   font-weight: 400 !important;
-  line-height: 46px !important;
-  font-size: 40px !important;
-  letter-spacing: -0.7px !important;
+  line-height: 41px !important;
+  font-size: 41px !important;
+  letter-spacing: 0 !important;
   text-decoration: none !important;
 }
 
 h2 {
-  font-family: BellSlim Heavy !important;
+  font-family: Ultramagnetic Virgin-Regular !important;
   font-weight: 400 !important;
-  line-height: 38px !important;
-  font-size: 32px !important;
-  letter-spacing: -0.5px !important;
+  line-height: 28px !important;
+  font-size: 28px !important;
+  letter-spacing: 0 !important;
   text-decoration: none !important;
 }
 
 h3 {
-  font-family: BellSlim Heavy !important;
+  font-family: Ultramagnetic Virgin-Regular !important;
   font-weight: 400 !important;
   line-height: 26px !important;
-  font-size: 24px !important;
-  letter-spacing: -0.4px !important;
+  font-size: 26px !important;
+  letter-spacing: 0 !important;
   text-decoration: none !important;
 }
 
 h4 {
-  font-family: BellSlim Heavy !important;
+  font-family: Ultramagnetic Virgin-Regular !important;
   font-weight: 400 !important;
   line-height: 22px !important;
-  font-size: 20px !important;
-  letter-spacing: 0% !important;
+  font-size: 22px !important;
+  letter-spacing: 0 !important;
   text-decoration: none !important;
 }
 
@@ -1162,14 +1162,14 @@ h6 {
   border: 0 solid transparent;
   color: #fff;
   display: inline-block;
-  font-family: Arial;
-  line-height: 16px;
+  font-family: Helvetica Neue;
+  line-height: 16;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  font-size: 15px;
-  line-height: 16px;
-  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 16;
+  line-height: 16;
+  padding: 12px 17px;
 }
 
 .btn.disabled, .btn:disabled {
@@ -1186,24 +1186,24 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  background: linear-gradient(180deg, #003778e6 0%, #003778 100%);
-  border-color: #003778;
-  border-width: 1px;
+  background: #cc0000;
+  border-color: #cc0000;
+  border-width: 2px;
   color: #ffffff;
-  padding: 9px 19px;
+  padding: 10px 15px;
 }
 
 .btn-primary.btn-sm {
-  padding: 4px 14px;
+  padding: 3px 13px;
 }
 
 .btn-primary.btn-lg {
-  padding: 9px 23px;
+  padding: 8px 22px;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(180deg, #00549ae6 0%, #00549A 100%);
-  border-color: #003778;
+  background: #eb0000;
+  border-color: #eb0000;
   color: #ffffff;
 }
 
@@ -1213,24 +1213,24 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   background: #ffffff00;
-  border-color: #00549A;
-  border-width: 1px;
-  color: #003778;
-  padding: 9px 19px;
+  border-color: #000000;
+  border-width: 2px;
+  color: #000000;
+  padding: 10px 15px;
 }
 
 .btn-secondary.btn-sm {
-  padding: 4px 14px;
+  padding: 3px 13px;
 }
 
 .btn-secondary.btn-lg {
-  padding: 9px 23px;
+  padding: 8px 22px;
 }
 
 .btn-secondary:hover {
-  background: #e6f1fa4d;
-  border-color: #00549A;
-  color: #00549A;
+  background: #999999;
+  border-color: #999999;
+  color: #000000;
 }
 
 .btn-secondary:disabled, .btn-secondary.disabled {
@@ -1238,18 +1238,18 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg {
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: 18px;
   line-height: 20px;
   padding: 10px 24px;
 }
 
 .btn-sm {
-  border-radius: 6px;
+  border-radius: 3px;
   font-size: 12px;
   line-height: 12px;
   padding: 5px 15px;
 }
 
 
-/*# sourceMappingURL=main.css.map*/
+/*# sourceMappingURL=virgin.css.map*/
