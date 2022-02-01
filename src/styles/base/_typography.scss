@@ -7,21 +7,21 @@ $font-path: '../fonts/' !default;
 // Bell Slim Black
 @include font-face("BellSlim Heavy", "#{$font-path}bellslim_black-webfont", normal, normal, woff woff2);
   
-h1 {
+h1, h1.sbdocs-h1 {
     @include heading-types(map-get($headings, h1));
 }
-h2 {
+h2, h2.sbdocs-h2 {
     @include heading-types(map-get($headings, h2));
 }
-h3 {
+h3, h3.sbdocs-h3 {
     @include heading-types(map-get($headings, h3));
 }
-h4 {
+h4, h4.sbdocs-h4 {
     @include heading-types(map-get($headings, h4));
 }
-h5 {
+h5, h5.sbdocs-h5 {
     @include heading-types(map-get($headings, h5));
 }
-h6 {
+h6, h6.sbdocs-h6 {
     @include heading-types(map-get($headings, h6));
 }
