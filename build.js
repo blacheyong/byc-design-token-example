@@ -25,11 +25,20 @@ StyleDictionaryPackage.registerTransform({
 });
 
 StyleDictionaryPackage.registerTransform({
+    name: 'typography/fontSize',
+    type: 'value',
+    matcher: function (prop) {
+        return prop.path.includes('fontSize')
+    },
+    transformer: function (prop) {
+        return parseFloat(prop.value) + 'px';
+    }
+})
+
+StyleDictionaryPackage.registerTransform({
     name: 'typography/fontWeight',
     type: 'value',
     matcher: function (prop) {
-        // console.log(prop)
-        // You can be more specific here if you only want 'em' units for font sizes    
         return prop.path.includes('fontWeight')
     },
     transformer: function (prop) {
@@ -99,7 +108,7 @@ function getStyleDictionaryConfig(theme) {
                 }]
             }, */
             "scss": {
-                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow", "typography/fontWeight"],
+                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow","typography/fontSize", "typography/fontWeight"],
                 "buildPath": `src/styles/settings/`,
                 "files": [{
                     "destination": `${theme}.scss`,
