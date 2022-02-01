@@ -47,13 +47,10 @@ body {
     &__title {
         margin-bottom: 8px;
     }
-    &__link {
+    &__subtitle {
         color: $colors-primary;
         font-family: $headings-h3-font-family;
-        font-size: 26px;
-        line-height: 26px;
-        text-decoration: none;
-        text-transform: uppercase;
+        margin: 0;
     }
     .card {
         margin-top: 32px;
