@@ -25,15 +25,26 @@ StyleDictionaryPackage.registerTransform({
 });
 
 StyleDictionaryPackage.registerTransform({
-    name: 'typography/fontSize',
+    name: 'typography/px',
     type: 'value',
     matcher: function (prop) {
-        return prop.path.includes('fontSize')
+        return prop.path.includes('fontSize') || prop.path.includes('lineHeight') || prop.path.includes('letterSpacing')
     },
     transformer: function (prop) {
         return parseFloat(prop.value) + 'px';
     }
-})
+});
+
+StyleDictionaryPackage.registerTransform({
+    name: 'typography/family',
+    type: 'value',
+    matcher: function (prop) {
+        return prop.path.includes('fontFamily')
+    },
+    transformer: function (prop) {
+        return `'${prop.value}'`
+    }
+});
 
 StyleDictionaryPackage.registerTransform({
     name: 'typography/fontWeight',
@@ -80,17 +91,6 @@ StyleDictionaryPackage.registerTransform({
 });
 
 StyleDictionaryPackage.registerTransform({
-    name: 'typography/lineHeight',
-    type: 'value',
-    matcher: function (prop) {
-        return prop.path.includes('lineHeight')
-    },
-    transformer: function (prop) {
-        return parseFloat(prop.value) + 'px';
-    }
-})
-
-StyleDictionaryPackage.registerTransform({
     name: 'shadow/spreadShadow',
     type: 'value',
     matcher: function (prop) {
@@ -119,7 +119,7 @@ function getStyleDictionaryConfig(theme) {
                 }]
             }, */
             "scss": {
-                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow","typography/fontSize", "typography/fontWeight", "typography/lineHeight"],
+                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow","typography/px", "typography/fontWeight", "typography/family"],
                 "buildPath": `src/styles/settings/`,
                 "files": [{
                     "destination": `${theme}.scss`,
