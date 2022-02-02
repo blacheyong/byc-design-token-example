@@ -1,5 +1,9 @@
 @mixin heading-types($heading) {
-    font-family: map-get($heading, font-family);
+    $fontFamily: $font-family-base;
+    @if(map-get($heading, font-family) != $font-family-base) {
+        $fontFamily: '#{map-get($heading, font-family)}', #{$font-family-base};
+    }
+    font-family: $fontFamily;
     font-weight: map-get($heading, font-weight);
     line-height: map-get($heading, line-height);
     font-size: map-get($heading, font-size);
