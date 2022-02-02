@@ -420,6 +420,23 @@
       }
     }
   },
+  "_cards": {
+    "radius": {
+      "value": 3,
+      "type": "borderRadius"
+    },
+    "drop-shadow": {
+      "value": {
+        "x": 0,
+        "y": 0,
+        "blur": 12,
+        "spread": 0,
+        "color": "#0000000f",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
+    }
+  },
   "_radius": {
     "default": {
       "value": 8,
@@ -500,6 +517,19 @@
     "none": {
       "value": "none",
       "type": "textDecoration"
+    }
+  },
+  "_card": {
+    "drop-shadow": {
+      "value": {
+        "x": 0,
+        "y": 6,
+        "blur": 25,
+        "spread": 0,
+        "color": "#0000001a",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
     }
   }
 }

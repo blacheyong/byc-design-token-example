@@ -3,6 +3,9 @@ $dark-grey: #242831 !default;
 $light-grey: #EBEBEB !default;
 $yellow: #FFFAA6 !default;
 $blue: #0d6efd !default;
+$grey: #6c757d;
+$disabled-grey: #BABEC2;
+
 $white: #fff;
 @if variable-exists(colors-white) {
   $white: $colors-white;
@@ -12,7 +15,15 @@ $primary: $blue !default;
 @if variable-exists(colors-primary) {
   $primary: $colors-primary;
 }
+$secondary: $grey !default;
+@if variable-exists(buttons-secondary-bg) {
+  $secondary: $buttons-secondary-bg; // no $colors-secondary token
+}
 
+$disabled: $disabled-grey;
+@if variable-exists(buttons-primary-bg-disabled) {
+  $disabled: $buttons-primary-bg-disabled;
+}
 
 $colors: () !default;
 $colors: map-merge(
@@ -26,15 +37,11 @@ $colors: map-merge(
   $colors
 );
 
-// $primary: $yellow;
-// $secondary: $dark-grey;
-
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary": $primary,
-    // "secondary": $dark-grey,
-    // "white": $white,
+    "secondary": $grey,
   ),
   $theme-colors
 );

@@ -164,6 +164,16 @@ $headings: (
 // - Shared variables that are reassigned `$buttons-` specific variables. Define text, background, and border color
 // ------------------------------------------
 
+$btn-hover-bg-shade-amount: 15% !default;
+$btn-hover-bg-tint-amount: 15% !default;
+$btn-hover-border-shade-amount: 15% !default;
+$btn-hover-border-tint-amount: 15% !default;
+
+$btn-active-bg-shade-amount: 20% !default;
+$btn-active-bg-tint-amount: 20% !default;
+$btn-active-border-shade-amount: 20% !default;
+$btn-active-border-tint-amount: 20% !default;
+
 // Base Variables, overriden by tokens
 $buttons-default-border-width: 0 !default; // no token atm
 $buttons-drop-shadow: $box-shadow-base !default;
@@ -183,39 +193,39 @@ $buttons-sm-radius: $border-radius-sm !default;
 $buttons-text-transform: none !default; // no token atm
 
 // Primary
-$buttons-primary-bg: null !default;
-$buttons-primary-bg-hover: null !default;
-$buttons-primary-bg-focus: null !default; // no token atm
-$buttons-primary-bg-active: null !default; // no token atm
-$buttons-primary-bg-disabled: null !default;
-$buttons-primary-border: null !default;
-$buttons-primary-border-hover: null !default;
-$buttons-primary-border-disabled: null !default;
-$buttons-primary-border-width: null !default;
-$buttons-primary-text: null !default;
-$buttons-primary-text-hover: null !default;
-$buttons-primary-text-focus: null !default; // no token atm
-$buttons-primary-text-active: null !default; // no token atm
-$buttons-primary-text-disabled: null !default; // no token atm
+$buttons-primary-bg: $primary !default;
+$buttons-primary-bg-hover: shade-color($primary, $btn-hover-bg-shade-amount) !default;
+$buttons-primary-bg-focus: shade-color($primary, $btn-hover-bg-shade-amount) !default; // no token atm
+$buttons-primary-bg-active: shade-color($primary, $btn-active-bg-shade-amount) !default; // no token atm
+$buttons-primary-bg-disabled: $disabled !default;
+$buttons-primary-border: $primary !default;
+$buttons-primary-border-hover: shade-color($primary, $btn-hover-border-shade-amount) !default;
+$buttons-primary-border-disabled: $disabled !default;
+$buttons-primary-border-width: 0 !default;
+$buttons-primary-text: $white !default;
+$buttons-primary-text-hover: $white !default;
+$buttons-primary-text-focus: $white !default; // no token atm
+$buttons-primary-text-active: $white !default; // no token atm
+$buttons-primary-text-disabled: $white !default; // no token atm
 
 
 // Secondary
-$buttons-secondary-bg: null !default;
-$buttons-secondary-bg-hover: null !default;
-$buttons-secondary-bg-focus: null !default; // no token atm
-$buttons-secondary-bg-active: null !default; // no token atm
-$buttons-secondary-bg-disabled: null !default; // no token atm
-$buttons-secondary-border: null !default;
-$buttons-secondary-border-hover: null !default; // no token atm
-$buttons-secondary-border-disabled: null !default;
-$buttons-secondary-border-width: null !default;
+$buttons-secondary-bg: $secondary !default;
+$buttons-secondary-bg-hover: shade-color($secondary, $btn-hover-bg-shade-amount) !default;
+$buttons-secondary-bg-focus: shade-color($secondary, $btn-hover-bg-shade-amount) !default; // no token atm
+$buttons-secondary-bg-active: shade-color($secondary, $btn-active-bg-shade-amount) !default; // no token atm
+$buttons-secondary-bg-disabled: $disabled !default; // no token atm
+$buttons-secondary-border: $primary !default;
+$buttons-secondary-border-hover: shade-color($secondary, $btn-hover-border-shade-amount) !default; // no token atm
+$buttons-secondary-border-disabled: $disabled !default;
+$buttons-secondary-border-width: 0 !default;
 $buttons-secondary-padding-x: $padding-x-base !default; // no token atm
 $buttons-secondary-padding-y: $padding-y-base !default; // no token atm
-$buttons-secondary-text: null !default;
-$buttons-secondary-text-hover: null !default;
-$buttons-secondary-text-focus: null !default; // no token atm
-$buttons-secondary-text-active: null !default; // no token atm
-$buttons-secondary-text-disabled: null !default;
+$buttons-secondary-text: $white !default;
+$buttons-secondary-text-hover: $white !default;
+$buttons-secondary-text-focus: $white !default; // no token atm
+$buttons-secondary-text-active: $white !default; // no token atm
+$buttons-secondary-text-disabled: $white !default;
 
 
 // Size
