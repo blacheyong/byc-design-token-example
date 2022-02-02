@@ -195,8 +195,8 @@ $buttons-text-transform: none !default; // no token atm
 // Primary
 $buttons-primary-bg: $primary !default;
 $buttons-primary-bg-hover: shade-color($primary, $btn-hover-bg-shade-amount) !default;
-$buttons-primary-bg-focus: shade-color($primary, $btn-hover-bg-shade-amount) !default; // no token atm
-$buttons-primary-bg-active: shade-color($primary, $btn-active-bg-shade-amount) !default; // no token atm
+$buttons-primary-bg-focus: null !default; // no token atm
+$buttons-primary-bg-active: null !default; // no token atm
 $buttons-primary-bg-disabled: $disabled !default;
 $buttons-primary-border: $primary !default;
 $buttons-primary-border-hover: shade-color($primary, $btn-hover-border-shade-amount) !default;
@@ -212,8 +212,8 @@ $buttons-primary-text-disabled: $white !default; // no token atm
 // Secondary
 $buttons-secondary-bg: $secondary !default;
 $buttons-secondary-bg-hover: shade-color($secondary, $btn-hover-bg-shade-amount) !default;
-$buttons-secondary-bg-focus: shade-color($secondary, $btn-hover-bg-shade-amount) !default; // no token atm
-$buttons-secondary-bg-active: shade-color($secondary, $btn-active-bg-shade-amount) !default; // no token atm
+$buttons-secondary-bg-focus: null !default; // no token atm
+$buttons-secondary-bg-active: null !default; // no token atm
 $buttons-secondary-bg-disabled: $disabled !default; // no token atm
 $buttons-secondary-border: $primary !default;
 $buttons-secondary-border-hover: shade-color($secondary, $btn-hover-border-shade-amount) !default; // no token atm
