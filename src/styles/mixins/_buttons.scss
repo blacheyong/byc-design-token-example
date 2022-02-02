@@ -6,27 +6,28 @@
     color: map-get($button, color);
 
     // Calculate padding based if variant's border-width is not equal to default border-width
-    @if($borderWidth != $buttons-default-border-width) {
-        $offsetBorders: 0;
-        @if($borderWidth > $buttons-default-border-width) {
-            $offsetBorders: map-get($button, border-width) - $buttons-default-border-width;
-        } @else if($borderWidth < $buttons-default-border-width) {
-            $offsetBorders: $buttons-default-border-width - map-get($button, border-width);
-        }
+    @if ($borderWidth != null ) {
+        @if($borderWidth != $buttons-default-border-width) {
+            $offsetBorders: 0;
+            @if($borderWidth > $buttons-default-border-width) {
+                $offsetBorders: map-get($button, border-width) - $buttons-default-border-width;
+            } @else if($borderWidth < $buttons-default-border-width) {
+                $offsetBorders: $buttons-default-border-width - map-get($button, border-width);
+            }
 
-        padding: ($buttons-padding-y - $offsetBorders) ($buttons-padding-x - $offsetBorders);
+            padding: ($buttons-padding-y - $offsetBorders) ($buttons-padding-x - $offsetBorders);
 
-        // Size sm
-        &.btn-sm {
-            padding: ($buttons-sm-padding-y - $offsetBorders) ($buttons-sm-padding-x - $offsetBorders);
-        }
+            // Size sm
+            &.btn-sm {
+                padding: ($buttons-sm-padding-y - $offsetBorders) ($buttons-sm-padding-x - $offsetBorders);
+            }
 
-        // Size lg
-        &.btn-lg {
-            padding: ($buttons-lg-padding-y - $offsetBorders) ($buttons-lg-padding-x - $offsetBorders);
+            // Size lg
+            &.btn-lg {
+                padding: ($buttons-lg-padding-y - $offsetBorders) ($buttons-lg-padding-x - $offsetBorders);
+            }
         }
     }
-    
     &:hover {
         background: map-get($button, hover-bg);
         border-color: map-get($button, hover-border-color);

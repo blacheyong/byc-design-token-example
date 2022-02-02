@@ -1,8 +1,18 @@
-$black: #111;
-$dark-grey: #242831;
-$light-grey: #EBEBEB;
-$yellow: #FFFAA6;
-$white: $colors-white;
+$black: #010101 !default;
+$dark-grey: #242831 !default;
+$light-grey: #EBEBEB !default;
+$yellow: #FFFAA6 !default;
+$blue: #0d6efd !default;
+$white: #fff;
+@if variable-exists(colors-white) {
+  $white: $colors-white;
+}
+
+$primary: $blue !default;
+@if variable-exists(colors-primary) {
+  $primary: $colors-primary;
+}
+
 
 $colors: () !default;
 $colors: map-merge(
@@ -22,7 +32,7 @@ $colors: map-merge(
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary": $colors-primary,
+    "primary": $primary,
     // "secondary": $dark-grey,
     // "white": $white,
   ),
