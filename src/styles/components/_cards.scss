@@ -1,0 +1,37 @@
+.card {
+    border-radius: map-get($cards, border-radius);
+    border-width: 0;
+    box-shadow: map-get($cards, box-shadow);
+    padding: 16px 21px;
+    img {
+        margin: auto;
+        max-width: 245px;
+        width: 100%;
+    }
+    .card-title {
+        margin: 24px 0 0;
+        text-align: center;
+    }
+    &__prices {
+        div:first-child {
+            margin-right: 20px;
+        }
+        h3 {
+            color: $primary;
+            margin-bottom: 0;
+            margin-top: 24px;
+        }
+        h6 {
+            color: $buttons-secondary-text-disabled;
+            margin: 0;
+        }
+    }
+    &__buttons {
+        margin-top: 24px;
+        .btn {
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ $border-radius: 8px !default;
 $border-radius-sm: 6px !default;
 $border-radius-lg: 8px !default;
 
-$box-shadow-base: 0px 0px 0px 0px #000000 !default;
+$box-shadow-base: 0px 0px 30px 0px #0000001a !default;
 
 $padding-x-base: .75rem !default;
 $padding-y-base: .375rem !default;
@@ -195,8 +195,8 @@ $buttons-text-transform: none !default; // no token atm
 // Primary
 $buttons-primary-bg: $primary !default;
 $buttons-primary-bg-hover: shade-color($primary, $btn-hover-bg-shade-amount) !default;
-$buttons-primary-bg-focus: shade-color($primary, $btn-hover-bg-shade-amount) !default; // no token atm
-$buttons-primary-bg-active: shade-color($primary, $btn-active-bg-shade-amount) !default; // no token atm
+$buttons-primary-bg-focus: null !default; // no token atm
+$buttons-primary-bg-active: null !default; // no token atm
 $buttons-primary-bg-disabled: $disabled !default;
 $buttons-primary-border: $primary !default;
 $buttons-primary-border-hover: shade-color($primary, $btn-hover-border-shade-amount) !default;
@@ -212,8 +212,8 @@ $buttons-primary-text-disabled: $white !default; // no token atm
 // Secondary
 $buttons-secondary-bg: $secondary !default;
 $buttons-secondary-bg-hover: shade-color($secondary, $btn-hover-bg-shade-amount) !default;
-$buttons-secondary-bg-focus: shade-color($secondary, $btn-hover-bg-shade-amount) !default; // no token atm
-$buttons-secondary-bg-active: shade-color($secondary, $btn-active-bg-shade-amount) !default; // no token atm
+$buttons-secondary-bg-focus: null !default; // no token atm
+$buttons-secondary-bg-active: null !default; // no token atm
 $buttons-secondary-bg-disabled: $disabled !default; // no token atm
 $buttons-secondary-border: $primary !default;
 $buttons-secondary-border-hover: shade-color($secondary, $btn-hover-border-shade-amount) !default; // no token atm
@@ -296,11 +296,14 @@ $buttons: (
     )
 );
 
+// ------------------------------------------
+// Cards
+// ------------------------------------------
 
-// ------------------------------------------
-// Links
-// ------------------------------------------
-$link-color: theme-color("white") !default;
-$link-decoration: none !default;
-$link-hover-color: theme-color("primary") !default;
-$link-hover-decoration: none !default;
+$cards-radius: $border-radius !default;
+$cards-drop-shadow: $box-shadow-base !default;
+
+$cards: (
+    border-radius: $cards-radius,
+    box-shadow: $cards-drop-shadow,
+);
