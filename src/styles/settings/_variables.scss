@@ -19,145 +19,30 @@ $padding-y-sm: .25rem !default;
 $padding-x-lg: 1rem !default;
 $padding-y-lg: .5rem !default;
 
-// Typography
-$font-family-base: Arial, Helvetica, sans-serif;
+// ------------------------------------------
+// Breakpoints
+// - Define the minimum dimensions at which your layout will change,
+// - adapting to different screen sizes, for use in media queries.
+// ------------------------------------------
 
-$line-height-base: 1.5 !default;
-$line-height-sm: 1.25 !default;
-$line-height-lg: 2 !default;
+$breakpoint-xs: 0 !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+$breakpoint-xxl: 1400px !default;
 
-$font-size-base: 1rem !default;
-$font-size-sm: $font-size-base * .875 !default;
-$font-size-lg: $font-size-base * 1.25 !default;
-
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
-
-$headings-h1-font-family: $font-family-base !default;
-$headings-h1-font-weight: bold !default;
-$headings-h1-line-height: $line-height-base !default;
-$headings-h1-font-size: $h1-font-size !default;
-$headings-h1-letter-spacing: normal !default;
-$headings-h1-paragraph-spacing: null !default;
-$headings-h1-text-decoration: none !default;
-$headings-h1-text-case: none !default;
-
-$headings-h2-font-family: $font-family-base !default;
-$headings-h2-font-weight: bold !default;
-$headings-h2-line-height: $line-height-base !default;
-$headings-h2-font-size: $h2-font-size !default;
-$headings-h2-letter-spacing: normal !default;
-$headings-h2-paragraph-spacing: null !default;
-$headings-h2-text-decoration: none !default;
-$headings-h2-text-case: none !default;
-
-$headings-h3-font-family: $font-family-base !default;
-$headings-h3-font-weight: bold !default;
-$headings-h3-line-height: $line-height-base !default;
-$headings-h3-font-size: $h3-font-size !default;
-$headings-h3-letter-spacing: normal !default;
-$headings-h3-paragraph-spacing: null !default;
-$headings-h3-text-decoration: none !default;
-$headings-h3-text-case: none !default;
-
-$headings-h4-font-family: $font-family-base !default;
-$headings-h4-font-weight: bold !default;
-$headings-h4-line-height: $line-height-base !default;
-$headings-h4-font-size: $h4-font-size !default;
-$headings-h4-letter-spacing: normal !default;
-$headings-h4-paragraph-spacing: null !default;
-$headings-h4-text-decoration: none !default;
-$headings-h4-text-case: none !default;
-
-$headings-h5-font-family: $font-family-base !default;
-$headings-h5-font-weight: bold !default;
-$headings-h5-line-height: $line-height-sm !default;
-$headings-h5-font-size: $h5-font-size !default;
-$headings-h5-letter-spacing: normal !default;
-$headings-h5-paragraph-spacing: null !default;
-$headings-h5-text-decoration: none !default;
-$headings-h5-text-case: none !default;
-
-$headings-h6-font-family: $font-family-base !default;
-$headings-h6-font-weight: bold !default;
-$headings-h6-line-height: $line-height-sm !default;
-$headings-h6-font-size: $h6-font-size !default;
-$headings-h6-letter-spacing: normal !default;
-$headings-h6-paragraph-spacing: null !default;
-$headings-h6-text-decoration: none !default;
-$headings-h6-text-case: none !default;
-
-$headings: (
-    h1: (
-        font-family: $headings-h1-font-family,
-        font-weight: $headings-h1-font-weight,
-        line-height: $headings-h1-line-height,
-        font-size: $headings-h1-font-size,
-        letter-spacing: $headings-h1-letter-spacing,
-        // $headings-h1-paragraph-spacing,
-        text-decoration: $headings-h1-text-decoration,
-        text-transform: $headings-h1-text-case,
-    ),
-
-    h2: (
-        font-family: $headings-h2-font-family,
-        font-weight: $headings-h2-font-weight,
-        line-height: $headings-h2-line-height,
-        font-size: $headings-h2-font-size,
-        letter-spacing: $headings-h2-letter-spacing,
-        // $headings-h2-paragraph-spacing,
-        text-decoration: $headings-h2-text-decoration,
-        text-transform: $headings-h2-text-case,
-    ),
-
-    h3: (
-        font-family: $headings-h3-font-family,
-        font-weight: $headings-h3-font-weight,
-        line-height: $headings-h3-line-height,
-        font-size: $headings-h3-font-size,
-        letter-spacing: $headings-h3-letter-spacing,
-        // $headings-h3-paragraph-spacing,
-        text-decoration: $headings-h3-text-decoration,
-        text-transform: $headings-h3-text-case,
-    ),
-
-    h4: (
-        font-family: $headings-h4-font-family,
-        font-weight: $headings-h4-font-weight,
-        line-height: $headings-h4-line-height,
-        font-size: $headings-h4-font-size,
-        letter-spacing: $headings-h4-letter-spacing,
-        // $headings-h4-paragraph-spacing,
-        text-decoration: $headings-h4-text-decoration,
-        text-transform: $headings-h4-text-case,
-    ),
-
-    h5: (
-        font-family: $headings-h5-font-family,
-        font-weight: $headings-h5-font-weight,
-        line-height: $headings-h5-line-height,
-        font-size: $headings-h5-font-size,
-        letter-spacing: $headings-h5-letter-spacing,
-        // $headings-h5-paragraph-spacing,
-        text-decoration: $headings-h5-text-decoration,
-        text-transform: $headings-h5-text-case,
-    ),
-
-    h6: (
-        font-family: $headings-h6-font-family,
-        font-weight: $headings-h6-font-weight,
-        line-height: $headings-h6-line-height,
-        font-size: $headings-h6-font-size,
-        letter-spacing: $headings-h6-letter-spacing,
-        // $headings-h6-paragraph-spacing,
-        text-decoration: $headings-h6-text-decoration,
-        text-transform: $headings-h6-text-case,
-    ),
+$grid-breakpoints: (
+    xs: $breakpoint-xs,
+    sm: $breakpoint-sm,
+    md: $breakpoint-md,
+    lg: $breakpoint-lg,
+    xl: $breakpoint-xl,
+    xxl: $breakpoint-xxl,
 );
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
 // ------------------------------------------
 // Buttons
@@ -306,4 +191,147 @@ $cards-drop-shadow: $box-shadow-base !default;
 $cards: (
     border-radius: $cards-radius,
     box-shadow: $cards-drop-shadow,
+);
+
+// ------------------------------------------
+// Typography
+// ------------------------------------------
+
+$font-family-base: Arial, Helvetica, sans-serif;
+
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * .875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-h1-font-family: $font-family-base !default;
+$headings-h1-font-weight: bold !default;
+$headings-h1-line-height: $line-height-base !default;
+$headings-h1-font-size: $h1-font-size !default;
+$headings-h1-letter-spacing: normal !default;
+$headings-h1-paragraph-spacing: null !default;
+$headings-h1-text-decoration: none !default;
+$headings-h1-text-case: none !default;
+
+$headings-h2-font-family: $font-family-base !default;
+$headings-h2-font-weight: bold !default;
+$headings-h2-line-height: $line-height-base !default;
+$headings-h2-font-size: $h2-font-size !default;
+$headings-h2-letter-spacing: normal !default;
+$headings-h2-paragraph-spacing: null !default;
+$headings-h2-text-decoration: none !default;
+$headings-h2-text-case: none !default;
+
+$headings-h3-font-family: $font-family-base !default;
+$headings-h3-font-weight: bold !default;
+$headings-h3-line-height: $line-height-base !default;
+$headings-h3-font-size: $h3-font-size !default;
+$headings-h3-letter-spacing: normal !default;
+$headings-h3-paragraph-spacing: null !default;
+$headings-h3-text-decoration: none !default;
+$headings-h3-text-case: none !default;
+
+$headings-h4-font-family: $font-family-base !default;
+$headings-h4-font-weight: bold !default;
+$headings-h4-line-height: $line-height-base !default;
+$headings-h4-font-size: $h4-font-size !default;
+$headings-h4-letter-spacing: normal !default;
+$headings-h4-paragraph-spacing: null !default;
+$headings-h4-text-decoration: none !default;
+$headings-h4-text-case: none !default;
+
+$headings-h5-font-family: $font-family-base !default;
+$headings-h5-font-weight: bold !default;
+$headings-h5-line-height: $line-height-sm !default;
+$headings-h5-font-size: $h5-font-size !default;
+$headings-h5-letter-spacing: normal !default;
+$headings-h5-paragraph-spacing: null !default;
+$headings-h5-text-decoration: none !default;
+$headings-h5-text-case: none !default;
+
+$headings-h6-font-family: $font-family-base !default;
+$headings-h6-font-weight: bold !default;
+$headings-h6-line-height: $line-height-sm !default;
+$headings-h6-font-size: $h6-font-size !default;
+$headings-h6-letter-spacing: normal !default;
+$headings-h6-paragraph-spacing: null !default;
+$headings-h6-text-decoration: none !default;
+$headings-h6-text-case: none !default;
+
+$headings: (
+    h1: (
+        font-family: $headings-h1-font-family,
+        font-weight: $headings-h1-font-weight,
+        line-height: $headings-h1-line-height,
+        font-size: $headings-h1-font-size,
+        letter-spacing: $headings-h1-letter-spacing,
+        // $headings-h1-paragraph-spacing,
+        text-decoration: $headings-h1-text-decoration,
+        text-transform: $headings-h1-text-case,
+    ),
+
+    h2: (
+        font-family: $headings-h2-font-family,
+        font-weight: $headings-h2-font-weight,
+        line-height: $headings-h2-line-height,
+        font-size: $headings-h2-font-size,
+        letter-spacing: $headings-h2-letter-spacing,
+        // $headings-h2-paragraph-spacing,
+        text-decoration: $headings-h2-text-decoration,
+        text-transform: $headings-h2-text-case,
+    ),
+
+    h3: (
+        font-family: $headings-h3-font-family,
+        font-weight: $headings-h3-font-weight,
+        line-height: $headings-h3-line-height,
+        font-size: $headings-h3-font-size,
+        letter-spacing: $headings-h3-letter-spacing,
+        // $headings-h3-paragraph-spacing,
+        text-decoration: $headings-h3-text-decoration,
+        text-transform: $headings-h3-text-case,
+    ),
+
+    h4: (
+        font-family: $headings-h4-font-family,
+        font-weight: $headings-h4-font-weight,
+        line-height: $headings-h4-line-height,
+        font-size: $headings-h4-font-size,
+        letter-spacing: $headings-h4-letter-spacing,
+        // $headings-h4-paragraph-spacing,
+        text-decoration: $headings-h4-text-decoration,
+        text-transform: $headings-h4-text-case,
+    ),
+
+    h5: (
+        font-family: $headings-h5-font-family,
+        font-weight: $headings-h5-font-weight,
+        line-height: $headings-h5-line-height,
+        font-size: $headings-h5-font-size,
+        letter-spacing: $headings-h5-letter-spacing,
+        // $headings-h5-paragraph-spacing,
+        text-decoration: $headings-h5-text-decoration,
+        text-transform: $headings-h5-text-case,
+    ),
+
+    h6: (
+        font-family: $headings-h6-font-family,
+        font-weight: $headings-h6-font-weight,
+        line-height: $headings-h6-line-height,
+        font-size: $headings-h6-font-size,
+        letter-spacing: $headings-h6-letter-spacing,
+        // $headings-h6-paragraph-spacing,
+        text-decoration: $headings-h6-text-decoration,
+        text-transform: $headings-h6-text-case,
+    ),
 );
