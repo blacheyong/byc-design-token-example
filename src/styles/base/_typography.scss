@@ -32,14 +32,13 @@ h6, .h6, .heading-6, h6.sbdocs-h6 {
 }
 
 p {
-    @include body-text($body-text);
-    // @include body-text(map-get($body-text, regular));
+    @include body-text(map-get($body-text, regular));
 
-    // @include media-breakpoint-down(md) {
-    //     @include body-text(map-get($body-text, small));
-    // }
     &.lead {
         @include body-text(map-get($body-text, large));
+    }
+    &.small {
+        @include body-text(map-get($body-text, small));
     }
 }
 

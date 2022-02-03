@@ -71,66 +71,24 @@
 }
 
 @mixin body-text($body-text) {
-    $regular: map-get($body-text, regular);
-    $small: map-get($body-text, small);
-
     $fontFamily: $font-family-base;
-    @if(map-get($regular, font-family) != $font-family-base) {
-        $fontFamily: '#{map-get($regular, font-family)}', #{$font-family-base};
+    @if(map-get($body-text, font-family) != $font-family-base) {
+        $fontFamily: '#{map-get($body-text, font-family)}', #{$font-family-base};
     }
     font-family: $fontFamily;
-    line-height: map-get($regular, line-height);
-    font-size: map-get($regular, font-size);
+    line-height: map-get($body-text, line-height);
+    font-size: map-get($body-text, font-size);
 
-    @if(map-get($regular, font-weight) != 400) {
-        font-weight: map-get($regular, font-weight);
+    @if(map-get($body-text, font-weight) != 400) {
+        font-weight: map-get($body-text, font-weight);
     }
-    @if(map-get($regular, letter-spacing) != 0px ) {
-        letter-spacing: map-get($regular, letter-spacing);
+    @if(map-get($body-text, letter-spacing) != 0px ) {
+        letter-spacing: map-get($body-text, letter-spacing);
     }
-    @if(map-get($regular, text-decoration) != none ) {
-        text-decoration: map-get($regular, text-decoration);
+    @if(map-get($body-text, text-decoration) != none ) {
+        text-decoration: map-get($body-text, text-decoration);
     }
-    @if(map-get($regular, text-transform) != none ) {
-        text-transform: map-get($regular, text-transform);
+    @if(map-get($body-text, text-transform) != none ) {
+        text-transform: map-get($body-text, text-transform);
     }
-
-    @include media-breakpoint-down(md) {
-        line-height: map-get($small, line-height);
-        font-size: map-get($small, font-size);
-
-        @if(map-get($small, font-weight) != 400) {
-            font-weight: map-get($small, font-weight);
-        }
-        @if(map-get($small, letter-spacing) != 0px ) {
-            letter-spacing: map-get($small, letter-spacing);
-        }
-        @if(map-get($small, text-decoration) != none ) {
-            text-decoration: map-get($small, text-decoration);
-        }
-        @if(map-get($small, text-transform) != none ) {
-            text-transform: map-get($small, text-transform);
-        }
-    }
-
-    // $fontFamily: $font-family-base;
-    // @if(map-get($body-text, font-family) != $font-family-base) {
-    //     $fontFamily: '#{map-get($body-text, font-family)}', #{$font-family-base};
-    // }
-    // font-family: $fontFamily;
-    // line-height: map-get($body-text, line-height);
-    // font-size: map-get($body-text, font-size);
-
-    // @if(map-get($body-text, font-weight) != 400) {
-    //     font-weight: map-get($body-text, font-weight);
-    // }
-    // @if(map-get($body-text, letter-spacing) != 0px ) {
-    //     letter-spacing: map-get($body-text, letter-spacing);
-    // }
-    // @if(map-get($body-text, text-decoration) != none ) {
-    //     text-decoration: map-get($body-text, text-decoration);
-    // }
-    // @if(map-get($body-text, text-transform) != none ) {
-    //     text-transform: map-get($body-text, text-transform);
-    // }
 }
