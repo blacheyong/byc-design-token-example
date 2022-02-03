@@ -215,6 +215,7 @@ $body-regular-letter-spacing: 0px !default;
 $body-regular-paragraph-spacing: 18 !default;
 $body-regular-text-decoration: none !default;
 $body-regular-text-case: none !default;
+
 $body-large-font-family: $font-family-base !default;
 $body-large-font-weight: 400 !default;
 $body-large-line-height: $line-height-lg !default;
@@ -223,6 +224,7 @@ $body-large-letter-spacing: 0px !default;
 $body-large-paragraph-spacing: 22 !default;
 $body-large-text-decoration: none !default;
 $body-large-text-case: none !default;
+
 $body-small-font-family: $font-family-base !default;
 $body-small-font-weight: 400 !default;
 $body-small-line-height: $line-height-sm !default;
@@ -435,6 +437,10 @@ $headings-mobile-h6-letter-spacing: normal !default;
 $headings-mobile-h6-paragraph-spacing: null !default;
 $headings-mobile-h6-text-decoration: none !default;
 $headings-mobile-h6-text-case: none !default;
+
+@if($headings-tablet-h1-font-size != $headings-desktop-h1-font-size) {
+    $headings-h1-font-size: $headings-tablet-h1-font-size
+}
 
 $headings: (
     desktop-h1: (
