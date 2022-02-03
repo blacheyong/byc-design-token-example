@@ -443,6 +443,36 @@ $headings-h1-font-size: null;
     $headings-h1-font-size: $headings-tablet-h1-font-size;
 }
 
+$h1: (
+    desktop: (
+        font-family: $headings-desktop-h1-font-family,
+        font-weight: $headings-desktop-h1-font-weight,
+        line-height: $headings-desktop-h1-line-height,
+        font-size: $headings-desktop-h1-font-size,
+        letter-spacing: $headings-desktop-h1-letter-spacing,
+        text-decoration: $headings-desktop-h1-text-decoration,
+        text-transform: $headings-desktop-h1-text-case
+    ),
+    tablet: (
+        font-family: $headings-tablet-h1-font-family,
+        font-weight: $headings-tablet-h1-font-weight,
+        line-height: $headings-tablet-h1-line-height,
+        font-size: $headings-tablet-h1-font-size,
+        letter-spacing: $headings-tablet-h1-letter-spacing,
+        text-decoration: $headings-tablet-h1-text-decoration,
+        text-transform: $headings-tablet-h1-text-case,
+    ),
+    mobile: (
+        font-family: $headings-mobile-h1-font-family,
+        font-weight: $headings-mobile-h1-font-weight,
+        line-height: $headings-mobile-h1-line-height,
+        font-size: $headings-mobile-h1-font-size,
+        letter-spacing: $headings-mobile-h1-letter-spacing,
+        text-decoration: $headings-mobile-h1-text-decoration,
+        text-transform: $headings-mobile-h1-text-case,
+    )
+);
+
 $headings: (
     // Test
     h1: (

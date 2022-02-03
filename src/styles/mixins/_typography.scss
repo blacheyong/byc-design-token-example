@@ -1,15 +1,39 @@
 @mixin heading-types($heading) {
+    $desktop: map-get($heading, desktop);
+    $tablet: map-get($heading, tablet);
+    $mobile: map-get($heading, mobile);
+
+    // Font-family
     $fontFamily: $font-family-base;
-    @if(map-get($heading, font-family) != $font-family-base) {
-        $fontFamily: '#{map-get($heading, font-family)}', #{$font-family-base};
+    @if(map-get($desktop, font-family) != $font-family-base) {
+        $fontFamily: '#{map-get($desktop, font-family)}', #{$font-family-base};
     }
     font-family: $fontFamily;
-    font-weight: map-get($heading, font-weight);
-    line-height: map-get($heading, line-height);
-    font-size: map-get($heading, font-size);
-    letter-spacing: map-get($heading, letter-spacing);
-    text-decoration: map-get($heading, text-decoration);
-    text-transform: map-get($heading, text-transform);
+
+    font-size: map-get($desktop, font-size);
+    font-weight: map-get($desktop, font-weight);
+
+    line-height: map-get($desktop, line-height);
+    
+    @if(map-get($desktop, letter-spacing) != 0px) {
+        letter-spacing: map-get($desktop, letter-spacing);
+    }
+    @if(map-get($desktop, text-decoration) != none ) {
+        text-decoration: map-get($desktop, text-decoration);
+    }
+    @if(map-get($desktop, text-transform) != none ) {
+        text-transform: map-get($desktop, text-transform);
+    }
+
+    @include media-breakpoint-down(lg) {
+        @if(map-get($tablet, font-size ) != map-get($desktop, font-size )) {
+            font-size: map-get($tablet, font-size);
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        
+    }
 }
 
 @mixin body-text($body-text) {

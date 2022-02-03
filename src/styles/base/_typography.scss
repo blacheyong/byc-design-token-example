@@ -8,17 +8,17 @@ $font-path: '../fonts/' !default;
 @include font-face("BellSlim Heavy", "#{$font-path}bellslim_black-webfont", normal, normal, woff woff2);
   
 h1, .h1, .heading-1, h1.sbdocs-h1 {
-    @include heading-types(map-get($headings, desktop-h1));
+    @include heading-types($h1);
 
-    @include media-breakpoint-down(lg) {
+    /* @include media-breakpoint-down(lg) {
         @include heading-types(map-get($headings, tablet-h1));
     }
     @include media-breakpoint-down(md) {
         @include heading-types(map-get($headings, mobile-h1));
-    }
+    } */
 }
 
-h2, .h2, .heading-2, h2.sbdocs-h2 {
+/* h2, .h2, .heading-2, h2.sbdocs-h2 {
     @include heading-types(map-get($headings, desktop-h2));
 
     @include media-breakpoint-down(lg) {
@@ -71,7 +71,7 @@ h6, .h6, .heading-6, h6.sbdocs-h6 {
     @include media-breakpoint-down(md) {
         @include heading-types(map-get($headings, mobile-h6));
     }
-}
+} */
 
 p {
     @include body-text(map-get($body-text, regular));
