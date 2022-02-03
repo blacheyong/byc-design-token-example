@@ -438,11 +438,17 @@ $headings-mobile-h6-paragraph-spacing: null !default;
 $headings-mobile-h6-text-decoration: none !default;
 $headings-mobile-h6-text-case: none !default;
 
+$headings-h1-font-size: null;
 @if($headings-tablet-h1-font-size != $headings-desktop-h1-font-size) {
-    $headings-h1-font-size: $headings-tablet-h1-font-size
+    $headings-h1-font-size: $headings-tablet-h1-font-size;
 }
 
 $headings: (
+    // Test
+    h1: (
+        font-size: $headings-h1-font-size,
+    ),
+    // / Test
     desktop-h1: (
         font-family: $headings-desktop-h1-font-family,
         font-weight: $headings-desktop-h1-font-weight,
