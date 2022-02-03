@@ -41,9 +41,6 @@ $grid-breakpoints: (
     xxl: $breakpoint-xxl,
 );
 
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
-
 // ------------------------------------------
 // Buttons
 // - Shared variables that are reassigned `$buttons-` specific variables. Define text, background, and border color
@@ -473,207 +470,357 @@ $h1: (
     )
 );
 
-$headings: (
-    // Test
-    h1: (
-        font-size: $headings-h1-font-size,
-    ),
-    // / Test
-    desktop-h1: (
-        font-family: $headings-desktop-h1-font-family,
-        font-weight: $headings-desktop-h1-font-weight,
-        line-height: $headings-desktop-h1-line-height,
-        font-size: $headings-desktop-h1-font-size,
-        letter-spacing: $headings-desktop-h1-letter-spacing,
-        // $headings-desktop-h1-paragraph-spacing,
-        text-decoration: $headings-desktop-h1-text-decoration,
-        text-transform: $headings-desktop-h1-text-case,
-    ),
-
-    desktop-h2: (
+$h2: (
+    desktop: (
         font-family: $headings-desktop-h2-font-family,
         font-weight: $headings-desktop-h2-font-weight,
         line-height: $headings-desktop-h2-line-height,
         font-size: $headings-desktop-h2-font-size,
         letter-spacing: $headings-desktop-h2-letter-spacing,
-        // $headings-desktop-h2-paragraph-spacing,
         text-decoration: $headings-desktop-h2-text-decoration,
-        text-transform: $headings-desktop-h2-text-case,
+        text-transform: $headings-desktop-h2-text-case
     ),
-
-    desktop-h3: (
-        font-family: $headings-desktop-h3-font-family,
-        font-weight: $headings-desktop-h3-font-weight,
-        line-height: $headings-desktop-h3-line-height,
-        font-size: $headings-desktop-h3-font-size,
-        letter-spacing: $headings-desktop-h3-letter-spacing,
-        // $headings-desktop-h3-paragraph-spacing,
-        text-decoration: $headings-desktop-h3-text-decoration,
-        text-transform: $headings-desktop-h3-text-case,
-    ),
-
-    desktop-h4: (
-        font-family: $headings-desktop-h4-font-family,
-        font-weight: $headings-desktop-h4-font-weight,
-        line-height: $headings-desktop-h4-line-height,
-        font-size: $headings-desktop-h4-font-size,
-        letter-spacing: $headings-desktop-h4-letter-spacing,
-        // $headings-desktop-h4-paragraph-spacing,
-        text-decoration: $headings-desktop-h4-text-decoration,
-        text-transform: $headings-desktop-h4-text-case,
-    ),
-
-    desktop-h5: (
-        font-family: $headings-desktop-h5-font-family,
-        font-weight: $headings-desktop-h5-font-weight,
-        line-height: $headings-desktop-h5-line-height,
-        font-size: $headings-desktop-h5-font-size,
-        letter-spacing: $headings-desktop-h5-letter-spacing,
-        // $headings-desktop-h5-paragraph-spacing,
-        text-decoration: $headings-desktop-h5-text-decoration,
-        text-transform: $headings-desktop-h5-text-case,
-    ),
-
-    desktop-h6: (
-        font-family: $headings-desktop-h6-font-family,
-        font-weight: $headings-desktop-h6-font-weight,
-        line-height: $headings-desktop-h6-line-height,
-        font-size: $headings-desktop-h6-font-size,
-        letter-spacing: $headings-desktop-h6-letter-spacing,
-        // $headings-desktop-h6-paragraph-spacing,
-        text-decoration: $headings-desktop-h6-text-decoration,
-        text-transform: $headings-desktop-h6-text-case,
-    ),
-
-    tablet-h1: (
-        font-family: $headings-tablet-h1-font-family,
-        font-weight: $headings-tablet-h1-font-weight,
-        line-height: $headings-tablet-h1-line-height,
-        font-size: $headings-tablet-h1-font-size,
-        letter-spacing: $headings-tablet-h1-letter-spacing,
-        // $headings-tablet-h1-paragraph-spacing,
-        text-decoration: $headings-tablet-h1-text-decoration,
-        text-transform: $headings-tablet-h1-text-case,
-    ),
-
-    tablet-h2: (
+    tablet: (
         font-family: $headings-tablet-h2-font-family,
         font-weight: $headings-tablet-h2-font-weight,
         line-height: $headings-tablet-h2-line-height,
         font-size: $headings-tablet-h2-font-size,
         letter-spacing: $headings-tablet-h2-letter-spacing,
-        // $headings-tablet-h2-paragraph-spacing,
         text-decoration: $headings-tablet-h2-text-decoration,
         text-transform: $headings-tablet-h2-text-case,
     ),
-
-    tablet-h3: (
-        font-family: $headings-tablet-h3-font-family,
-        font-weight: $headings-tablet-h3-font-weight,
-        line-height: $headings-tablet-h3-line-height,
-        font-size: $headings-tablet-h3-font-size,
-        letter-spacing: $headings-tablet-h3-letter-spacing,
-        // $headings-tablet-h3-paragraph-spacing,
-        text-decoration: $headings-tablet-h3-text-decoration,
-        text-transform: $headings-tablet-h3-text-case,
-    ),
-
-    tablet-h4: (
-        font-family: $headings-tablet-h4-font-family,
-        font-weight: $headings-tablet-h4-font-weight,
-        line-height: $headings-tablet-h4-line-height,
-        font-size: $headings-tablet-h4-font-size,
-        letter-spacing: $headings-tablet-h4-letter-spacing,
-        // $headings-tablet-h4-paragraph-spacing,
-        text-decoration: $headings-tablet-h4-text-decoration,
-        text-transform: $headings-tablet-h4-text-case,
-    ),
-
-    tablet-h5: (
-        font-family: $headings-tablet-h5-font-family,
-        font-weight: $headings-tablet-h5-font-weight,
-        line-height: $headings-tablet-h5-line-height,
-        font-size: $headings-tablet-h5-font-size,
-        letter-spacing: $headings-tablet-h5-letter-spacing,
-        // $headings-tablet-h5-paragraph-spacing,
-        text-decoration: $headings-tablet-h5-text-decoration,
-        text-transform: $headings-tablet-h5-text-case,
-    ),
-
-    tablet-h6: (
-        font-family: $headings-tablet-h6-font-family,
-        font-weight: $headings-tablet-h6-font-weight,
-        line-height: $headings-tablet-h6-line-height,
-        font-size: $headings-tablet-h6-font-size,
-        letter-spacing: $headings-tablet-h6-letter-spacing,
-        // $headings-tablet-h6-paragraph-spacing,
-        text-decoration: $headings-tablet-h6-text-decoration,
-        text-transform: $headings-tablet-h6-text-case,
-    ),
-
-    mobile-h1: (
-        font-family: $headings-mobile-h1-font-family,
-        font-weight: $headings-mobile-h1-font-weight,
-        line-height: $headings-mobile-h1-line-height,
-        font-size: $headings-mobile-h1-font-size,
-        letter-spacing: $headings-mobile-h1-letter-spacing,
-        // $headings-mobile-h1-paragraph-spacing,
-        text-decoration: $headings-mobile-h1-text-decoration,
-        text-transform: $headings-mobile-h1-text-case,
-    ),
-
-    mobile-h2: (
+    mobile: (
         font-family: $headings-mobile-h2-font-family,
         font-weight: $headings-mobile-h2-font-weight,
         line-height: $headings-mobile-h2-line-height,
         font-size: $headings-mobile-h2-font-size,
         letter-spacing: $headings-mobile-h2-letter-spacing,
-        // $headings-mobile-h2-paragraph-spacing,
         text-decoration: $headings-mobile-h2-text-decoration,
         text-transform: $headings-mobile-h2-text-case,
-    ),
+    )
+);
 
-    mobile-h3: (
+$h3: (
+    desktop: (
+        font-family: $headings-desktop-h3-font-family,
+        font-weight: $headings-desktop-h3-font-weight,
+        line-height: $headings-desktop-h3-line-height,
+        font-size: $headings-desktop-h3-font-size,
+        letter-spacing: $headings-desktop-h3-letter-spacing,
+        text-decoration: $headings-desktop-h3-text-decoration,
+        text-transform: $headings-desktop-h3-text-case
+    ),
+    tablet: (
+        font-family: $headings-tablet-h3-font-family,
+        font-weight: $headings-tablet-h3-font-weight,
+        line-height: $headings-tablet-h3-line-height,
+        font-size: $headings-tablet-h3-font-size,
+        letter-spacing: $headings-tablet-h3-letter-spacing,
+        text-decoration: $headings-tablet-h3-text-decoration,
+        text-transform: $headings-tablet-h3-text-case,
+    ),
+    mobile: (
         font-family: $headings-mobile-h3-font-family,
         font-weight: $headings-mobile-h3-font-weight,
         line-height: $headings-mobile-h3-line-height,
         font-size: $headings-mobile-h3-font-size,
         letter-spacing: $headings-mobile-h3-letter-spacing,
-        // $headings-mobile-h3-paragraph-spacing,
         text-decoration: $headings-mobile-h3-text-decoration,
         text-transform: $headings-mobile-h3-text-case,
-    ),
+    )
+);
 
-    mobile-h4: (
+$h4: (
+    desktop: (
+        font-family: $headings-desktop-h4-font-family,
+        font-weight: $headings-desktop-h4-font-weight,
+        line-height: $headings-desktop-h4-line-height,
+        font-size: $headings-desktop-h4-font-size,
+        letter-spacing: $headings-desktop-h4-letter-spacing,
+        text-decoration: $headings-desktop-h4-text-decoration,
+        text-transform: $headings-desktop-h4-text-case
+    ),
+    tablet: (
+        font-family: $headings-tablet-h4-font-family,
+        font-weight: $headings-tablet-h4-font-weight,
+        line-height: $headings-tablet-h4-line-height,
+        font-size: $headings-tablet-h4-font-size,
+        letter-spacing: $headings-tablet-h4-letter-spacing,
+        text-decoration: $headings-tablet-h4-text-decoration,
+        text-transform: $headings-tablet-h4-text-case,
+    ),
+    mobile: (
         font-family: $headings-mobile-h4-font-family,
         font-weight: $headings-mobile-h4-font-weight,
         line-height: $headings-mobile-h4-line-height,
         font-size: $headings-mobile-h4-font-size,
         letter-spacing: $headings-mobile-h4-letter-spacing,
-        // $headings-mobile-h4-paragraph-spacing,
         text-decoration: $headings-mobile-h4-text-decoration,
         text-transform: $headings-mobile-h4-text-case,
-    ),
+    )
+);
 
-    mobile-h5: (
+$h5: (
+    desktop: (
+        font-family: $headings-desktop-h5-font-family,
+        font-weight: $headings-desktop-h5-font-weight,
+        line-height: $headings-desktop-h5-line-height,
+        font-size: $headings-desktop-h5-font-size,
+        letter-spacing: $headings-desktop-h5-letter-spacing,
+        text-decoration: $headings-desktop-h5-text-decoration,
+        text-transform: $headings-desktop-h5-text-case
+    ),
+    tablet: (
+        font-family: $headings-tablet-h5-font-family,
+        font-weight: $headings-tablet-h5-font-weight,
+        line-height: $headings-tablet-h5-line-height,
+        font-size: $headings-tablet-h5-font-size,
+        letter-spacing: $headings-tablet-h5-letter-spacing,
+        text-decoration: $headings-tablet-h5-text-decoration,
+        text-transform: $headings-tablet-h5-text-case,
+    ),
+    mobile: (
         font-family: $headings-mobile-h5-font-family,
         font-weight: $headings-mobile-h5-font-weight,
         line-height: $headings-mobile-h5-line-height,
         font-size: $headings-mobile-h5-font-size,
         letter-spacing: $headings-mobile-h5-letter-spacing,
-        // $headings-mobile-h5-paragraph-spacing,
         text-decoration: $headings-mobile-h5-text-decoration,
         text-transform: $headings-mobile-h5-text-case,
-    ),
+    )
+);
 
-    mobile-h6: (
+$h6: (
+    desktop: (
+        font-family: $headings-desktop-h6-font-family,
+        font-weight: $headings-desktop-h6-font-weight,
+        line-height: $headings-desktop-h6-line-height,
+        font-size: $headings-desktop-h6-font-size,
+        letter-spacing: $headings-desktop-h6-letter-spacing,
+        text-decoration: $headings-desktop-h6-text-decoration,
+        text-transform: $headings-desktop-h6-text-case
+    ),
+    tablet: (
+        font-family: $headings-tablet-h6-font-family,
+        font-weight: $headings-tablet-h6-font-weight,
+        line-height: $headings-tablet-h6-line-height,
+        font-size: $headings-tablet-h6-font-size,
+        letter-spacing: $headings-tablet-h6-letter-spacing,
+        text-decoration: $headings-tablet-h6-text-decoration,
+        text-transform: $headings-tablet-h6-text-case,
+    ),
+    mobile: (
         font-family: $headings-mobile-h6-font-family,
         font-weight: $headings-mobile-h6-font-weight,
         line-height: $headings-mobile-h6-line-height,
         font-size: $headings-mobile-h6-font-size,
         letter-spacing: $headings-mobile-h6-letter-spacing,
-        // $headings-mobile-h6-paragraph-spacing,
         text-decoration: $headings-mobile-h6-text-decoration,
         text-transform: $headings-mobile-h6-text-case,
-    ),
+    )
 );
+
+// $headings: (
+//     // Test
+//     h1: (
+//         font-size: $headings-h1-font-size,
+//     ),
+//     // / Test
+//     desktop-h1: (
+//         font-family: $headings-desktop-h1-font-family,
+//         font-weight: $headings-desktop-h1-font-weight,
+//         line-height: $headings-desktop-h1-line-height,
+//         font-size: $headings-desktop-h1-font-size,
+//         letter-spacing: $headings-desktop-h1-letter-spacing,
+//         // $headings-desktop-h1-paragraph-spacing,
+//         text-decoration: $headings-desktop-h1-text-decoration,
+//         text-transform: $headings-desktop-h1-text-case,
+//     ),
+
+//     desktop-h2: (
+//         font-family: $headings-desktop-h2-font-family,
+//         font-weight: $headings-desktop-h2-font-weight,
+//         line-height: $headings-desktop-h2-line-height,
+//         font-size: $headings-desktop-h2-font-size,
+//         letter-spacing: $headings-desktop-h2-letter-spacing,
+//         // $headings-desktop-h2-paragraph-spacing,
+//         text-decoration: $headings-desktop-h2-text-decoration,
+//         text-transform: $headings-desktop-h2-text-case,
+//     ),
+
+//     desktop-h3: (
+//         font-family: $headings-desktop-h3-font-family,
+//         font-weight: $headings-desktop-h3-font-weight,
+//         line-height: $headings-desktop-h3-line-height,
+//         font-size: $headings-desktop-h3-font-size,
+//         letter-spacing: $headings-desktop-h3-letter-spacing,
+//         // $headings-desktop-h3-paragraph-spacing,
+//         text-decoration: $headings-desktop-h3-text-decoration,
+//         text-transform: $headings-desktop-h3-text-case,
+//     ),
+
+//     desktop-h4: (
+//         font-family: $headings-desktop-h4-font-family,
+//         font-weight: $headings-desktop-h4-font-weight,
+//         line-height: $headings-desktop-h4-line-height,
+//         font-size: $headings-desktop-h4-font-size,
+//         letter-spacing: $headings-desktop-h4-letter-spacing,
+//         // $headings-desktop-h4-paragraph-spacing,
+//         text-decoration: $headings-desktop-h4-text-decoration,
+//         text-transform: $headings-desktop-h4-text-case,
+//     ),
+
+//     desktop-h5: (
+//         font-family: $headings-desktop-h5-font-family,
+//         font-weight: $headings-desktop-h5-font-weight,
+//         line-height: $headings-desktop-h5-line-height,
+//         font-size: $headings-desktop-h5-font-size,
+//         letter-spacing: $headings-desktop-h5-letter-spacing,
+//         // $headings-desktop-h5-paragraph-spacing,
+//         text-decoration: $headings-desktop-h5-text-decoration,
+//         text-transform: $headings-desktop-h5-text-case,
+//     ),
+
+//     desktop-h6: (
+//         font-family: $headings-desktop-h6-font-family,
+//         font-weight: $headings-desktop-h6-font-weight,
+//         line-height: $headings-desktop-h6-line-height,
+//         font-size: $headings-desktop-h6-font-size,
+//         letter-spacing: $headings-desktop-h6-letter-spacing,
+//         // $headings-desktop-h6-paragraph-spacing,
+//         text-decoration: $headings-desktop-h6-text-decoration,
+//         text-transform: $headings-desktop-h6-text-case,
+//     ),
+
+//     tablet-h1: (
+//         font-family: $headings-tablet-h1-font-family,
+//         font-weight: $headings-tablet-h1-font-weight,
+//         line-height: $headings-tablet-h1-line-height,
+//         font-size: $headings-tablet-h1-font-size,
+//         letter-spacing: $headings-tablet-h1-letter-spacing,
+//         // $headings-tablet-h1-paragraph-spacing,
+//         text-decoration: $headings-tablet-h1-text-decoration,
+//         text-transform: $headings-tablet-h1-text-case,
+//     ),
+
+//     tablet-h2: (
+//         font-family: $headings-tablet-h2-font-family,
+//         font-weight: $headings-tablet-h2-font-weight,
+//         line-height: $headings-tablet-h2-line-height,
+//         font-size: $headings-tablet-h2-font-size,
+//         letter-spacing: $headings-tablet-h2-letter-spacing,
+//         // $headings-tablet-h2-paragraph-spacing,
+//         text-decoration: $headings-tablet-h2-text-decoration,
+//         text-transform: $headings-tablet-h2-text-case,
+//     ),
+
+//     tablet-h3: (
+//         font-family: $headings-tablet-h3-font-family,
+//         font-weight: $headings-tablet-h3-font-weight,
+//         line-height: $headings-tablet-h3-line-height,
+//         font-size: $headings-tablet-h3-font-size,
+//         letter-spacing: $headings-tablet-h3-letter-spacing,
+//         // $headings-tablet-h3-paragraph-spacing,
+//         text-decoration: $headings-tablet-h3-text-decoration,
+//         text-transform: $headings-tablet-h3-text-case,
+//     ),
+
+//     tablet-h4: (
+//         font-family: $headings-tablet-h4-font-family,
+//         font-weight: $headings-tablet-h4-font-weight,
+//         line-height: $headings-tablet-h4-line-height,
+//         font-size: $headings-tablet-h4-font-size,
+//         letter-spacing: $headings-tablet-h4-letter-spacing,
+//         // $headings-tablet-h4-paragraph-spacing,
+//         text-decoration: $headings-tablet-h4-text-decoration,
+//         text-transform: $headings-tablet-h4-text-case,
+//     ),
+
+//     tablet-h5: (
+//         font-family: $headings-tablet-h5-font-family,
+//         font-weight: $headings-tablet-h5-font-weight,
+//         line-height: $headings-tablet-h5-line-height,
+//         font-size: $headings-tablet-h5-font-size,
+//         letter-spacing: $headings-tablet-h5-letter-spacing,
+//         // $headings-tablet-h5-paragraph-spacing,
+//         text-decoration: $headings-tablet-h5-text-decoration,
+//         text-transform: $headings-tablet-h5-text-case,
+//     ),
+
+//     tablet-h6: (
+//         font-family: $headings-tablet-h6-font-family,
+//         font-weight: $headings-tablet-h6-font-weight,
+//         line-height: $headings-tablet-h6-line-height,
+//         font-size: $headings-tablet-h6-font-size,
+//         letter-spacing: $headings-tablet-h6-letter-spacing,
+//         // $headings-tablet-h6-paragraph-spacing,
+//         text-decoration: $headings-tablet-h6-text-decoration,
+//         text-transform: $headings-tablet-h6-text-case,
+//     ),
+
+//     mobile-h1: (
+//         font-family: $headings-mobile-h1-font-family,
+//         font-weight: $headings-mobile-h1-font-weight,
+//         line-height: $headings-mobile-h1-line-height,
+//         font-size: $headings-mobile-h1-font-size,
+//         letter-spacing: $headings-mobile-h1-letter-spacing,
+//         // $headings-mobile-h1-paragraph-spacing,
+//         text-decoration: $headings-mobile-h1-text-decoration,
+//         text-transform: $headings-mobile-h1-text-case,
+//     ),
+
+//     mobile-h2: (
+//         font-family: $headings-mobile-h2-font-family,
+//         font-weight: $headings-mobile-h2-font-weight,
+//         line-height: $headings-mobile-h2-line-height,
+//         font-size: $headings-mobile-h2-font-size,
+//         letter-spacing: $headings-mobile-h2-letter-spacing,
+//         // $headings-mobile-h2-paragraph-spacing,
+//         text-decoration: $headings-mobile-h2-text-decoration,
+//         text-transform: $headings-mobile-h2-text-case,
+//     ),
+
+//     mobile-h3: (
+//         font-family: $headings-mobile-h3-font-family,
+//         font-weight: $headings-mobile-h3-font-weight,
+//         line-height: $headings-mobile-h3-line-height,
+//         font-size: $headings-mobile-h3-font-size,
+//         letter-spacing: $headings-mobile-h3-letter-spacing,
+//         // $headings-mobile-h3-paragraph-spacing,
+//         text-decoration: $headings-mobile-h3-text-decoration,
+//         text-transform: $headings-mobile-h3-text-case,
+//     ),
+
+//     mobile-h4: (
+//         font-family: $headings-mobile-h4-font-family,
+//         font-weight: $headings-mobile-h4-font-weight,
+//         line-height: $headings-mobile-h4-line-height,
+//         font-size: $headings-mobile-h4-font-size,
+//         letter-spacing: $headings-mobile-h4-letter-spacing,
+//         // $headings-mobile-h4-paragraph-spacing,
+//         text-decoration: $headings-mobile-h4-text-decoration,
+//         text-transform: $headings-mobile-h4-text-case,
+//     ),
+
+//     mobile-h5: (
+//         font-family: $headings-mobile-h5-font-family,
+//         font-weight: $headings-mobile-h5-font-weight,
+//         line-height: $headings-mobile-h5-line-height,
+//         font-size: $headings-mobile-h5-font-size,
+//         letter-spacing: $headings-mobile-h5-letter-spacing,
+//         // $headings-mobile-h5-paragraph-spacing,
+//         text-decoration: $headings-mobile-h5-text-decoration,
+//         text-transform: $headings-mobile-h5-text-case,
+//     ),
+
+//     mobile-h6: (
+//         font-family: $headings-mobile-h6-font-family,
+//         font-weight: $headings-mobile-h6-font-weight,
+//         line-height: $headings-mobile-h6-line-height,
+//         font-size: $headings-mobile-h6-font-size,
+//         letter-spacing: $headings-mobile-h6-letter-spacing,
+//         // $headings-mobile-h6-paragraph-spacing,
+//         text-decoration: $headings-mobile-h6-text-decoration,
+//         text-transform: $headings-mobile-h6-text-case,
+//     ),
+// );
