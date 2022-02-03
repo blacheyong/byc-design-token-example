@@ -11,3 +11,17 @@
     text-decoration: map-get($heading, text-decoration);
     text-transform: map-get($heading, text-transform);
 }
+
+@mixin body-text($body-text) {
+    $fontFamily: $font-family-base;
+    @if(map-get($body-text, font-family) != $font-family-base) {
+        $fontFamily: '#{map-get($body-text, font-family)}', #{$font-family-base};
+    }
+    font-family: $fontFamily;
+    font-weight: map-get($body-text, font-weight);
+    line-height: map-get($body-text, line-height);
+    font-size: map-get($body-text, font-size);
+    letter-spacing: map-get($body-text, letter-spacing);
+    text-decoration: map-get($body-text, text-decoration);
+    text-transform: map-get($body-text, text-transform);
+}

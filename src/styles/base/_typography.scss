@@ -8,22 +8,80 @@ $font-path: '../fonts/' !default;
 @include font-face("BellSlim Heavy", "#{$font-path}bellslim_black-webfont", normal, normal, woff woff2);
   
 h1, .h1, .heading-1, h1.sbdocs-h1 {
-    @include heading-types(map-get($headings, h1));
+    @include heading-types(map-get($headings, desktop-h1));
+
+    @include media-breakpoint-down(lg) {
+        @include heading-types(map-get($headings, tablet-h1));
+    }
+    @include media-breakpoint-down(md) {
+        @include heading-types(map-get($headings, mobile-h1));
+    }
 }
+
 h2, .h2, .heading-2, h2.sbdocs-h2 {
-    @include heading-types(map-get($headings, h2));
+    @include heading-types(map-get($headings, desktop-h2));
+
+    @include media-breakpoint-down(lg) {
+        @include heading-types(map-get($headings, tablet-h2));
+    }
+    @include media-breakpoint-down(md) {
+        @include heading-types(map-get($headings, mobile-h2));
+    }
 }
+
 h3, .h3, .heading-3, h3.sbdocs-h3 {
-    @include heading-types(map-get($headings, h3));
+    @include heading-types(map-get($headings, desktop-h3));
+
+    @include media-breakpoint-down(lg) {
+        @include heading-types(map-get($headings, tablet-h3));
+    }
+    @include media-breakpoint-down(md) {
+        @include heading-types(map-get($headings, mobile-h3));
+    }
 }
+
 h4, .h4, .heading-4, h4.sbdocs-h4 {
-    @include heading-types(map-get($headings, h4));
+    @include heading-types(map-get($headings, desktop-h4));
+
+    @include media-breakpoint-down(lg) {
+        @include heading-types(map-get($headings, tablet-h4));
+    }
+    @include media-breakpoint-down(md) {
+        @include heading-types(map-get($headings, mobile-h4));
+    }
 }
+
 h5, .h5, .heading-5, h5.sbdocs-h5 {
-    @include heading-types(map-get($headings, h5));
+    @include heading-types(map-get($headings, desktop-h5));
+
+    @include media-breakpoint-down(lg) {
+        @include heading-types(map-get($headings, tablet-h5));
+    }
+    @include media-breakpoint-down(md) {
+        @include heading-types(map-get($headings, mobile-h5));
+    }
 }
+
 h6, .h6, .heading-6, h6.sbdocs-h6 {
-    @include heading-types(map-get($headings, h6));
+    @include heading-types(map-get($headings, desktop-h6));
+
+    @include media-breakpoint-down(lg) {
+        @include heading-types(map-get($headings, tablet-h6));
+    }
+    @include media-breakpoint-down(md) {
+        @include heading-types(map-get($headings, mobile-h6));
+    }
+}
+
+p {
+    @include body-text(map-get($body-text, regular));
+
+    @include media-breakpoint-down(md) {
+        @include body-text(map-get($body-text, small));
+    }
+    &.lead {
+        @include body-text(map-get($body-text, large));
+    }
 }
 
 // Reset Storybook styles

@@ -207,6 +207,66 @@ $font-size-base: 1rem !default;
 $font-size-sm: $font-size-base * .875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
+$body-regular-font-family: $font-family-base !default;
+$body-regular-font-weight: 400 !default;
+$body-regular-line-height: $line-height-base !default;
+$body-regular-font-size: $font-size-base !default;
+$body-regular-letter-spacing: 0px !default;
+$body-regular-paragraph-spacing: 18 !default;
+$body-regular-text-decoration: none !default;
+$body-regular-text-case: none !default;
+$body-large-font-family: $font-family-base !default;
+$body-large-font-weight: 400 !default;
+$body-large-line-height: $line-height-lg !default;
+$body-large-font-size: $font-size-lg !default;
+$body-large-letter-spacing: 0px !default;
+$body-large-paragraph-spacing: 22 !default;
+$body-large-text-decoration: none !default;
+$body-large-text-case: none !default;
+$body-small-font-family: $font-family-base !default;
+$body-small-font-weight: 400 !default;
+$body-small-line-height: $line-height-sm !default;
+$body-small-font-size: $font-size-sm !default;
+$body-small-letter-spacing: 0px !default;
+$body-small-paragraph-spacing: 14 !default;
+$body-small-text-decoration: none !default;
+$body-small-text-case: none !default;
+
+$body-text: (
+    regular: (
+        font-family: $body-regular-font-family,
+        font-size: $body-regular-font-size,
+        font-weight: $body-regular-font-weight,
+        letter-spacing: $body-regular-letter-spacing,
+        line-height: $body-regular-line-height,
+        // margin-bottom: $body-regular-paragraph-spacing,
+        text-decoration: $body-regular-text-decoration,
+        text-transform: $body-regular-text-case,
+    ),
+
+    large: (
+        font-family: $body-large-font-family,
+        font-size: $body-large-font-size,
+        font-weight: $body-large-font-weight,
+        letter-spacing: $body-large-letter-spacing,
+        line-height: $body-large-line-height,
+        // margin-bottom: $body-large-paragraph-spacing,
+        text-decoration: $body-large-text-decoration,
+        text-transform: $body-large-text-case,
+    ),
+
+    small: (
+        font-family: $body-small-font-family,
+        font-size: $body-small-font-size,
+        font-weight: $body-small-font-weight,
+        letter-spacing: $body-small-letter-spacing,
+        line-height: $body-small-line-height,
+        // margin-bottom: $body-small-paragraph-spacing,
+        text-decoration: $body-small-text-decoration,
+        text-transform: $body-small-text-case,
+    ),
+);
+
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
@@ -214,124 +274,364 @@ $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
-$headings-h1-font-family: $font-family-base !default;
-$headings-h1-font-weight: bold !default;
-$headings-h1-line-height: $line-height-base !default;
-$headings-h1-font-size: $h1-font-size !default;
-$headings-h1-letter-spacing: normal !default;
-$headings-h1-paragraph-spacing: null !default;
-$headings-h1-text-decoration: none !default;
-$headings-h1-text-case: none !default;
+$headings-desktop-h1-font-family: $font-family-base !default;
+$headings-desktop-h1-font-weight: bold !default;
+$headings-desktop-h1-line-height: $line-height-base !default;
+$headings-desktop-h1-font-size: $h1-font-size !default;
+$headings-desktop-h1-letter-spacing: normal !default;
+$headings-desktop-h1-paragraph-spacing: null !default;
+$headings-desktop-h1-text-decoration: none !default;
+$headings-desktop-h1-text-case: none !default;
 
-$headings-h2-font-family: $font-family-base !default;
-$headings-h2-font-weight: bold !default;
-$headings-h2-line-height: $line-height-base !default;
-$headings-h2-font-size: $h2-font-size !default;
-$headings-h2-letter-spacing: normal !default;
-$headings-h2-paragraph-spacing: null !default;
-$headings-h2-text-decoration: none !default;
-$headings-h2-text-case: none !default;
+$headings-desktop-h2-font-family: $font-family-base !default;
+$headings-desktop-h2-font-weight: bold !default;
+$headings-desktop-h2-line-height: $line-height-base !default;
+$headings-desktop-h2-font-size: $h2-font-size !default;
+$headings-desktop-h2-letter-spacing: normal !default;
+$headings-desktop-h2-paragraph-spacing: null !default;
+$headings-desktop-h2-text-decoration: none !default;
+$headings-desktop-h2-text-case: none !default;
 
-$headings-h3-font-family: $font-family-base !default;
-$headings-h3-font-weight: bold !default;
-$headings-h3-line-height: $line-height-base !default;
-$headings-h3-font-size: $h3-font-size !default;
-$headings-h3-letter-spacing: normal !default;
-$headings-h3-paragraph-spacing: null !default;
-$headings-h3-text-decoration: none !default;
-$headings-h3-text-case: none !default;
+$headings-desktop-h3-font-family: $font-family-base !default;
+$headings-desktop-h3-font-weight: bold !default;
+$headings-desktop-h3-line-height: $line-height-base !default;
+$headings-desktop-h3-font-size: $h3-font-size !default;
+$headings-desktop-h3-letter-spacing: normal !default;
+$headings-desktop-h3-paragraph-spacing: null !default;
+$headings-desktop-h3-text-decoration: none !default;
+$headings-desktop-h3-text-case: none !default;
 
-$headings-h4-font-family: $font-family-base !default;
-$headings-h4-font-weight: bold !default;
-$headings-h4-line-height: $line-height-base !default;
-$headings-h4-font-size: $h4-font-size !default;
-$headings-h4-letter-spacing: normal !default;
-$headings-h4-paragraph-spacing: null !default;
-$headings-h4-text-decoration: none !default;
-$headings-h4-text-case: none !default;
+$headings-desktop-h4-font-family: $font-family-base !default;
+$headings-desktop-h4-font-weight: bold !default;
+$headings-desktop-h4-line-height: $line-height-base !default;
+$headings-desktop-h4-font-size: $h4-font-size !default;
+$headings-desktop-h4-letter-spacing: normal !default;
+$headings-desktop-h4-paragraph-spacing: null !default;
+$headings-desktop-h4-text-decoration: none !default;
+$headings-desktop-h4-text-case: none !default;
 
-$headings-h5-font-family: $font-family-base !default;
-$headings-h5-font-weight: bold !default;
-$headings-h5-line-height: $line-height-sm !default;
-$headings-h5-font-size: $h5-font-size !default;
-$headings-h5-letter-spacing: normal !default;
-$headings-h5-paragraph-spacing: null !default;
-$headings-h5-text-decoration: none !default;
-$headings-h5-text-case: none !default;
+$headings-desktop-h5-font-family: $font-family-base !default;
+$headings-desktop-h5-font-weight: bold !default;
+$headings-desktop-h5-line-height: $line-height-sm !default;
+$headings-desktop-h5-font-size: $h5-font-size !default;
+$headings-desktop-h5-letter-spacing: normal !default;
+$headings-desktop-h5-paragraph-spacing: null !default;
+$headings-desktop-h5-text-decoration: none !default;
+$headings-desktop-h5-text-case: none !default;
 
-$headings-h6-font-family: $font-family-base !default;
-$headings-h6-font-weight: bold !default;
-$headings-h6-line-height: $line-height-sm !default;
-$headings-h6-font-size: $h6-font-size !default;
-$headings-h6-letter-spacing: normal !default;
-$headings-h6-paragraph-spacing: null !default;
-$headings-h6-text-decoration: none !default;
-$headings-h6-text-case: none !default;
+$headings-desktop-h6-font-family: $font-family-base !default;
+$headings-desktop-h6-font-weight: bold !default;
+$headings-desktop-h6-line-height: $line-height-sm !default;
+$headings-desktop-h6-font-size: $h6-font-size !default;
+$headings-desktop-h6-letter-spacing: normal !default;
+$headings-desktop-h6-paragraph-spacing: null !default;
+$headings-desktop-h6-text-decoration: none !default;
+$headings-desktop-h6-text-case: none !default;
+
+$headings-tablet-h1-font-family: $font-family-base !default;
+$headings-tablet-h1-font-weight: bold !default;
+$headings-tablet-h1-line-height: $line-height-base !default;
+$headings-tablet-h1-font-size: $h1-font-size !default;
+$headings-tablet-h1-letter-spacing: normal !default;
+$headings-tablet-h1-paragraph-spacing: null !default;
+$headings-tablet-h1-text-decoration: none !default;
+$headings-tablet-h1-text-case: none !default;
+
+$headings-tablet-h2-font-family: $font-family-base !default;
+$headings-tablet-h2-font-weight: bold !default;
+$headings-tablet-h2-line-height: $line-height-base !default;
+$headings-tablet-h2-font-size: $h2-font-size !default;
+$headings-tablet-h2-letter-spacing: normal !default;
+$headings-tablet-h2-paragraph-spacing: null !default;
+$headings-tablet-h2-text-decoration: none !default;
+$headings-tablet-h2-text-case: none !default;
+
+$headings-tablet-h3-font-family: $font-family-base !default;
+$headings-tablet-h3-font-weight: bold !default;
+$headings-tablet-h3-line-height: $line-height-base !default;
+$headings-tablet-h3-font-size: $h3-font-size !default;
+$headings-tablet-h3-letter-spacing: normal !default;
+$headings-tablet-h3-paragraph-spacing: null !default;
+$headings-tablet-h3-text-decoration: none !default;
+$headings-tablet-h3-text-case: none !default;
+
+$headings-tablet-h4-font-family: $font-family-base !default;
+$headings-tablet-h4-font-weight: bold !default;
+$headings-tablet-h4-line-height: $line-height-base !default;
+$headings-tablet-h4-font-size: $h4-font-size !default;
+$headings-tablet-h4-letter-spacing: normal !default;
+$headings-tablet-h4-paragraph-spacing: null !default;
+$headings-tablet-h4-text-decoration: none !default;
+$headings-tablet-h4-text-case: none !default;
+
+$headings-tablet-h5-font-family: $font-family-base !default;
+$headings-tablet-h5-font-weight: bold !default;
+$headings-tablet-h5-line-height: $line-height-sm !default;
+$headings-tablet-h5-font-size: $h5-font-size !default;
+$headings-tablet-h5-letter-spacing: normal !default;
+$headings-tablet-h5-paragraph-spacing: null !default;
+$headings-tablet-h5-text-decoration: none !default;
+$headings-tablet-h5-text-case: none !default;
+
+$headings-tablet-h6-font-family: $font-family-base !default;
+$headings-tablet-h6-font-weight: bold !default;
+$headings-tablet-h6-line-height: $line-height-sm !default;
+$headings-tablet-h6-font-size: $h6-font-size !default;
+$headings-tablet-h6-letter-spacing: normal !default;
+$headings-tablet-h6-paragraph-spacing: null !default;
+$headings-tablet-h6-text-decoration: none !default;
+$headings-tablet-h6-text-case: none !default;
+
+$headings-mobile-h1-font-family: $font-family-base !default;
+$headings-mobile-h1-font-weight: bold !default;
+$headings-mobile-h1-line-height: $line-height-base !default;
+$headings-mobile-h1-font-size: $h1-font-size !default;
+$headings-mobile-h1-letter-spacing: normal !default;
+$headings-mobile-h1-paragraph-spacing: null !default;
+$headings-mobile-h1-text-decoration: none !default;
+$headings-mobile-h1-text-case: none !default;
+
+$headings-mobile-h2-font-family: $font-family-base !default;
+$headings-mobile-h2-font-weight: bold !default;
+$headings-mobile-h2-line-height: $line-height-base !default;
+$headings-mobile-h2-font-size: $h2-font-size !default;
+$headings-mobile-h2-letter-spacing: normal !default;
+$headings-mobile-h2-paragraph-spacing: null !default;
+$headings-mobile-h2-text-decoration: none !default;
+$headings-mobile-h2-text-case: none !default;
+
+$headings-mobile-h3-font-family: $font-family-base !default;
+$headings-mobile-h3-font-weight: bold !default;
+$headings-mobile-h3-line-height: $line-height-base !default;
+$headings-mobile-h3-font-size: $h3-font-size !default;
+$headings-mobile-h3-letter-spacing: normal !default;
+$headings-mobile-h3-paragraph-spacing: null !default;
+$headings-mobile-h3-text-decoration: none !default;
+$headings-mobile-h3-text-case: none !default;
+
+$headings-mobile-h4-font-family: $font-family-base !default;
+$headings-mobile-h4-font-weight: bold !default;
+$headings-mobile-h4-line-height: $line-height-base !default;
+$headings-mobile-h4-font-size: $h4-font-size !default;
+$headings-mobile-h4-letter-spacing: normal !default;
+$headings-mobile-h4-paragraph-spacing: null !default;
+$headings-mobile-h4-text-decoration: none !default;
+$headings-mobile-h4-text-case: none !default;
+
+$headings-mobile-h5-font-family: $font-family-base !default;
+$headings-mobile-h5-font-weight: bold !default;
+$headings-mobile-h5-line-height: $line-height-sm !default;
+$headings-mobile-h5-font-size: $h5-font-size !default;
+$headings-mobile-h5-letter-spacing: normal !default;
+$headings-mobile-h5-paragraph-spacing: null !default;
+$headings-mobile-h5-text-decoration: none !default;
+$headings-mobile-h5-text-case: none !default;
+
+$headings-mobile-h6-font-family: $font-family-base !default;
+$headings-mobile-h6-font-weight: bold !default;
+$headings-mobile-h6-line-height: $line-height-sm !default;
+$headings-mobile-h6-font-size: $h6-font-size !default;
+$headings-mobile-h6-letter-spacing: normal !default;
+$headings-mobile-h6-paragraph-spacing: null !default;
+$headings-mobile-h6-text-decoration: none !default;
+$headings-mobile-h6-text-case: none !default;
 
 $headings: (
-    h1: (
-        font-family: $headings-h1-font-family,
-        font-weight: $headings-h1-font-weight,
-        line-height: $headings-h1-line-height,
-        font-size: $headings-h1-font-size,
-        letter-spacing: $headings-h1-letter-spacing,
-        // $headings-h1-paragraph-spacing,
-        text-decoration: $headings-h1-text-decoration,
-        text-transform: $headings-h1-text-case,
+    desktop-h1: (
+        font-family: $headings-desktop-h1-font-family,
+        font-weight: $headings-desktop-h1-font-weight,
+        line-height: $headings-desktop-h1-line-height,
+        font-size: $headings-desktop-h1-font-size,
+        letter-spacing: $headings-desktop-h1-letter-spacing,
+        // $headings-desktop-h1-paragraph-spacing,
+        text-decoration: $headings-desktop-h1-text-decoration,
+        text-transform: $headings-desktop-h1-text-case,
     ),
 
-    h2: (
-        font-family: $headings-h2-font-family,
-        font-weight: $headings-h2-font-weight,
-        line-height: $headings-h2-line-height,
-        font-size: $headings-h2-font-size,
-        letter-spacing: $headings-h2-letter-spacing,
-        // $headings-h2-paragraph-spacing,
-        text-decoration: $headings-h2-text-decoration,
-        text-transform: $headings-h2-text-case,
+    desktop-h2: (
+        font-family: $headings-desktop-h2-font-family,
+        font-weight: $headings-desktop-h2-font-weight,
+        line-height: $headings-desktop-h2-line-height,
+        font-size: $headings-desktop-h2-font-size,
+        letter-spacing: $headings-desktop-h2-letter-spacing,
+        // $headings-desktop-h2-paragraph-spacing,
+        text-decoration: $headings-desktop-h2-text-decoration,
+        text-transform: $headings-desktop-h2-text-case,
     ),
 
-    h3: (
-        font-family: $headings-h3-font-family,
-        font-weight: $headings-h3-font-weight,
-        line-height: $headings-h3-line-height,
-        font-size: $headings-h3-font-size,
-        letter-spacing: $headings-h3-letter-spacing,
-        // $headings-h3-paragraph-spacing,
-        text-decoration: $headings-h3-text-decoration,
-        text-transform: $headings-h3-text-case,
+    desktop-h3: (
+        font-family: $headings-desktop-h3-font-family,
+        font-weight: $headings-desktop-h3-font-weight,
+        line-height: $headings-desktop-h3-line-height,
+        font-size: $headings-desktop-h3-font-size,
+        letter-spacing: $headings-desktop-h3-letter-spacing,
+        // $headings-desktop-h3-paragraph-spacing,
+        text-decoration: $headings-desktop-h3-text-decoration,
+        text-transform: $headings-desktop-h3-text-case,
     ),
 
-    h4: (
-        font-family: $headings-h4-font-family,
-        font-weight: $headings-h4-font-weight,
-        line-height: $headings-h4-line-height,
-        font-size: $headings-h4-font-size,
-        letter-spacing: $headings-h4-letter-spacing,
-        // $headings-h4-paragraph-spacing,
-        text-decoration: $headings-h4-text-decoration,
-        text-transform: $headings-h4-text-case,
+    desktop-h4: (
+        font-family: $headings-desktop-h4-font-family,
+        font-weight: $headings-desktop-h4-font-weight,
+        line-height: $headings-desktop-h4-line-height,
+        font-size: $headings-desktop-h4-font-size,
+        letter-spacing: $headings-desktop-h4-letter-spacing,
+        // $headings-desktop-h4-paragraph-spacing,
+        text-decoration: $headings-desktop-h4-text-decoration,
+        text-transform: $headings-desktop-h4-text-case,
     ),
 
-    h5: (
-        font-family: $headings-h5-font-family,
-        font-weight: $headings-h5-font-weight,
-        line-height: $headings-h5-line-height,
-        font-size: $headings-h5-font-size,
-        letter-spacing: $headings-h5-letter-spacing,
-        // $headings-h5-paragraph-spacing,
-        text-decoration: $headings-h5-text-decoration,
-        text-transform: $headings-h5-text-case,
+    desktop-h5: (
+        font-family: $headings-desktop-h5-font-family,
+        font-weight: $headings-desktop-h5-font-weight,
+        line-height: $headings-desktop-h5-line-height,
+        font-size: $headings-desktop-h5-font-size,
+        letter-spacing: $headings-desktop-h5-letter-spacing,
+        // $headings-desktop-h5-paragraph-spacing,
+        text-decoration: $headings-desktop-h5-text-decoration,
+        text-transform: $headings-desktop-h5-text-case,
     ),
 
-    h6: (
-        font-family: $headings-h6-font-family,
-        font-weight: $headings-h6-font-weight,
-        line-height: $headings-h6-line-height,
-        font-size: $headings-h6-font-size,
-        letter-spacing: $headings-h6-letter-spacing,
-        // $headings-h6-paragraph-spacing,
-        text-decoration: $headings-h6-text-decoration,
-        text-transform: $headings-h6-text-case,
+    desktop-h6: (
+        font-family: $headings-desktop-h6-font-family,
+        font-weight: $headings-desktop-h6-font-weight,
+        line-height: $headings-desktop-h6-line-height,
+        font-size: $headings-desktop-h6-font-size,
+        letter-spacing: $headings-desktop-h6-letter-spacing,
+        // $headings-desktop-h6-paragraph-spacing,
+        text-decoration: $headings-desktop-h6-text-decoration,
+        text-transform: $headings-desktop-h6-text-case,
+    ),
+
+    tablet-h1: (
+        font-family: $headings-tablet-h1-font-family,
+        font-weight: $headings-tablet-h1-font-weight,
+        line-height: $headings-tablet-h1-line-height,
+        font-size: $headings-tablet-h1-font-size,
+        letter-spacing: $headings-tablet-h1-letter-spacing,
+        // $headings-tablet-h1-paragraph-spacing,
+        text-decoration: $headings-tablet-h1-text-decoration,
+        text-transform: $headings-tablet-h1-text-case,
+    ),
+
+    tablet-h2: (
+        font-family: $headings-tablet-h2-font-family,
+        font-weight: $headings-tablet-h2-font-weight,
+        line-height: $headings-tablet-h2-line-height,
+        font-size: $headings-tablet-h2-font-size,
+        letter-spacing: $headings-tablet-h2-letter-spacing,
+        // $headings-tablet-h2-paragraph-spacing,
+        text-decoration: $headings-tablet-h2-text-decoration,
+        text-transform: $headings-tablet-h2-text-case,
+    ),
+
+    tablet-h3: (
+        font-family: $headings-tablet-h3-font-family,
+        font-weight: $headings-tablet-h3-font-weight,
+        line-height: $headings-tablet-h3-line-height,
+        font-size: $headings-tablet-h3-font-size,
+        letter-spacing: $headings-tablet-h3-letter-spacing,
+        // $headings-tablet-h3-paragraph-spacing,
+        text-decoration: $headings-tablet-h3-text-decoration,
+        text-transform: $headings-tablet-h3-text-case,
+    ),
+
+    tablet-h4: (
+        font-family: $headings-tablet-h4-font-family,
+        font-weight: $headings-tablet-h4-font-weight,
+        line-height: $headings-tablet-h4-line-height,
+        font-size: $headings-tablet-h4-font-size,
+        letter-spacing: $headings-tablet-h4-letter-spacing,
+        // $headings-tablet-h4-paragraph-spacing,
+        text-decoration: $headings-tablet-h4-text-decoration,
+        text-transform: $headings-tablet-h4-text-case,
+    ),
+
+    tablet-h5: (
+        font-family: $headings-tablet-h5-font-family,
+        font-weight: $headings-tablet-h5-font-weight,
+        line-height: $headings-tablet-h5-line-height,
+        font-size: $headings-tablet-h5-font-size,
+        letter-spacing: $headings-tablet-h5-letter-spacing,
+        // $headings-tablet-h5-paragraph-spacing,
+        text-decoration: $headings-tablet-h5-text-decoration,
+        text-transform: $headings-tablet-h5-text-case,
+    ),
+
+    tablet-h6: (
+        font-family: $headings-tablet-h6-font-family,
+        font-weight: $headings-tablet-h6-font-weight,
+        line-height: $headings-tablet-h6-line-height,
+        font-size: $headings-tablet-h6-font-size,
+        letter-spacing: $headings-tablet-h6-letter-spacing,
+        // $headings-tablet-h6-paragraph-spacing,
+        text-decoration: $headings-tablet-h6-text-decoration,
+        text-transform: $headings-tablet-h6-text-case,
+    ),
+
+    mobile-h1: (
+        font-family: $headings-mobile-h1-font-family,
+        font-weight: $headings-mobile-h1-font-weight,
+        line-height: $headings-mobile-h1-line-height,
+        font-size: $headings-mobile-h1-font-size,
+        letter-spacing: $headings-mobile-h1-letter-spacing,
+        // $headings-mobile-h1-paragraph-spacing,
+        text-decoration: $headings-mobile-h1-text-decoration,
+        text-transform: $headings-mobile-h1-text-case,
+    ),
+
+    mobile-h2: (
+        font-family: $headings-mobile-h2-font-family,
+        font-weight: $headings-mobile-h2-font-weight,
+        line-height: $headings-mobile-h2-line-height,
+        font-size: $headings-mobile-h2-font-size,
+        letter-spacing: $headings-mobile-h2-letter-spacing,
+        // $headings-mobile-h2-paragraph-spacing,
+        text-decoration: $headings-mobile-h2-text-decoration,
+        text-transform: $headings-mobile-h2-text-case,
+    ),
+
+    mobile-h3: (
+        font-family: $headings-mobile-h3-font-family,
+        font-weight: $headings-mobile-h3-font-weight,
+        line-height: $headings-mobile-h3-line-height,
+        font-size: $headings-mobile-h3-font-size,
+        letter-spacing: $headings-mobile-h3-letter-spacing,
+        // $headings-mobile-h3-paragraph-spacing,
+        text-decoration: $headings-mobile-h3-text-decoration,
+        text-transform: $headings-mobile-h3-text-case,
+    ),
+
+    mobile-h4: (
+        font-family: $headings-mobile-h4-font-family,
+        font-weight: $headings-mobile-h4-font-weight,
+        line-height: $headings-mobile-h4-line-height,
+        font-size: $headings-mobile-h4-font-size,
+        letter-spacing: $headings-mobile-h4-letter-spacing,
+        // $headings-mobile-h4-paragraph-spacing,
+        text-decoration: $headings-mobile-h4-text-decoration,
+        text-transform: $headings-mobile-h4-text-case,
+    ),
+
+    mobile-h5: (
+        font-family: $headings-mobile-h5-font-family,
+        font-weight: $headings-mobile-h5-font-weight,
+        line-height: $headings-mobile-h5-line-height,
+        font-size: $headings-mobile-h5-font-size,
+        letter-spacing: $headings-mobile-h5-letter-spacing,
+        // $headings-mobile-h5-paragraph-spacing,
+        text-decoration: $headings-mobile-h5-text-decoration,
+        text-transform: $headings-mobile-h5-text-case,
+    ),
+
+    mobile-h6: (
+        font-family: $headings-mobile-h6-font-family,
+        font-weight: $headings-mobile-h6-font-weight,
+        line-height: $headings-mobile-h6-line-height,
+        font-size: $headings-mobile-h6-font-size,
+        letter-spacing: $headings-mobile-h6-letter-spacing,
+        // $headings-mobile-h6-paragraph-spacing,
+        text-decoration: $headings-mobile-h6-text-decoration,
+        text-transform: $headings-mobile-h6-text-case,
     ),
 );
