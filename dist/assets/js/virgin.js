@@ -81,53 +81,47 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/scripts/main.js":
-/*!*****************************!*\
-  !*** ./src/scripts/main.js ***!
-  \*****************************/
+/***/ "./src/scripts/virgin.js":
+/*!*******************************!*\
+  !*** ./src/scripts/virgin.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 //------------------------------------------------------------------------
 // Import Main Styles for Webpack
 //------------------------------------------------------------------------
-__webpack_require__(/*! ../styles/main.scss */ "./src/styles/main.scss"); // TODO: Remove for testing only
-
-
-console.log('Hello world!');
+__webpack_require__(/*! ../styles/virgin.scss */ "./src/styles/virgin.scss");
 
 /***/ }),
 
-/***/ "./src/styles/main.scss":
-/*!******************************!*\
-  !*** ./src/styles/main.scss ***!
-  \******************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/styles/virgin.scss":
+/*!********************************!*\
+  !*** ./src/styles/virgin.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: no mixin named font-face\n        on line 6 of src/styles/settings/_font-face.scss\n        from line 12 of src/styles/virgin.scss\n>> @include font-face(\"bell-slim\", \"#{$font-path}bellslim_regular-webfont\", 200\n   ---------^\n\n    at /Users/mathieu/www-root/byc-design-token-example/node_modules/webpack/lib/NormalModule.js:316:20\n    at /Users/mathieu/www-root/byc-design-token-example/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Users/mathieu/www-root/byc-design-token-example/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/Users/mathieu/www-root/byc-design-token-example/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.callback (/Users/mathieu/www-root/byc-design-token-example/node_modules/sass-loader/dist/index.js:62:7)\n    at Object.done [as callback] (/Users/mathieu/www-root/byc-design-token-example/node_modules/neo-async/async.js:8069:18)\n    at options.error (/Users/mathieu/www-root/byc-design-token-example/node_modules/node-sass/lib/index.js:293:32)");
 
 /***/ }),
 
-/***/ 0:
-/*!***********************************!*\
-  !*** multi ./src/scripts/main.js ***!
-  \***********************************/
+/***/ 1:
+/*!*************************************!*\
+  !*** multi ./src/scripts/virgin.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./src/scripts/main.js */"./src/scripts/main.js");
+module.exports = __webpack_require__(/*! ./src/scripts/virgin.js */"./src/scripts/virgin.js");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=virgin.js.map

@@ -1,12 +1,3 @@
-$font-path: '../fonts/' !default;
-
-// Define bell-slim font
-@include font-face("bell-slim", "#{$font-path}bellslim_regular-webfont", 200, normal, svg eot ttf woff);
-@include font-face("bell-slim", "#{$font-path}bellslim_medium-webfont", normal, normal, svg eot ttf woff);
-@include font-face("bell-slim", "#{$font-path}bellslim_semibold-webfont", 700, normal, svg eot ttf woff);
-// Bell Slim Black
-@include font-face("BellSlim Heavy", "#{$font-path}bellslim_black-webfont", normal, normal, woff woff2);
-  
 h1, .h1, .heading-1, h1.sbdocs-h1 {
     @include heading-types($h1);
 }
