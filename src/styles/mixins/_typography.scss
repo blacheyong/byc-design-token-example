@@ -9,13 +9,13 @@
         $fontFamily: '#{map-get($desktop, font-family)}', #{$font-family-base};
     }
     font-family: $fontFamily;
-    font-size: map-get($desktop, font-size);
+    font-size: pxToRem(map-get($desktop, font-size));
 
     @if(map-get($desktop, font-weight) != 400) {
         font-weight: map-get($desktop, font-weight);
     }
     @if(map-get($desktop, line-height) != normal) {
-        line-height: map-get($desktop, line-height);
+        line-height: scaleLineHeight(map-get($desktop, line-height), map-get($desktop, font-size));
     }
     @if(map-get($desktop, letter-spacing) != 0px) {
         letter-spacing: map-get($desktop, letter-spacing);
