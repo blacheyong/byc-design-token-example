@@ -28,8 +28,8 @@
     }
 
     @include media-breakpoint-down(lg) {
-        @if(map-get($tablet, font-size) != map-get($desktop, font-size)) {
-            font-size: map-get($tablet, font-size);
+        @if map-get($tablet, font-size) and (map-get($tablet, font-size) != map-get($desktop, font-size)) {
+            font-size: pxToRem(map-get($tablet, font-size));
         }
         @if(map-get($tablet, font-weight) != map-get($desktop, font-weight)) {
             font-weight: map-get($tablet, font-weight);
@@ -49,7 +49,7 @@
     }
 
     @include media-breakpoint-down(md) {
-        @if(map-get($mobile, font-size) != map-get($desktop, font-size)) {
+        @if map-get($mobile, font-zise) and (map-get($mobile, font-size) != map-get($desktop, font-size)) {
             font-size: map-get($mobile, font-size);
         }
         @if(map-get($mobile, font-weight) != map-get($desktop, font-weight)) {
