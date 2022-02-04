@@ -94,7 +94,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, outputPath),
-    filename: outputName
+    filename: '[name].js'
   },
   module: {
     rules: [
