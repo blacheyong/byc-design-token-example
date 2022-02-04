@@ -28,7 +28,7 @@ StyleDictionaryPackage.registerTransform({
     name: 'typography/px',
     type: 'value',
     matcher: function (prop) {
-        return prop.path.includes('fontSize') || prop.path.includes('lineHeight') || prop.path.includes('letterSpacing')
+        return prop.path.includes('fontSize') || prop.path.includes('lineHeight') || prop.path.includes('letterSpacing') || prop.path.includes('paragraphSpacing')
     },
     transformer: function (prop) {
         return parseFloat(prop.value) + 'px';
