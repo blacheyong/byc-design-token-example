@@ -19,6 +19,16 @@ $padding-y-sm: .25rem !default;
 $padding-x-lg: 1rem !default;
 $padding-y-lg: .5rem !default;
 
+$font-family-base: Arial, Helvetica, sans-serif;
+
+$line-height-base: 1.5 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 2 !default;
+
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * .875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
 // ------------------------------------------
 // Breakpoints
 // - Define the minimum dimensions at which your layout will change,
@@ -217,16 +227,6 @@ $cards: (
 // ------------------------------------------
 // Typography
 // ------------------------------------------
-
-$font-family-base: Arial, Helvetica, sans-serif;
-
-$line-height-base: 1.5 !default;
-$line-height-sm: 1.25 !default;
-$line-height-lg: 2 !default;
-
-$font-size-base: 1rem !default;
-$font-size-sm: $font-size-base * .875 !default;
-$font-size-lg: $font-size-base * 1.25 !default;
 
 $body-regular-font-family: $font-family-base !default;
 $body-regular-font-weight: 400 !default;
@@ -643,4 +643,50 @@ $h6: (
         text-decoration: $headings-mobile-h6-text-decoration,
         text-transform: $headings-mobile-h6-text-case,
     )
+);
+
+// ------------------------------------------
+// Inputs
+// ------------------------------------------
+
+$inputs-bg: $white !default;
+$inputs-border: #D4D4D4 !default;
+$inputs-border-focus: $primary !default;
+$inputs-bg-disabled: #F4F4F4 !default;
+$inputs-text: #555555 !default;
+$inputs-placeholder: #999999 !default;
+$inputs-radius: $border-radius-sm !default;
+$inputs-border-width: 1px !default;
+$inputs-border-invalid: #BD2025 !default;
+$inputs-padding-x: $padding-x-base !default;
+$inputs-padding-y: $padding-y-base !default;
+$inputs-text-font-family: $font-family-base !default;
+$inputs-text-font-weight: 400 !default;
+$inputs-text-line-height: $line-height-base !default;
+$inputs-text-font-size: $font-size-base !default;
+$inputs-text-letter-spacing: 0px !default;
+$inputs-text-paragraph-spacing: 0px !default;
+$inputs-text-text-decoration: none !default;
+$inputs-text-text-case: none !default;
+
+$inputs: (
+    background-color: $inputs-bg,
+    border-color: $inputs-border,
+    border-radius: $inputs-radius,
+    border-width: $inputs-border-width,
+    color: $inputs-text,
+    color-placeholder: $inputs-placeholder,
+    font-family: $inputs-text-font-family,
+    font-size: $inputs-text-font-size,
+    font-weight: $inputs-text-font-weight,
+    letter-spacing: $inputs-text-letter-spacing,
+    line-height: $inputs-text-line-height,
+    margin-bottom: $inputs-text-paragraph-spacing,
+    padding-x: $inputs-padding-x,
+    padding-y: $inputs-padding-y,
+    text-decoration: $inputs-text-text-decoration,
+    text-transform: $inputs-text-text-case,
+    disabled-background: $inputs-bg-disabled,
+    focus-border-color: $inputs-border-focus,
+    invalid-border-color: $inputs-border-invalid,
 );
