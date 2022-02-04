@@ -130,4 +130,4 @@ module.exports = __webpack_require__(/*! ./src/scripts/main.js */"./src/scripts/
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=main.js.map
