@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Fri, 04 Feb 2022 15:40:24 GMT
+// Generated on Fri, 04 Feb 2022 19:13:02 GMT
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -169,6 +169,16 @@ $headings-mobile-h1-text-decoration: none;
 $headings-mobile-h1-text-case: none;
 $cards-radius: 10px;
 $cards-drop-shadow: 0px 6px 25px 0px #0000001a;
+$cards-bg: #ffffff;
+$cards-border: #E1E1E1;
+$cards-padding-x: 20px;
+$cards-padding-y: 20px;
+$cards-border-width: 1px;
+$cards-drop-shadow-hover: 0px 8px 30px 20px #00000033;
+$cards-border-selected: #00549A;
+$cards-bg-hover: #f1f1f1;
+$cards-bg-selected: #C2CEDF;
+$cards-bg-overlay: #000000bf;
 $body-regular-font-family: 'Arial';
 $body-regular-font-weight: 400;
 $body-regular-line-height: 18px;
@@ -193,3 +203,8 @@ $body-small-letter-spacing: 0px;
 $body-small-paragraph-spacing: 14px;
 $body-small-text-decoration: none;
 $body-small-text-case: none;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;

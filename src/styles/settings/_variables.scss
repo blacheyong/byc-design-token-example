@@ -184,10 +184,34 @@ $buttons: (
 
 $cards-radius: $border-radius !default;
 $cards-drop-shadow: $box-shadow-base !default;
+$cards-bg: $white !default;
+$cards-border: #E1E1E1 !default;
+$cards-padding-x: $padding-x-base !default;
+$cards-padding-y: $padding-y-base !default;
+$cards-border-width: 1px !default;
+$cards-drop-shadow-hover: 0px 8px 30px 20px #00000033 !default;
+$cards-border-selected: #C2CEDF !default;
+$cards-bg-hover: #f1f1f1 !default;
+$cards-border-hover: #E1E1E1 !default;
+$cards-bg-selected: #C2CEDF !default;
+$cards-bg-overlay: #000000bf !default;
+$cards-drop-shadow-selected: 0px 8px 30px 20px #00000033 !default;
 
 $cards: (
+    background-color: $cards-bg,
+    background-overlay: $cards-bg-overlay,
+    border-color: $cards-border,
     border-radius: $cards-radius,
+    border-width: $cards-border-width,
     box-shadow: $cards-drop-shadow,
+    padding-x: $cards-padding-x,
+    padding-y: $cards-padding-y,
+    hover-background: $cards-bg-hover,
+    hover-border-color: $cards-border-hover,
+    hover-box-shadow: $cards-drop-shadow-hover,
+    selected-background: $cards-bg-selected,
+    selected-border-color: $cards-border-selected, 
+    selected-box-shadow: $cards-drop-shadow-selected,
 );
 
 // ------------------------------------------

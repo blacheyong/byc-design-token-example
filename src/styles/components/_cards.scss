@@ -1,17 +1,43 @@
 .card {
+    background-color: map-get($cards, background-color);
+    border-color: map-get($cards, border-color);
     border-radius: map-get($cards, border-radius);
-    border-width: 0;
+    border-width: map-get($cards, border-width);
     box-shadow: map-get($cards, box-shadow);
-    padding: 16px 21px;
+    transition: all .3s ease-in-out;
+
+    &--hoverable {
+        &:hover {
+            background-color: map-get($cards, hover-background);
+            border-color: map-get($cards, hover-border-color);
+            box-shadow: map-get($cards, hover-box-shadow);
+        }
+    }
+    &--selected {
+        background-color: map-get($cards, selected-background);
+        border-color: map-get($cards, selected-border-color);
+        box-shadow: map-get($cards, selected-box-shadow);
+    }
+
     img {
         margin: auto;
         max-width: 245px;
         width: 100%;
     }
-    .card-title {
-        margin: 24px 0 0;
-        text-align: center;
+
+    .card-img-overlay {
+        background-color: map-get($cards, background-overlay);
     }
+
+    .card-body {
+        padding: map-get($cards, padding-y) map-get($cards, padding-x);
+
+        .card-title {
+            margin: 24px 0 0;
+            text-align: center;
+        }
+    }
+
     &__prices {
         div:first-child {
             margin-right: 20px;
