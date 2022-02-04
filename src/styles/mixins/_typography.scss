@@ -91,4 +91,8 @@
     @if(map-get($body-text, text-transform) != none ) {
         text-transform: map-get($body-text, text-transform);
     }
+
+    &:not(:last-child) {
+        margin-bottom: map-get($body-text, margin-bottom);
+    }
 }

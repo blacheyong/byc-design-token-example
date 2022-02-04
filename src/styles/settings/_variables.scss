@@ -209,7 +209,7 @@ $body-regular-font-weight: 400 !default;
 $body-regular-line-height: $line-height-base !default;
 $body-regular-font-size: $font-size-base !default;
 $body-regular-letter-spacing: 0px !default;
-$body-regular-paragraph-spacing: 18 !default;
+$body-regular-paragraph-spacing: 18px !default;
 $body-regular-text-decoration: none !default;
 $body-regular-text-case: none !default;
 
@@ -218,7 +218,7 @@ $body-large-font-weight: 400 !default;
 $body-large-line-height: $line-height-lg !default;
 $body-large-font-size: $font-size-lg !default;
 $body-large-letter-spacing: 0px !default;
-$body-large-paragraph-spacing: 22 !default;
+$body-large-paragraph-spacing: 22px !default;
 $body-large-text-decoration: none !default;
 $body-large-text-case: none !default;
 
@@ -227,7 +227,7 @@ $body-small-font-weight: 400 !default;
 $body-small-line-height: $line-height-sm !default;
 $body-small-font-size: $font-size-sm !default;
 $body-small-letter-spacing: 0px !default;
-$body-small-paragraph-spacing: 14 !default;
+$body-small-paragraph-spacing: 14px !default;
 $body-small-text-decoration: none !default;
 $body-small-text-case: none !default;
 
@@ -238,7 +238,7 @@ $body-text: (
         font-weight: $body-regular-font-weight,
         letter-spacing: $body-regular-letter-spacing,
         line-height: $body-regular-line-height,
-        // margin-bottom: $body-regular-paragraph-spacing,
+        margin-bottom: $body-regular-paragraph-spacing,
         text-decoration: $body-regular-text-decoration,
         text-transform: $body-regular-text-case,
     ),
@@ -249,7 +249,7 @@ $body-text: (
         font-weight: $body-large-font-weight,
         letter-spacing: $body-large-letter-spacing,
         line-height: $body-large-line-height,
-        // margin-bottom: $body-large-paragraph-spacing,
+        margin-bottom: $body-large-paragraph-spacing,
         text-decoration: $body-large-text-decoration,
         text-transform: $body-large-text-case,
     ),
@@ -260,7 +260,7 @@ $body-text: (
         font-weight: $body-small-font-weight,
         letter-spacing: $body-small-letter-spacing,
         line-height: $body-small-line-height,
-        // margin-bottom: $body-small-paragraph-spacing,
+        margin-bottom: $body-small-paragraph-spacing,
         text-decoration: $body-small-text-decoration,
         text-transform: $body-small-text-case,
     ),
