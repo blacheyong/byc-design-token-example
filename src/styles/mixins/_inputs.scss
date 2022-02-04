@@ -1,0 +1,5 @@
+@mixin input-styles($class, $input) {
+    .#{$class} {
+        border: map-get($input, border-width) solid map-get($input, border);
+    }
+}

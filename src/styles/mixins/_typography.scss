@@ -34,8 +34,8 @@
         @if(map-get($tablet, font-weight) != map-get($desktop, font-weight)) {
             font-weight: map-get($tablet, font-weight);
         }
-        @if(map-get($tablet, line-height) != map-get($desktop, line-height)) {
-            line-height: map-get($tablet, line-height);
+        @if map-get($tablet, line-height) and (map-get($tablet, line-height) != map-get($desktop, line-height)) {
+            line-height: scaleLineHeight(map-get($tablet, line-height), map-get($tablet, font-size));
         }
         @if(map-get($tablet, letter-spacing) != map-get($desktop, letter-spacing)) {
             letter-spacing: map-get($tablet, letter-spacing);
@@ -55,8 +55,8 @@
         @if(map-get($mobile, font-weight) != map-get($desktop, font-weight)) {
             font-weight: map-get($mobile, font-weight);
         }
-        @if(map-get($mobile, line-height) != map-get($desktop, line-height)) {
-            line-height: map-get($mobile, line-height);
+        @if map-get($mobile, line-height) and (map-get($mobile, line-height) != map-get($desktop, line-height)) {
+            line-height: scaleLineHeight(map-get($mobile, line-height), map-get($mobile, font-size));
         }
         @if(map-get($mobile, letter-spacing) != map-get($desktop, letter-spacing)) {
             letter-spacing: map-get($mobile, letter-spacing);
@@ -76,8 +76,8 @@
         $fontFamily: '#{map-get($body-text, font-family)}', #{$font-family-base};
     }
     font-family: $fontFamily;
-    line-height: map-get($body-text, line-height);
-    font-size: map-get($body-text, font-size);
+    line-height: scaleLineHeight(map-get($body-text, line-height), map-get($body-text, font-size));
+    font-size: pxToRem(map-get($body-text, font-size));
 
     @if(map-get($body-text, font-weight) != 400) {
         font-weight: map-get($body-text, font-weight);

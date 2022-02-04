@@ -309,7 +309,7 @@ $headings-desktop-h1-text-case: none !default;
 
 $headings-tablet-h1-font-family: $font-family-base !default;
 $headings-tablet-h1-font-weight: bold !default;
-$headings-tablet-h1-line-height: $line-height-base !default;
+$headings-tablet-h1-line-height: null!default;
 $headings-tablet-h1-font-size: null !default;
 $headings-tablet-h1-letter-spacing: normal !default;
 $headings-tablet-h1-paragraph-spacing: null !default;
@@ -318,7 +318,7 @@ $headings-tablet-h1-text-case: none !default;
 
 $headings-mobile-h1-font-family: $font-family-base !default;
 $headings-mobile-h1-font-weight: bold !default;
-$headings-mobile-h1-line-height: $line-height-base !default;
+$headings-mobile-h1-line-height: null!default;
 $headings-mobile-h1-font-size: null !default;
 $headings-mobile-h1-letter-spacing: normal !default;
 $headings-mobile-h1-paragraph-spacing: null !default;
@@ -337,8 +337,8 @@ $headings-desktop-h2-text-case: none !default;
 
 $headings-tablet-h2-font-family: $font-family-base !default;
 $headings-tablet-h2-font-weight: bold !default;
-$headings-tablet-h2-line-height: $line-height-base !default;
-$headings-tablet-h2-font-size: $h2-font-size !default;
+$headings-tablet-h2-line-height: null !default;
+$headings-tablet-h2-font-size: null !default;
 $headings-tablet-h2-letter-spacing: normal !default;
 $headings-tablet-h2-paragraph-spacing: null !default;
 $headings-tablet-h2-text-decoration: none !default;
@@ -346,8 +346,8 @@ $headings-tablet-h2-text-case: none !default;
 
 $headings-mobile-h2-font-family: $font-family-base !default;
 $headings-mobile-h2-font-weight: bold !default;
-$headings-mobile-h2-line-height: $line-height-base !default;
-$headings-mobile-h2-font-size: $h2-font-size !default;
+$headings-mobile-h2-line-height: null !default;
+$headings-mobile-h2-font-size: null !default;
 $headings-mobile-h2-letter-spacing: normal !default;
 $headings-mobile-h2-paragraph-spacing: null !default;
 $headings-mobile-h2-text-decoration: none !default;
@@ -365,8 +365,8 @@ $headings-desktop-h3-text-case: none !default;
 
 $headings-tablet-h3-font-family: $font-family-base !default;
 $headings-tablet-h3-font-weight: bold !default;
-$headings-tablet-h3-line-height: $line-height-base !default;
-$headings-tablet-h3-font-size: $h3-font-size !default;
+$headings-tablet-h3-line-height: null!default;
+$headings-tablet-h3-font-size: null !default;
 $headings-tablet-h3-letter-spacing: normal !default;
 $headings-tablet-h3-paragraph-spacing: null !default;
 $headings-tablet-h3-text-decoration: none !default;
@@ -374,8 +374,8 @@ $headings-tablet-h3-text-case: none !default;
 
 $headings-mobile-h3-font-family: $font-family-base !default;
 $headings-mobile-h3-font-weight: bold !default;
-$headings-mobile-h3-line-height: $line-height-base !default;
-$headings-mobile-h3-font-size: $h3-font-size !default;
+$headings-mobile-h3-line-height: null!default;
+$headings-mobile-h3-font-size: null !default;
 $headings-mobile-h3-letter-spacing: normal !default;
 $headings-mobile-h3-paragraph-spacing: null !default;
 $headings-mobile-h3-text-decoration: none !default;
@@ -393,8 +393,8 @@ $headings-desktop-h4-text-case: none !default;
 
 $headings-tablet-h4-font-family: $font-family-base !default;
 $headings-tablet-h4-font-weight: bold !default;
-$headings-tablet-h4-line-height: $line-height-base !default;
-$headings-tablet-h4-font-size: $h4-font-size !default;
+$headings-tablet-h4-line-height: null !default;
+$headings-tablet-h4-font-size: null !default;
 $headings-tablet-h4-letter-spacing: normal !default;
 $headings-tablet-h4-paragraph-spacing: null !default;
 $headings-tablet-h4-text-decoration: none !default;
@@ -402,8 +402,8 @@ $headings-tablet-h4-text-case: none !default;
 
 $headings-mobile-h4-font-family: $font-family-base !default;
 $headings-mobile-h4-font-weight: bold !default;
-$headings-mobile-h4-line-height: $line-height-base !default;
-$headings-mobile-h4-font-size: $h4-font-size !default;
+$headings-mobile-h4-line-height: null !default;
+$headings-mobile-h4-font-size: null !default;
 $headings-mobile-h4-letter-spacing: normal !default;
 $headings-mobile-h4-paragraph-spacing: null !default;
 $headings-mobile-h4-text-decoration: none !default;
@@ -421,7 +421,7 @@ $headings-desktop-h5-text-case: none !default;
 
 $headings-tablet-h5-font-family: $font-family-base !default;
 $headings-tablet-h5-font-weight: bold !default;
-$headings-tablet-h5-line-height: $line-height-sm !default;
+$headings-tablet-h5-line-height: null !default;
 $headings-tablet-h5-font-size: null !default;
 $headings-tablet-h5-letter-spacing: normal !default;
 $headings-tablet-h5-paragraph-spacing: null !default;
@@ -430,7 +430,7 @@ $headings-tablet-h5-text-case: none !default;
 
 $headings-mobile-h5-font-family: $font-family-base !default;
 $headings-mobile-h5-font-weight: bold !default;
-$headings-mobile-h5-line-height: $line-height-sm !default;
+$headings-mobile-h5-line-height: null !default;
 $headings-mobile-h5-font-size: null !default;
 $headings-mobile-h5-letter-spacing: normal !default;
 $headings-mobile-h5-paragraph-spacing: null !default;
@@ -449,7 +449,7 @@ $headings-desktop-h6-text-case: none !default;
 
 $headings-tablet-h6-font-family: $font-family-base !default;
 $headings-tablet-h6-font-weight: bold !default;
-$headings-tablet-h6-line-height: $line-height-sm !default;
+$headings-tablet-h6-line-height: null !default;
 $headings-tablet-h6-font-size: null !default;
 $headings-tablet-h6-letter-spacing: normal !default;
 $headings-tablet-h6-paragraph-spacing: null !default;
@@ -458,7 +458,7 @@ $headings-tablet-h6-text-case: none !default;
 
 $headings-mobile-h6-font-family: $font-family-base !default;
 $headings-mobile-h6-font-weight: bold !default;
-$headings-mobile-h6-line-height: $line-height-sm !default;
+$headings-mobile-h6-line-height: null !default;
 $headings-mobile-h6-font-size: null !default;
 $headings-mobile-h6-letter-spacing: normal !default;
 $headings-mobile-h6-paragraph-spacing: null !default;
