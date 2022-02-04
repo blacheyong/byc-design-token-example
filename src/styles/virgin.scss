@@ -17,7 +17,7 @@
 //-------------------------------------------
 @import "mixins/breakpoints";
 @import "mixins/buttons";
-@import "mixins/buttons";
+@import "mixins/inputs";
 @import "mixins/typography";
 
 // ------------------------------------------
@@ -46,3 +46,4 @@
 // ------------------------------------------
 @import "components/buttons";
 @import "components/cards";
+@import "components/form";

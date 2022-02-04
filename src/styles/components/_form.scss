@@ -1,0 +1,7 @@
+input {
+    @include input-styles('custom-input', $inputs)
+}
+
+textarea {
+    @include input-styles('custom-input', $inputs)
+}

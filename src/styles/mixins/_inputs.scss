@@ -1,5 +1,41 @@
 @mixin input-styles($class, $input) {
-    .#{$class} {
-        border: map-get($input, border-width) solid map-get($input, border);
+    &.#{$class} {
+        background-color: map-get($input, background-color);
+        border: map-get($input, border-width) solid map-get($input, border-color);
+        border-radius: map-get($input, border-radius);
+        color: map-get($input, color);
+        font-family: map-get($input, font-family);
+        font-size: map-get($input, font-size);
+        @if(map-get($input, font-weight) != 400) {
+            font-weight: map-get($input, font-weight);
+        }
+        @if(map-get($input, letter-spacing) != 0px) {
+            letter-spacing: map-get($input, letter-spacing);
+        }
+        @if(map-get($input, line-height) != normal) {
+            line-height: map-get($input, line-height);
+        }
+        // margin-bottom: map-get($input, margin-bottom);
+        padding: map-get($input, padding-y) map-get($input, padding-x);
+        @if(map-get($input, text-decoration) != none ) {
+            text-decoration: map-get($input, text-decoration);
+        }
+        @if(map-get($input, text-transform) != none ) {
+            text-transform: map-get($input, text-transform);
+        }
+
+        &::placeholder {
+            color: map-get($input, color-placeholder);
+        }
+
+        &:focus {
+            border-color: map-get($input, focus-border-color);
+        }
+        &:disabled, &.disabled {
+            background-color: map-get($input, disabled-background);
+        }
+        &.invalid {
+            border-color: map-get($input, invalid-border-color);
+        }
     }
 }
