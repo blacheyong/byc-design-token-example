@@ -87,3 +87,22 @@ Large.args = {
   size: 'lg',
   label: 'Large Button',
 };
+
+export const IconOnTheLeft = ({ label }) => `<a class="btn btn-icon btn-icon--icon-left" href="#">
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="7" cy="7" r="6.25" stroke="white" stroke-width="1.5"/>
+</svg>
+${ label }
+</a>`
+IconOnTheLeft.args = {
+  label: 'Icon on the left',
+};
+export const IconOnTheRight = ({ label }) => `<a class="btn btn-icon btn-icon--icon-right" href="#">
+${ label }
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="7" cy="7" r="6.25" stroke="white" stroke-width="1.5"/>
+</svg>
+</a>`
+IconOnTheRight.args = {
+  label: 'Icon on the right',
+};
