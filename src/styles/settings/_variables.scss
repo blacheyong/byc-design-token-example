@@ -119,6 +119,24 @@ $buttons-secondary-text-focus: $white !default; // no token atm
 $buttons-secondary-text-active: $white !default; // no token atm
 $buttons-secondary-text-disabled: $white !default;
 
+// Primary Dark
+$buttons-primary-dark-bg: linear-gradient(180deg, #ffffffe6 0%, #ffffff 100%) !default;
+$buttons-primary-dark-bg-hover: linear-gradient(180deg, #ffffffcc 0%, #ffffffcc 100%) !default;
+$buttons-primary-dark-text: #003778 !default;
+$buttons-primary-dark-bg-disabled: #ffffff4d !default;
+$buttons-primary-dark-text-disabled: #c2cedf80 !default;
+
+// Secondary dark
+$buttons-secondary-dark-border: $white !default;
+$buttons-secondary-dark-text: $white !default;
+$buttons-secondary-dark-border-hover: #C2CEDF !default;
+$buttons-secondary-dark-text-hover: #C2CEDF !default;
+$buttons-secondary-dark-border-disabled: #c2cedf80 !default;
+$buttons-secondary-dark-text-disabled: #c2cedf80 !default;
+
+// Icon
+$buttons-icon-gap: 6px !default;
+
 
 // Size
 $buttons-sm-text-font-family: $font-family-base !default;
@@ -185,6 +203,28 @@ $buttons: (
         hover-bg: $buttons-secondary-bg-hover,
         hover-color: $buttons-secondary-text-hover,
         hover-border-color: $buttons-secondary-border-hover
+    ),
+
+    primary-dark: (
+        bg: $buttons-primary-dark-bg,
+        hover-bg: $buttons-primary-dark-bg-hover,
+        color: $buttons-primary-dark-text,
+        disabled-bg: $buttons-primary-dark-bg-disabled,
+        disabled-color: $buttons-primary-dark-text-disabled,
+    ),
+
+    secondary-dark: (
+        border-color: $buttons-secondary-dark-border,
+        color: $buttons-secondary-dark-text,
+        hover-border: $buttons-secondary-dark-border-hover,
+        hover-color: $buttons-secondary-dark-text-hover,
+        disabled-border: $buttons-secondary-dark-border-disabled,
+        disabled-color: $buttons-secondary-dark-text-disabled,
+    ),
+
+    icon: (
+        color: $buttons-primary-dark-text,
+        icon-gap: $buttons-icon-gap,
     )
 );
 

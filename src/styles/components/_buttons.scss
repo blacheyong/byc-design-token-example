@@ -31,11 +31,23 @@ fieldset:disabled a.btn {
 
 // SASS map tests
 .btn-primary {
-    @include btn-variants(map-get($buttons,primary));
+    @include btn-variants(map-get($buttons, primary));
+
+    &.btn-inverse {
+        @include btn-variants(map-get($buttons, primary-dark));
+    }
 }
 
 .btn-secondary {
-    @include btn-variants(map-get($buttons,secondary));
+    @include btn-variants(map-get($buttons, secondary));
+
+    &.btn-inverse {
+        @include btn-variants(map-get($buttons, secondary-dark));
+    }
+}
+
+.btn-icon {
+    @include btn-variants(map-get($buttons, icon));
 }
 
 // Button sizes

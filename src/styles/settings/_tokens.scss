@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Mon, 07 Feb 2022 14:28:13 GMT
+// Generated on Mon, 07 Feb 2022 16:49:00 GMT
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -12,6 +12,7 @@ $buttons-border-width: 1px;
 $buttons-radius: 8px;
 $buttons-padding-x: 20px;
 $buttons-padding-y: 10px;
+$buttons-icon-gap: 11px;
 $buttons-sm-radius: 6px;
 $buttons-sm-padding-x: 15px;
 $buttons-sm-padding-y: 5px;
@@ -28,6 +29,11 @@ $buttons-primary-text-hover: #ffffff;
 $buttons-primary-border-width: 1px;
 $buttons-primary-bg-disabled: #BABEC2;
 $buttons-primary-border-disabled: #BABEC2;
+$buttons-primary-dark-bg: linear-gradient(180deg, #ffffffe6 0%, #ffffff 100%);
+$buttons-primary-dark-bg-hover: linear-gradient(180deg, #ffffffcc 0%, #ffffffcc 100%);
+$buttons-primary-dark-text: #003778;
+$buttons-primary-dark-bg-disabled: #ffffff4d;
+$buttons-primary-dark-text-disabled: #c2cedf80;
 $buttons-secondary-bg: #ffffff00;
 $buttons-secondary-text: #003778;
 $buttons-secondary-bg-hover: #e6f1fa4d;
@@ -37,6 +43,12 @@ $buttons-secondary-border-width: 1px;
 $buttons-secondary-text-disabled: #BABEC2;
 $buttons-secondary-border-disabled: #BABEC2;
 $buttons-secondary-border-hover: #00549A;
+$buttons-secondary-dark-border: #ffffff;
+$buttons-secondary-dark-text: #ffffff;
+$buttons-secondary-dark-border-hover: #C2CEDF;
+$buttons-secondary-dark-text-hover: #C2CEDF;
+$buttons-secondary-dark-border-disabled: #c2cedf80;
+$buttons-secondary-dark-text-disabled: #c2cedf80;
 $radius-default: 8px;
 $radius-sm: 6px;
 $sans-serif: Arial;

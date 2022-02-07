@@ -46,6 +46,25 @@
         border-color: map-get($button, disabled-border-color);
         color: map-get($button, disabled-color);
     }
+
+    &.btn-icon {
+        align-items: center;
+        display: flex;
+        padding: 0;
+        svg {
+            fill: map-get($button, color);
+        }
+        &--icon-left {
+            svg {
+                margin-right: map-get($button, icon-gap);
+            }
+        }
+        &--icon-right {
+            svg {
+                margin-left: map-get($button, icon-gap);
+            }
+        }
+    }
 }
 
 @mixin btn-sizes($padding-y, $padding-x, $font-size, $border-radius, $line-height) {
