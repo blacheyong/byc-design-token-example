@@ -1,0 +1,30 @@
+// Test for Storybook Design Tokens addon
+:root {
+    /**
+    * @tokens Border Radius
+    * @presenter BorderRadius
+    */
+  
+    --radius-default: 8px;
+    --radius-sm: 6px;
+
+    /**
+    * @tokens Buttons
+    */
+    --buttons-border-width: 1px;
+    --buttons-radius: 8px;
+    --buttons-padding-x: 20px;
+    --buttons-padding-y: 10px;
+  
+    /**
+    * @tokens Colors
+    * @presenter Color
+    */
+  
+    --colors-blue-bell: #00549A; /* Token Description Example  @presenter Color */
+    --colors-blue-dark: #00215E;
+    --colors-blue-medium: #003778;
+    --colors-blue-light: #C2CEDF;
+    --colors-primary: #00549A;
+    --colors-white: #ffffff;
+}
