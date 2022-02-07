@@ -38,6 +38,9 @@ PrimaryOnDarkBackground.args = {
   disabled: false,
   label: 'Primary Button',
 };
+PrimaryOnDarkBackground.parameters = {
+  backgrounds: { default: 'dark' }
+};
 
 export const PrimaryDisabled = Template.bind({});
 PrimaryDisabled.args = {
