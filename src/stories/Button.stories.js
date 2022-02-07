@@ -4,6 +4,11 @@ export default {
   title: 'Example/Button',
   argTypes: {
     backgroundColor: { control: 'color' },
+    darkBg: {
+      control: 'boolean',
+      description: 'True if the button is on a dark background.',
+      table: { defaultValue: { summary: false } },
+    },
     disabled: { control: 'boolean' },
     label: { control: 'text' },
     onClick: { action: 'onClick' },
@@ -26,6 +31,14 @@ Primary.args = {
   label: 'Primary Button',
 };
 
+export const PrimaryOnDarkBackground = Template.bind({});
+PrimaryOnDarkBackground.args = {
+  primary: true,
+  darkBg: true,
+  disabled: false,
+  label: 'Primary Button',
+};
+
 export const PrimaryDisabled = Template.bind({});
 PrimaryDisabled.args = {
   primary: true,
@@ -38,6 +51,17 @@ Secondary.args = {
   primary: false,
   disabled: false,
   label: 'Secondary Button',
+};
+
+export const SecondaryOnDarkBackground = Template.bind({});
+SecondaryOnDarkBackground.args = {
+  primary: false,
+  darkBg: true,
+  disabled: false,
+  label: 'Secondary Button',
+};
+SecondaryOnDarkBackground.parameters = {
+  backgrounds: { default: 'dark' }
 };
 
 export const SecondaryDisabled = Template.bind({});
