@@ -904,7 +904,7 @@
           "y": 0,
           "blur": 2,
           "spread": 3,
-          "color": "#fffff",
+          "color": "#ffffff",
           "type": "dropShadow"
         },
         {
@@ -918,8 +918,8 @@
         {
           "x": 0,
           "y": 0,
-          "blur": "2px",
-          "spread": "5px",
+          "blur": 2,
+          "spread": 5,
           "color": "#8ec6fc",
           "type": "dropShadow"
         }

@@ -97,9 +97,21 @@ StyleDictionaryPackage.registerTransform({
         return prop.type === 'boxShadow';
     },
     transformer: function (prop) {
-        const shadow = Object.values(prop.value);
-        const [x, y, blur, spread, color] = shadow.map((s) => s.toString());
-        return `${x}px ${y}px ${blur}px ${spread}px ${color}`;
+        if (Array.isArray(prop.value)) {
+            const shadows = Object.values(prop.value);
+            const shadowsArr = [];
+            for (let i = 0; i < shadows.length; i++) {
+                const shadow = Object.values(shadows[i]);
+                const [x, y, blur, spread, color] = shadow.map((s) => s.toString());
+                shadowsArr.push(`${x}px ${y}px ${blur}px ${spread}px ${color}`);
+            }
+            return shadowsArr.toString();
+        } else {
+            const shadow = Object.values(prop.value);
+            const [x, y, blur, spread, color] = shadow.map((s) => s.toString());
+            return `${x}px ${y}px ${blur}px ${spread}px ${color}`;
+        }
+        
     } 
 });
 
