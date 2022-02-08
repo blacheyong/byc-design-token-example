@@ -19,7 +19,8 @@
         box-shadow: map-get($cards, selected-box-shadow);
     }
 
-    img {
+    .card-img-top {
+        display: block;
         margin: auto;
         max-width: 245px;
         width: 100%;
@@ -27,6 +28,7 @@
 
     .card-img-overlay {
         background-color: map-get($cards, background-overlay);
+        color: $white;
     }
 
     .card-body {

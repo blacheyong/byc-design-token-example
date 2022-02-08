@@ -35,9 +35,6 @@ $font-size-lg: $font-size-base * 1.25 !default;
 // - adapting to different screen sizes, for use in media queries.
 // ------------------------------------------
 
-/**
-* @tokens Breakpoints
-*/
 $breakpoint-xs: 0 !default;
 $breakpoint-sm: 576px !default;
 $breakpoint-md: 768px !default;
@@ -59,9 +56,6 @@ $grid-breakpoints: (
 // - Shared variables that are reassigned `$buttons-` specific variables. Define text, background, and border color
 // ------------------------------------------
 
-/**
-* @tokens ButtonBase
-*/
 $btn-hover-bg-shade-amount: 15% !default;
 $btn-hover-bg-tint-amount: 15% !default;
 $btn-hover-border-shade-amount: 15% !default;
@@ -90,9 +84,6 @@ $buttons-lg-radius: $border-radius-lg !default;
 $buttons-sm-radius: $border-radius-sm !default;
 $buttons-text-transform: none !default; // no token atm
 
-/**
-* @tokens Button Primary
-*/
 // Primary
 $buttons-primary-bg: $primary !default;
 $buttons-primary-bg-hover: shade-color($primary, $btn-hover-bg-shade-amount) !default;
@@ -109,9 +100,6 @@ $buttons-primary-text-focus: $white !default; // no token atm
 $buttons-primary-text-active: $white !default; // no token atm
 $buttons-primary-text-disabled: $white !default; // no token atm
 
-/**
-* @tokens Button Secondary
-*/
 // Secondary
 $buttons-secondary-bg: $secondary !default;
 $buttons-secondary-bg-hover: shade-color($secondary, $btn-hover-bg-shade-amount) !default;
@@ -130,9 +118,6 @@ $buttons-secondary-text-focus: $white !default; // no token atm
 $buttons-secondary-text-active: $white !default; // no token atm
 $buttons-secondary-text-disabled: $white !default;
 
-/**
-* @tokens Button Primary Dark
-*/
 // Primary Dark
 $buttons-primary-dark-bg: linear-gradient(180deg, #ffffffe6 0%, #ffffff 100%) !default;
 $buttons-primary-dark-bg-hover: linear-gradient(180deg, #ffffffcc 0%, #ffffffcc 100%) !default;
@@ -140,9 +125,6 @@ $buttons-primary-dark-text: #003778 !default;
 $buttons-primary-dark-bg-disabled: #ffffff4d !default;
 $buttons-primary-dark-text-disabled: #c2cedf80 !default;
 
-/**
-* @tokens Button Secondary Dark
-*/
 // Secondary dark
 $buttons-secondary-dark-border: $white !default;
 $buttons-secondary-dark-text: $white !default;
@@ -151,15 +133,9 @@ $buttons-secondary-dark-text-hover: #C2CEDF !default;
 $buttons-secondary-dark-border-disabled: #c2cedf80 !default;
 $buttons-secondary-dark-text-disabled: #c2cedf80 !default;
 
-/**
-* @tokens Button Icon
-*/
 // Icon
 $buttons-icon-gap: 6px !default;
 
-/**
-* @tokens Button Sizes
-*/
 // Size
 $buttons-sm-text-font-family: $font-family-base !default;
 $buttons-sm-text-font-size: $font-size-sm !default;
@@ -253,9 +229,6 @@ $buttons: (
 // ------------------------------------------
 // Cards
 // ------------------------------------------
-/**
-* @tokens Cards
-*/
 $cards-radius: $border-radius !default;
 $cards-drop-shadow: $box-shadow-base !default;
 $cards-bg: $white !default;
@@ -291,9 +264,6 @@ $cards: (
 // ------------------------------------------
 // Typography
 // ------------------------------------------
-/**
-* @tokens Typography: Body
-*/
 $body-regular-font-family: $font-family-base !default;
 $body-regular-font-weight: 400 !default;
 $body-regular-line-height: $line-height-base !default;
@@ -356,9 +326,6 @@ $body-text: (
     ),
 );
 
-/**
-* @tokens Typography: Headings
-*/
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
@@ -717,9 +684,6 @@ $h6: (
 // ------------------------------------------
 // Inputs
 // ------------------------------------------
-/**
-* @tokens Inputs
-*/
 $inputs-bg: $white !default;
 $inputs-border: #D4D4D4 !default;
 $inputs-border-focus: $primary !default;

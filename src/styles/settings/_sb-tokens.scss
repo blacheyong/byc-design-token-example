@@ -1,20 +1,92 @@
 // // Test for Storybook Design Tokens addon
 
-// /**
-// * @tokens Border Radius
-// * @presenter BorderRadius
-// */
-  
-// $radius-default: 8px;
-// $radius-sm: 6px;
+/**
+* @tokens Border Radius
+* @presenter BorderRadius
+*/
+$radius-default: 8px;
+$radius-sm: 6px;
 
-// /**
-// * @tokens Buttons
-// */
-// $buttons-border-width: 1px;
-// $buttons-radius: 8px;
-// $buttons-padding-x: 20px;
-// $buttons-padding-y: 10px;
+/**
+* @tokens Buttons Base
+*/
+$buttons-border-width: 1px;
+$buttons-radius: 8px;
+$buttons-padding-x: 20px;
+$buttons-padding-y: 10px;
+$buttons-icon-gap: 11px;
+$buttons-drop-shadow: 0px 0px 30px 0px #00000033;
+$buttons-text-font-family: 'Arial';
+$buttons-text-font-weight: 400;
+$buttons-text-line-height: 16px;
+$buttons-text-font-size: 15px;
+$buttons-text-letter-spacing: 0px;
+$buttons-text-paragraph-spacing: 0px;
+$buttons-text-text-case: none;
+$buttons-text-text-decoration: none;
+
+$buttons-sm-radius: 6px;
+$buttons-sm-padding-x: 15px;
+$buttons-sm-padding-y: 5px;
+$buttons-sm-text-font-family: 'Arial';
+$buttons-sm-text-font-weight: 400;
+$buttons-sm-text-line-height: 12px;
+$buttons-sm-text-font-size: 12px;
+$buttons-sm-text-letter-spacing: 0px;
+$buttons-sm-text-paragraph-spacing: 0px;
+$buttons-sm-text-text-decoration: none;
+$buttons-sm-text-text-case: none;
+
+$buttons-lg-radius: 8px;
+$buttons-lg-padding-x: 24px;
+$buttons-lg-padding-y: 10px;
+$buttons-lg-text-font-family: 'Arial';
+$buttons-lg-text-font-weight: 400;
+$buttons-lg-text-line-height: 20px;
+$buttons-lg-text-font-size: 18px;
+$buttons-lg-text-letter-spacing: 0px;
+$buttons-lg-text-paragraph-spacing: 0px;
+$buttons-lg-text-text-decoration: none;
+$buttons-lg-text-text-case: none;
+
+/**
+* @tokens Buttons Primary
+* @presenter Color
+*/
+$buttons-primary-bg: linear-gradient(180deg, #003778e6 0%, #003778 100%);
+$buttons-primary-text: #ffffff;
+$buttons-primary-bg-hover: linear-gradient(180deg, #00549ae6 0%, #00549A 100%);
+$buttons-primary-border: #003778;
+$buttons-primary-border-hover: #003778;
+$buttons-primary-text-hover: #ffffff;
+$buttons-primary-border-width: 1px;
+$buttons-primary-bg-disabled: #BABEC2;
+$buttons-primary-border-disabled: #BABEC2;
+$buttons-primary-dark-bg: linear-gradient(180deg, #ffffffe6 0%, #ffffff 100%);
+$buttons-primary-dark-bg-hover: linear-gradient(180deg, #ffffffcc 0%, #ffffffcc 100%);
+$buttons-primary-dark-text: #003778;
+$buttons-primary-dark-bg-disabled: #ffffff4d;
+$buttons-primary-dark-text-disabled: #c2cedf80;
+
+/**
+* @tokens Buttons Secondary
+* @presenter Color
+*/
+$buttons-secondary-bg: #ffffff00;
+$buttons-secondary-text: #003778;
+$buttons-secondary-bg-hover: #e6f1fa4d;
+$buttons-secondary-border: #00549A;
+$buttons-secondary-text-hover: #00549A;
+$buttons-secondary-border-width: 1px;
+$buttons-secondary-text-disabled: #BABEC2;
+$buttons-secondary-border-disabled: #BABEC2;
+$buttons-secondary-border-hover: #00549A;
+$buttons-secondary-dark-border: #ffffff;
+$buttons-secondary-dark-text: #ffffff;
+$buttons-secondary-dark-border-hover: #C2CEDF;
+$buttons-secondary-dark-text-hover: #C2CEDF;
+$buttons-secondary-dark-border-disabled: #c2cedf80;
+$buttons-secondary-dark-text-disabled: #c2cedf80;
   
 /**
 * @tokens Colors
