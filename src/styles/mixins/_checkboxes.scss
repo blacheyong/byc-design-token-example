@@ -1,0 +1,33 @@
+@mixin checkbox-styles($class, $checkbox) {
+    &.#{$class} {
+        appearance: none;
+        background: map-get($checkbox, bg);
+        border: map-get($checkbox, border-width) solid map-get($checkbox, border);
+        border-radius: map-get($checkbox, border-radius);
+        height: map-get($checkbox, height);
+        margin-right: map-get($checkbox, margin-right);
+        margin-top: map-get($checkbox, margin-top);
+        width: map-get($checkbox, width);
+
+        &--lg {
+            height: map-get($checkbox, height-lg);
+            width: map-get($checkbox, width-lg);
+        }
+
+        &:hover {
+            background: map-get($checkbox, hover-bg);
+            border-color: map-get($checkbox, hover-border);
+        }
+
+        &:checked {
+            background: map-get($checkbox, checked-bg);
+            background-image: map-get($checkbox, bg-svg);
+            background-size: map-get($checkbox, checked-bg-size);
+        }
+
+        &:disabled, &.disabled {
+            background: map-get($checkbox, disabled-bg);
+            border-color: map-get($checkbox, disabled-border);
+        }
+    }
+}

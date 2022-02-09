@@ -1,0 +1,34 @@
+@mixin radio-styles($class, $radio) {
+    &.#{$class} {
+        appearance: none;
+        background: map-get($radio, bg);
+        border: map-get($radio, border-width) solid map-get($radio, border-color);
+        border-radius: map-get($radio, border-radius);
+        height: map-get($radio, height);
+        margin-right: map-get($radio, margin-right);
+        margin-top: map-get($radio, margin-top);
+        width: map-get($radio, width);
+
+        &--lg {
+            height: map-get($radio, height-lg);
+            width: map-get($radio, width-lg);
+        }
+
+        &:hover {
+            border-color: map-get($radio, hover-border);
+        }
+
+        &:checked {
+            background: map-get($radio, bg-checked);
+            background-image: map-get($radio, bg-svg);
+            & + label {
+                // color: map-get($radio, color-checked);
+            }
+        }
+
+        &:disabled, &.disabled {
+            background: map-get($radio, disabled-bg);
+            border-color: map-get($radio, disabled-border);
+        }
+    }
+}

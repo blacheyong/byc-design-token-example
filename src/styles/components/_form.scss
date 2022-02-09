@@ -1,7 +1,18 @@
 input {
-    @include input-styles('custom-input', $inputs)
+    @include input-styles('custom-input', $inputs);
+
+    &[type="checkbox"] {
+        @include checkbox-styles('custom-checkbox', $checkboxes);
+    }
+    &[type="radio"] {
+        @include radio-styles('custom-radio', $radios);
+    }
+}
+
+select {
+    @include input-styles('custom-select', $selects);
 }
 
 textarea {
-    @include input-styles('custom-input', $inputs)
+    @include input-styles('custom-input', $inputs);
 }

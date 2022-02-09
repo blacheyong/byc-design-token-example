@@ -1,5 +1,6 @@
 @mixin input-styles($class, $input) {
     &.#{$class} {
+        appearance: none;
         background-color: map-get($input, background-color);
         border: map-get($input, border-width) solid map-get($input, border-color);
         border-radius: map-get($input, border-radius);
@@ -28,8 +29,10 @@
             color: map-get($input, color-placeholder);
         }
 
-        &:focus {
+        &:focus, :focus-visible {
             border-color: map-get($input, focus-border-color);
+            box-shadow: map-get($input, focus-drop-shadow);
+            outline: none;
         }
         &:disabled, &.disabled {
             background-color: map-get($input, disabled-background);
@@ -37,5 +40,10 @@
         &.invalid {
             border-color: map-get($input, invalid-border-color);
         }
+    }
+
+    &.custom-select {
+        background: map-get($input, icon) map-get($input, background-position) no-repeat;
+        background-size: map-get($input, background-size);
     }
 }
