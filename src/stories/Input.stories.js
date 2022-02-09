@@ -1,5 +1,5 @@
 export default {
-    title: 'Example/Input',
+    title: 'Form/Input',
 }
 
 export const Input = ({ placeholder }) => `

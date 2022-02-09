@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Wed, 09 Feb 2022 15:28:31 GMT
+// Generated on Wed, 09 Feb 2022 18:56:15 GMT
 
 $colors-primary: #cc0000;
 $colors-black: #000000;
@@ -287,6 +287,14 @@ $radios-label-letter-spacing: 0px;
 $radios-label-paragraph-spacing: 0px;
 $radios-label-text-decoration: none;
 $radios-label-text-case: none;
+$form-check-label-font-family: 'Arial';
+$form-check-label-font-weight: 400;
+$form-check-label-line-height: 18px;
+$form-check-label-font-size: 14px;
+$form-check-label-letter-spacing: 0px;
+$form-check-label-paragraph-spacing: 0px;
+$form-check-label-text-decoration: none;
+$form-check-label-text-case: none;
 $forms-label-font-family: '$fontFamilies';
 $forms-label-font-weight: 700;
 $forms-label-line-height: 18px;
@@ -295,3 +303,14 @@ $forms-label-letter-spacing: 0px;
 $forms-label-paragraph-spacing: 5px;
 $forms-label-text-decoration: none;
 $forms-label-text-case: none;
+$form-check-margin-bottom: 4px;
+$form-check-input-bg: #ffffff;
+$form-check-input-bg-checked: #003778;
+$form-check-input-bg-checked-hover: #cc0000;
+$form-check-input-border: #555555;
+$form-check-input-border-checked: #003778;
+$form-check-input-border-checked-hover: #cc0000;
+$form-check-input-checked-color: #ffffff;
+$form-check-input-bg-disabled: #f4f4f4;
+$form-check-input-border-disabled: #BABEC2;
+$form-check-input-borde-invalid: #BD2025;

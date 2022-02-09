@@ -1,5 +1,5 @@
 export default {
-    title: 'Example/Textarea',
+    title: 'Form/Textarea',
 }
 
 export const Textarea = ({ cols, placeholder, rows }) => `

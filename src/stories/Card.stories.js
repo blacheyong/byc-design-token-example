@@ -1,7 +1,7 @@
 import imageDevice from '../images/device-1.png';
 
 export default {
-  title: 'Example/Card',
+  title: 'Components/Card',
   argTypes: {
     title: { control: 'text' }, // not working atm because of html component
   },

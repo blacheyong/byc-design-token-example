@@ -1143,6 +1143,34 @@
       }
     }
   },
+  "form-check": {
+    "label": {
+      "fontFamily": {
+        "value": "Arial"
+      },
+      "fontWeight": {
+        "value": "Regular"
+      },
+      "lineHeight": {
+        "value": 18
+      },
+      "fontSize": {
+        "value": 14
+      },
+      "letterSpacing": {
+        "value": 0
+      },
+      "paragraphSpacing": {
+        "value": 0
+      },
+      "textDecoration": {
+        "value": "none"
+      },
+      "textCase": {
+        "value": "none"
+      }
+    }
+  },
   "forms": {
     "label": {
       "fontFamily": {
@@ -1168,6 +1196,54 @@
       },
       "textCase": {
         "value": "none"
+      }
+    }
+  },
+  "_form-check": {
+    "margin-bottom": {
+      "value": 4,
+      "type": "spacing"
+    },
+    "input": {
+      "bg": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "bg-checked": {
+        "value": "#003778",
+        "type": "color"
+      },
+      "bg-checked-hover": {
+        "value": "#cc0000",
+        "type": "color"
+      },
+      "border": {
+        "value": "#555555",
+        "type": "color"
+      },
+      "border-checked": {
+        "value": "#003778",
+        "type": "color"
+      },
+      "border-checked-hover": {
+        "value": "#cc0000",
+        "type": "color"
+      },
+      "checked-color": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "bg-disabled": {
+        "value": "#f4f4f4",
+        "type": "color"
+      },
+      "border-disabled": {
+        "value": "#BABEC2",
+        "type": "color"
+      },
+      "borde-invalid": {
+        "value": "#BD2025",
+        "type": "color"
       }
     }
   }

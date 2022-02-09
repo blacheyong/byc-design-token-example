@@ -27,6 +27,10 @@ textarea {
     min-height: $form-check-min-height;
     padding-left: $form-check-padding-start;
 
+    > label {
+        // Insert label style for checkboxes + radios
+    }
+
     > input {
         float: left;
         // margin-top: TODO need to be calculated base on label line-height
