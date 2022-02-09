@@ -1,16 +1,10 @@
 label {
-    @include form-styles(map-get($forms, label));
+    // @include form-styles(map-get($forms, label));
+    @include label-styles(map-get($labels, regular));
 }
 
 input {
     @include input-styles('custom-input', $inputs);
-
-    &[type="checkbox"] {
-        @include checkbox-styles('custom-checkbox', $checkboxes);
-    }
-    &[type="radio"] {
-        @include radio-styles('custom-radio', $radios);
-    }
 }
 
 select {
@@ -28,12 +22,20 @@ textarea {
     padding-left: $form-check-padding-start;
 
     > label {
-        // Insert label style for checkboxes + radios
+        @include label-styles(map-get($labels, check));
     }
 
     > input {
+        @include check-styles('custom-check', $form-check);
         float: left;
         // margin-top: TODO need to be calculated base on label line-height
         margin-left: $form-check-padding-start * -1;
+
+        &[type="checkbox"] {
+            @include check-styles('custom-check', map-get($form-check, checkbox));
+        }
+        &[type="radio"] {
+            @include check-styles('custom-check', map-get($form-check, radio));
+        }
     }
 }
