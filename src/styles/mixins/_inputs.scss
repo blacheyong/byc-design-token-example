@@ -43,7 +43,9 @@
     }
 
     &.custom-select {
-        background: map-get($input, icon) map-get($input, background-position) no-repeat;
+        background-image: escape-svg('#{map-get($input, icon)}');
+        background-position: map-get($input, background-position);
+        background-repeat: no-repeat;
         background-size: map-get($input, background-size);
     }
 }

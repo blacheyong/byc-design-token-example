@@ -845,7 +845,7 @@ $select-drop-shadow-focus: $inputs-drop-shadow-focus !default;
 $select-bg-position: right 10px center !default;
 $select-bg-size: 10px !default;
 $select-indicator-color: $colors-blue-medium !default;
-$select-indicator: url("data:image/svg+xml,<svg width='14' height='14' viewBox='0 0 14 14' fill='red' xmlns='http://www.w3.org/2000/svg'><circle cx='7' cy='7' r='6.25' stroke='white' stroke-width='1.5'/></svg>") !default; // #{$select-indicator-color}
+$select-indicator: url("data:image/svg+xml,<svg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M4.5 5L9 0H0L4.5 5Z' fill='#{$select-indicator-color:}'/></svg>") !default; // #{$select-indicator-color}
 
 $selects: (
     background-color: $select-bg,
