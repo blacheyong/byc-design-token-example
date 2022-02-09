@@ -5,7 +5,7 @@
         border: map-get($radio, border-width) solid map-get($radio, border-color);
         border-radius: map-get($radio, border-radius);
         height: map-get($radio, height);
-        margin-right: map-get($radio, margin-right);
+        // margin-right: map-get($radio, margin-right);
         margin-top: map-get($radio, margin-top);
         transition: $default-animation;
         width: map-get($radio, width);

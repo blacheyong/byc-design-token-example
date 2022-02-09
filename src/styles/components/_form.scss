@@ -20,3 +20,16 @@ select {
 textarea {
     @include input-styles('custom-input', $inputs);
 }
+
+// Form Check TODO: Make it more flexible, mixin or placeholder?
+.form-check {
+    display: block;
+    min-height: $form-check-min-height;
+    padding-left: $form-check-padding-start;
+
+    > input {
+        float: left;
+        // margin-top: TODO need to be calculated base on label line-height
+        margin-left: $form-check-padding-start * -1;
+    }
+}
