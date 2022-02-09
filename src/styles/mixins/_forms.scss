@@ -35,6 +35,9 @@
         &:not(.disabled):not(:disabled):hover {
             border-color: map-get($check, hover-border-color);
         }
+        &:not(.disabled):not(:disabled):focus {
+            box-shadow: map-get($check, focus-box-shadow);
+        }
 
         &:checked {
             background-image: escape-svg('#{map-get($check, bg-icon)}');

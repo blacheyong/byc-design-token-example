@@ -959,148 +959,112 @@
     "value": "#f6911a",
     "type": "color"
   },
-  "_radios": {
-    "width": {
-      "value": 16,
-      "type": "sizing"
-    },
-    "height": {
-      "value": 16,
-      "type": "sizing"
-    },
-    "width-lg": {
-      "value": 22,
-      "type": "sizing"
-    },
-    "height-lg": {
-      "value": 22,
-      "type": "sizing"
-    },
-    "bg": {
-      "value": "#ffffff",
-      "type": "color"
-    },
-    "bg-checked": {
-      "value": "#003778",
-      "type": "color"
-    },
-    "checked-color": {
-      "value": "#ffffff",
-      "type": "color"
-    },
-    "border": {
-      "value": "#555555",
-      "type": "color"
-    },
-    "border-checked": {
-      "value": "#003778",
-      "type": "color"
-    },
-    "bg-disabled": {
-      "value": "#F4F4F4",
-      "type": "color"
-    },
-    "border-disabled": {
-      "value": "#BABEC2",
-      "type": "color"
-    },
-    "radius": {
+  "_form-check": {
+    "radios-radius": {
       "value": "50%",
       "type": "borderRadius"
     },
-    "border-width": {
-      "value": 1,
-      "type": "borderWidth"
-    },
-    "margin-right": {
-      "value": 8,
-      "type": "spacing"
-    },
-    "margin-top": {
-      "value": 4,
-      "type": "spacing"
-    },
-    "bg-checked-hover": {
-      "value": "#00549A",
-      "type": "color"
-    },
-    "border-hover": {
-      "value": "#00549A",
-      "type": "color"
-    }
-  },
-  "_check": {
-    "width": {
-      "value": 16,
-      "type": "sizing"
-    },
-    "height": {
-      "value": 16,
-      "type": "sizing"
-    },
-    "width-lg": {
-      "value": 22,
-      "type": "sizing"
-    },
-    "height-lg": {
-      "value": 22,
-      "type": "sizing"
-    },
-    "margin-right": {
-      "value": 8,
-      "type": "spacing"
-    },
-    "margin-top": {
-      "value": 4,
-      "type": "spacing"
-    },
-    "radius": {
+    "check-radius": {
       "value": 4,
       "type": "borderRadius"
     },
-    "radius-lg": {
+    "check-radius-lg": {
       "value": 6,
       "type": "borderRadius"
     },
-    "border-width": {
+    "margin-bottom": {
+      "value": 4,
+      "type": "spacing"
+    },
+    "input": {
+      "bg": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "bg-checked": {
+        "value": "#003778",
+        "type": "color"
+      },
+      "bg-checked-hover": {
+        "value": "#00549A",
+        "type": "color"
+      },
+      "border": {
+        "value": "#555555",
+        "type": "color"
+      },
+      "border-checked": {
+        "value": "#003778",
+        "type": "color"
+      },
+      "border-checked-hover": {
+        "value": "#00549A",
+        "type": "color"
+      },
+      "checked-color": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "bg-disabled": {
+        "value": "#f4f4f4",
+        "type": "color"
+      },
+      "border-disabled": {
+        "value": "#BABEC2",
+        "type": "color"
+      },
+      "borde-invalid": {
+        "value": "#BD2025",
+        "type": "color"
+      }
+    },
+    "input-width": {
+      "value": 16,
+      "type": "sizing"
+    },
+    "input-height": {
+      "value": 16,
+      "type": "sizing"
+    },
+    "input-width-lg": {
+      "value": 22,
+      "type": "sizing"
+    },
+    "input-height-lg": {
+      "value": 22,
+      "type": "sizing"
+    },
+    "input-margin-right": {
+      "value": 8,
+      "type": "spacing"
+    },
+    "input-margin-top": {
+      "value": 4,
+      "type": "spacing"
+    },
+    "input-border-width": {
       "value": 1,
       "type": "borderWidth"
+    }
+  },
+  "_radios": {
+    "margin-right": {
+      "value": 8,
+      "type": "spacing"
     },
-    "bg": {
-      "value": "#ffffff",
-      "type": "color"
+    "margin-top": {
+      "value": 4,
+      "type": "spacing"
+    }
+  },
+  "_check": {
+    "margin-right": {
+      "value": 8,
+      "type": "spacing"
     },
-    "bg-checked": {
-      "value": "#003778",
-      "type": "color"
-    },
-    "checked-color": {
-      "value": "#ffffff",
-      "type": "color"
-    },
-    "border": {
-      "value": "#555555",
-      "type": "color"
-    },
-    "border-checked": {
-      "value": "#003778",
-      "type": "color"
-    },
-    "bg-checked-hover": {
-      "value": "#00549A",
-      "type": "color"
-    },
-    "border-hover": {
-      "value": "#00549A",
-      "type": "color"
-    },
-    "bg-disabled": {
-      "value": "#f4f4f4",
-      "type": "color"
-    },
-    "border-disabled": {
-      "value": "#BABEC2",
-      "type": "color"
+    "margin-top": {
+      "value": 4,
+      "type": "spacing"
     }
   },
   "radios": {
@@ -1185,78 +1149,6 @@
       "textCase": {
         "value": "none"
       }
-    }
-  },
-  "_form-check": {
-    "margin-bottom": {
-      "value": 4,
-      "type": "spacing"
-    },
-    "input": {
-      "bg": {
-        "value": "#ffffff",
-        "type": "color"
-      },
-      "bg-checked": {
-        "value": "#003778",
-        "type": "color"
-      },
-      "bg-checked-hover": {
-        "value": "#00549A",
-        "type": "color"
-      },
-      "border": {
-        "value": "#555555",
-        "type": "color"
-      },
-      "border-checked": {
-        "value": "#003778",
-        "type": "color"
-      },
-      "border-checked-hover": {
-        "value": "#00549A",
-        "type": "color"
-      },
-      "checked-color": {
-        "value": "#ffffff",
-        "type": "color"
-      },
-      "bg-disabled": {
-        "value": "#f4f4f4",
-        "type": "color"
-      },
-      "border-disabled": {
-        "value": "#BABEC2",
-        "type": "color"
-      },
-      "borde-invalid": {
-        "value": "#BD2025",
-        "type": "color"
-      }
-    },
-    "width": {
-      "value": 16,
-      "type": "sizing"
-    },
-    "height": {
-      "value": 16,
-      "type": "sizing"
-    },
-    "width-lg": {
-      "value": 22,
-      "type": "sizing"
-    },
-    "height-lg": {
-      "value": 22,
-      "type": "sizing"
-    },
-    "input-margin-right": {
-      "value": 8,
-      "type": "spacing"
-    },
-    "input-margin-top": {
-      "value": 4,
-      "type": "spacing"
     }
   }
 }
