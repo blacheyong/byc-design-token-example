@@ -7,6 +7,7 @@
         height: map-get($radio, height);
         margin-right: map-get($radio, margin-right);
         margin-top: map-get($radio, margin-top);
+        transition: $default-animation;
         width: map-get($radio, width);
 
         &--lg {
@@ -19,16 +20,28 @@
         }
 
         &:checked {
-            background: map-get($radio, bg-checked);
-            background-image: map-get($radio, bg-svg);
-            & + label {
-                // color: map-get($radio, color-checked);
-            }
+            background: escape-svg('#{map-get($radio, bg-svg)}') map-get($radio, bg-checked);
+            border-color: map-get($radio, border-color-checked);
         }
 
         &:disabled, &.disabled {
             background: map-get($radio, disabled-bg);
             border-color: map-get($radio, disabled-border);
+        }
+
+        & + label {
+            font-family: map-get($radio, label-font-family);
+            font-size: map-get($radio, label-font-size);
+            font-weight: map-get($radio, label-font-weight);
+            letter-spacing: map-get($radio, label-letter-spacing);
+            line-height: map-get($radio, label-line-height);
+            margin-bottom: map-get($radio, label-margin-bottom);
+            @if(map-get($radio, label-text-decoration) != none) {
+                text-decoration: map-get($radio, label-text-decoration);
+            }
+            @if(map-get($radio, label-text-transform) != none) {
+                text-transform: map-get($radio, label-text-transform);
+            }
         }
     }
 }

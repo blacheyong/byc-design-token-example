@@ -1,3 +1,7 @@
+label {
+    @include form-styles(map-get($forms, label));
+}
+
 input {
     @include input-styles('custom-input', $inputs);
 

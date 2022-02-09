@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Tue, 08 Feb 2022 19:04:33 GMT
+// Generated on Wed, 09 Feb 2022 15:28:31 GMT
 
 $colors-primary: #cc0000;
 $colors-black: #000000;
@@ -252,15 +252,15 @@ $radios-bg: #ffffff;
 $radios-bg-checked: #003778;
 $radios-checked-color: #ffffff;
 $radios-border: #555555;
-$radios-border-hover: #003778;
+$radios-border-checked: #003778;
 $radios-bg-disabled: #F4F4F4;
 $radios-border-disabled: #BABEC2;
 $radios-radius: 50px;
 $radios-border-width: 1px;
 $radios-margin-right: 8px;
 $radios-margin-top: 4px;
-$radios-bg-checkecd: #cc0000;
-$radios-border-checked: #cc0000;
+$radios-bg-checked-hover: #cc0000;
+$radios-border-hover: #cc0000;
 $check-width: 16px;
 $check-height: 16px;
 $check-width-lg: 22px;
@@ -271,11 +271,27 @@ $check-radius: 4px;
 $check-radius-lg: 6px;
 $check-border-width: 1px;
 $check-bg: #ffffff;
-$check-bg-hover: #003778;
+$check-bg-checked: #003778;
 $check-checked-color: #ffffff;
 $check-border: #555555;
-$check-border-hover: #003778;
-$check-bg-checked: #cc0000;
-$check-border-checked: #cc0000;
+$check-border-checked: #003778;
+$check-bg-checked-hover: #cc0000;
+$check-border-hover: #cc0000;
 $check-bg-disabled: #f4f4f4;
 $check-border-disabled: #BABEC2;
+$radios-label-font-family: 'Arial';
+$radios-label-font-weight: 400;
+$radios-label-line-height: 18px;
+$radios-label-font-size: 14px;
+$radios-label-letter-spacing: 0px;
+$radios-label-paragraph-spacing: 0px;
+$radios-label-text-decoration: none;
+$radios-label-text-case: none;
+$forms-label-font-family: '$fontFamilies';
+$forms-label-font-weight: 700;
+$forms-label-line-height: 18px;
+$forms-label-font-size: 14px;
+$forms-label-letter-spacing: 0px;
+$forms-label-paragraph-spacing: 5px;
+$forms-label-text-decoration: none;
+$forms-label-text-case: none;

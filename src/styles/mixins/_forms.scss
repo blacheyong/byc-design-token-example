@@ -1,0 +1,10 @@
+@mixin form-styles($forms) {
+    font-family: $forms-label-font-family;
+    font-size: $forms-label-font-size;
+    font-weight: $forms-label-font-weight;
+    letter-spacing: $forms-label-letter-spacing;
+    line-height: $forms-label-line-height;
+    margin-bottom: $forms-label-paragraph-spacing;
+    text-decoration: $forms-label-text-decoration;
+    text-transform: $forms-label-text-case;
+}

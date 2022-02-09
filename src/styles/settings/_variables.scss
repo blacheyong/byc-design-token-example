@@ -2,6 +2,12 @@
 // Options
 // - Quickly modify global styling by enabling or disabling optional features.
 // ------------------------------------------
+
+// Animation
+$default-timing: .2s !default;
+$default-ease: ease-in-out !default;
+$default-animation: all $default-timing $default-ease !default;
+
 $enable-rounded: true !default;
 $enable-transitions: true !default;
 $enable-prefers-reduced-motion-media-query: true !default;
@@ -682,6 +688,31 @@ $h6: (
 );
 
 // ------------------------------------------
+// Forms
+// ------------------------------------------
+$forms-label-font-family: '$fontFamilies' !default;
+$forms-label-font-weight: 700 !default;
+$forms-label-line-height: 18px !default;
+$forms-label-font-size: 14px !default;
+$forms-label-letter-spacing: 0px !default;
+$forms-label-paragraph-spacing: 5px !default;
+$forms-label-text-decoration: none !default;
+$forms-label-text-case: none !default;
+
+$forms: (
+    label: (
+        font-family: $forms-label-font-family,
+        font-size: $forms-label-font-size,
+        font-weight: $forms-label-font-weight,
+        letter-spacing: $forms-label-letter-spacing,
+        line-height: $forms-label-line-height,
+        margin-bottom: $forms-label-paragraph-spacing,
+        text-decoration: $forms-label-text-decoration,
+        text-transform: $forms-label-text-case,
+    ),
+);
+
+// ------------------------------------------
 // Inputs
 // ------------------------------------------
 $inputs-bg: $white !default;
@@ -729,6 +760,66 @@ $inputs: (
 );
 
 // ------------------------------------------
+// Radios
+// ------------------------------------------
+$radios-width: 16px !default;
+$radios-height: 16px !default;
+$radios-width-lg: 22px !default;
+$radios-height-lg: 22px !default;
+$radios-bg: $white !default;
+$radios-bg-checked: $colors-blue-medium !default;
+$radios-checked-color: $white !default;
+$radios-border: #555555 !default;
+$radios-border-hover: $colors-blue-medium !default;
+$radios-bg-disabled: #F4F4F4 !default;
+$radios-border-disabled: #BABEC2 !default;
+$radios-radius: 50px !default;
+$radios-border-width: 1px !default;
+$radios-margin-right: 8px !default;
+$radios-margin-top: 4px !default;
+$radios-bg-checkecd: $colors-blue-bell !default;
+$radios-border-checked: $colors-blue-bell !default;
+$radios-bg-svg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$radios-checked-color}'/></svg>") !default;
+
+$radios-label-font-family: 'Arial' !default;
+$radios-label-font-weight: 400 !default;
+$radios-label-line-height: 18px !default;
+$radios-label-font-size: 14px !default;
+$radios-label-letter-spacing: 0px !default;
+$radios-label-paragraph-spacing: 0px !default;
+$radios-label-text-decoration: none !default;
+$radios-label-text-case: none !default;
+
+$radios: (
+    width: $radios-width,
+    height: $radios-height,
+    width-lg: $radios-width-lg,
+    height-lg: $radios-height-lg,
+    bg: $radios-bg,
+    bg-checked: $radios-bg-checked,
+    color-checked: $radios-checked-color,
+    border-color: $radios-border,
+    hover-border: $radios-border-hover,
+    disabled-bg: $radios-bg-disabled,
+    disabled-border: $radios-border-disabled,
+    border-radius: $radios-radius,
+    border-width: $radios-border-width,
+    margin-right: $radios-margin-right,
+    margin-top: $radios-margin-top,
+    // $radios-bg-checkecd,
+    border-color-checked: $radios-border-checked,
+    bg-svg: $radios-bg-svg,
+    label-font-family: $radios-label-font-family,
+    label-font-weight: $radios-label-font-weight,
+    label-font-size: $radios-label-font-size,
+    label-letter-spacing: $radios-label-letter-spacing,
+    label-line-height: $radios-label-line-height,
+    label-margin-bottom: $radios-label-paragraph-spacing,
+    label-text-decoration: $radios-label-text-decoration,
+    label-text-transform: $radios-label-text-case,
+);
+
+// ------------------------------------------
 // Checkboxes
 // ------------------------------------------
 $check-width: 16px !default;
@@ -749,8 +840,18 @@ $check-bg-checked: $colors-blue-bell !default;
 $check-border-checked: $colors-blue-bell !default;
 $check-bg-disabled: #f4f4f4 !default;
 $check-border-disabled: #BABEC2 !default;
-$check-bg-svg: url("data:image/svg+xml,<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M2.70711 8.29289C3.09763 7.90237 3.7308 7.90237 4.12132 8.29289L6.24264 10.4142L11.1924 5.46447C11.5829 5.07394 12.2161 5.07394 12.6066 5.46447C12.9971 5.85499 12.9971 6.48816 12.6066 6.87868L6.94975 12.5355C6.55922 12.9261 5.92606 12.9261 5.53553 12.5355L2.70711 9.70711C2.31658 9.31658 2.31658 8.68342 2.70711 8.29289Z' fill='white'/></svg>") !default; // #{$check-bg-checked}
+$check-bg-svg: url("data:image/svg+xml,<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M2.70711 8.29289C3.09763 7.90237 3.7308 7.90237 4.12132 8.29289L6.24264 10.4142L11.1924 5.46447C11.5829 5.07394 12.2161 5.07394 12.6066 5.46447C12.9971 5.85499 12.9971 6.48816 12.6066 6.87868L6.94975 12.5355C6.55922 12.9261 5.92606 12.9261 5.53553 12.5355L2.70711 9.70711C2.31658 9.31658 2.31658 8.68342 2.70711 8.29289Z' fill='#{$check-checked-color}'/></svg>") !default;
 $check-bg-size-checked: 100% !default;
+
+$check-label-font-family: $radios-label-font-family !default;
+$check-label-font-weight: $radios-label-font-weight !default;
+$check-label-line-height: $radios-label-line-height !default;
+$check-label-font-size: $radios-label-font-size !default;
+$check-label-letter-spacing: $radios-label-letter-spacing !default;
+$check-label-line-height: $radios-label-line-height !default;
+$check-label-paragraph-spacing: $radios-label-paragraph-spacing !default;
+$check-label-text-decoration: $radios-label-text-decoration !default;
+$check-label-text-case: $radios-label-text-case !default;
 
 $checkboxes: (
     width: $check-width,
@@ -773,49 +874,14 @@ $checkboxes: (
     disabled-border: $check-border-disabled,
     bg-svg: $check-bg-svg,
     checked-bg-size: $check-bg-size-checked,
-);
-
-// ------------------------------------------
-// Radios
-// ------------------------------------------
-$radios-width: 16px !default;
-$radios-height: 16px !default;
-$radios-width-lg: 22px !default;
-$radios-height-lg: 22px !default;
-$radios-bg: $white !default;
-$radios-bg-checked: $colors-blue-medium !default;
-$radios-checked-color: $white !default;
-$radios-border: #555555 !default;
-$radios-border-hover: $colors-blue-medium !default;
-$radios-bg-disabled: #F4F4F4 !default;
-$radios-border-disabled: #BABEC2 !default;
-$radios-radius: 50px !default;
-$radios-border-width: 1px !default;
-$radios-margin-right: 8px !default;
-$radios-margin-top: 4px !default;
-$radios-bg-checkecd: $colors-blue-bell !default;
-$radios-border-checked: $colors-blue-bell !default;
-$radios-bg-svg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='white'/></svg>") !default; // #{$radios-bg-checked}
-
-$radios: (
-    width: $radios-width,
-    height: $radios-height,
-    width-lg: $radios-width-lg,
-    height-lg: $radios-height-lg,
-    bg: $radios-bg,
-    bg-checked: $radios-bg-checked,
-    color-checked: $radios-checked-color,
-    border-color: $radios-border,
-    hover-border: $radios-border-hover,
-    disabled-bg: $radios-bg-disabled,
-    disabled-border: $radios-border-disabled,
-    border-radius: $radios-radius,
-    border-width: $radios-border-width,
-    margin-right: $radios-margin-right,
-    margin-top: $radios-margin-top,
-    // $radios-bg-checkecd,
-    border-color-checked: $radios-border-checked,
-    bg-svg: $radios-bg-svg,
+    label-font-family: $check-label-font-family,
+    label-font-weight: $check-label-font-weight,
+    label-font-size: $check-label-font-size,
+    label-letter-spacing: $check-label-letter-spacing,
+    label-line-height: $check-label-line-height,
+    label-margin-bottom: $check-label-paragraph-spacing,
+    label-text-decoration: $check-label-text-decoration,
+    label-text-transform: $check-label-text-case,
 );
 
 // ------------------------------------------
@@ -845,7 +911,7 @@ $select-drop-shadow-focus: $inputs-drop-shadow-focus !default;
 $select-bg-position: right 10px center !default;
 $select-bg-size: 10px !default;
 $select-indicator-color: $colors-blue-medium !default;
-$select-indicator: url("data:image/svg+xml,<svg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M4.5 5L9 0H0L4.5 5Z' fill='#{$select-indicator-color:}'/></svg>") !default; // #{$select-indicator-color}
+$select-indicator: url("data:image/svg+xml,<svg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M4.5 5L9 0H0L4.5 5Z' fill='#{$select-indicator-color:}'/></svg>") !default;
 
 $selects: (
     background-color: $select-bg,

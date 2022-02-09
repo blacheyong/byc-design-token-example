@@ -992,7 +992,7 @@
       "value": "#555555",
       "type": "color"
     },
-    "border-hover": {
+    "border-checked": {
       "value": "#003778",
       "type": "color"
     },
@@ -1020,11 +1020,11 @@
       "value": 4,
       "type": "spacing"
     },
-    "bg-checkecd": {
+    "bg-checked-hover": {
       "value": "#00549A",
       "type": "color"
     },
-    "border-checked": {
+    "border-hover": {
       "value": "#00549A",
       "type": "color"
     }
@@ -1070,7 +1070,7 @@
       "value": "#ffffff",
       "type": "color"
     },
-    "bg-hover": {
+    "bg-checked": {
       "value": "#003778",
       "type": "color"
     },
@@ -1082,15 +1082,15 @@
       "value": "#555555",
       "type": "color"
     },
-    "border-hover": {
+    "border-checked": {
       "value": "#003778",
       "type": "color"
     },
-    "bg-checked": {
+    "bg-checked-hover": {
       "value": "#00549A",
       "type": "color"
     },
-    "border-checked": {
+    "border-hover": {
       "value": "#00549A",
       "type": "color"
     },
@@ -1101,6 +1101,62 @@
     "border-disabled": {
       "value": "#BABEC2",
       "type": "color"
+    }
+  },
+  "radios": {
+    "label": {
+      "fontFamily": {
+        "value": "Arial"
+      },
+      "fontWeight": {
+        "value": "Regular"
+      },
+      "lineHeight": {
+        "value": 18
+      },
+      "fontSize": {
+        "value": 14
+      },
+      "letterSpacing": {
+        "value": 0
+      },
+      "paragraphSpacing": {
+        "value": 0
+      },
+      "textDecoration": {
+        "value": "none"
+      },
+      "textCase": {
+        "value": "none"
+      }
+    }
+  },
+  "forms": {
+    "label": {
+      "fontFamily": {
+        "value": "$fontFamilies"
+      },
+      "fontWeight": {
+        "value": "Bold"
+      },
+      "lineHeight": {
+        "value": 18
+      },
+      "fontSize": {
+        "value": 14
+      },
+      "letterSpacing": {
+        "value": 0
+      },
+      "paragraphSpacing": {
+        "value": 5
+      },
+      "textDecoration": {
+        "value": "none"
+      },
+      "textCase": {
+        "value": "none"
+      }
     }
   }
 }
