@@ -1245,6 +1245,30 @@
         "value": "#BD2025",
         "type": "color"
       }
+    },
+    "width": {
+      "value": 16,
+      "type": "sizing"
+    },
+    "height": {
+      "value": 16,
+      "type": "sizing"
+    },
+    "width-lg": {
+      "value": 22,
+      "type": "sizing"
+    },
+    "height-lg": {
+      "value": 22,
+      "type": "sizing"
+    },
+    "input-margin-right": {
+      "value": 8,
+      "type": "spacing"
+    },
+    "input-margin-top": {
+      "value": 4,
+      "type": "spacing"
     }
   }
 }

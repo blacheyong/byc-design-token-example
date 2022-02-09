@@ -779,130 +779,8 @@ $inputs: (
 );
 
 // ------------------------------------------
-// Radios
+// Checkboxes / Radios
 // ------------------------------------------
-// $radios-width: 16px !default;
-// $radios-height: 16px !default;
-// $radios-width-lg: 22px !default;
-// $radios-height-lg: 22px !default;
-// $radios-bg: $white !default;
-// $radios-bg-checked: $colors-blue-medium !default;
-// $radios-checked-color: $white !default;
-// $radios-border: #555555 !default;
-// $radios-border-hover: $colors-blue-medium !default;
-// $radios-bg-disabled: #F4F4F4 !default;
-// $radios-border-disabled: #BABEC2 !default;
-// $radios-radius: 50px !default;
-// $radios-border-width: 1px !default;
-// $radios-margin-right: 8px !default;
-// $radios-margin-top: 4px !default;
-// $radios-bg-checkecd: $colors-blue-bell !default;
-// $radios-border-checked: $colors-blue-bell !default;
-// $radios-bg-svg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$radios-checked-color}'/></svg>") !default;
-
-// $radios-label-font-family: 'Arial' !default;
-// $radios-label-font-weight: 400 !default;
-// $radios-label-line-height: 18px !default;
-// $radios-label-font-size: 14px !default;
-// $radios-label-letter-spacing: 0px !default;
-// $radios-label-paragraph-spacing: 0px !default;
-// $radios-label-text-decoration: none !default;
-// $radios-label-text-case: none !default;
-
-// $radios: (
-//     width: $radios-width,
-//     height: $radios-height,
-//     width-lg: $radios-width-lg,
-//     height-lg: $radios-height-lg,
-//     bg: $radios-bg,
-//     bg-checked: $radios-bg-checked,
-//     color-checked: $radios-checked-color,
-//     border-color: $radios-border,
-//     hover-border: $radios-border-hover,
-//     disabled-bg: $radios-bg-disabled,
-//     disabled-border: $radios-border-disabled,
-//     border-radius: $radios-radius,
-//     border-width: $radios-border-width,
-//     margin-right: $radios-margin-right,
-//     margin-top: $radios-margin-top,
-//     // $radios-bg-checkecd,
-//     border-color-checked: $radios-border-checked,
-//     bg-svg: $radios-bg-svg,
-//     label-font-family: $radios-label-font-family,
-//     label-font-weight: $radios-label-font-weight,
-//     label-font-size: $radios-label-font-size,
-//     label-letter-spacing: $radios-label-letter-spacing,
-//     label-line-height: $radios-label-line-height,
-//     label-margin-bottom: $radios-label-paragraph-spacing,
-//     label-text-decoration: $radios-label-text-decoration,
-//     label-text-transform: $radios-label-text-case,
-// );
-
-// ------------------------------------------
-// Checkboxes
-// ------------------------------------------
-// $check-width: 16px !default;
-// $check-height: 16px !default;
-// $check-width-lg: 22px !default;
-// $check-height-lg: 22px !default;
-// $check-margin-right: 8px !default;
-// $check-margin-top: 4px !default;
-// $check-radius: 4px !default;
-// $check-radius-lg: 6px !default;
-// $check-border-width: 1px !default;
-// $check-bg: $white !default;
-// $check-bg-hover: $colors-blue-medium !default;
-// $check-checked-color: $white !default;
-// $check-border: #555555 !default;
-// $check-border-hover: $colors-blue-medium !default;
-// $check-bg-checked: $colors-blue-bell !default;
-// $check-border-checked: $colors-blue-bell !default;
-// $check-bg-disabled: #f4f4f4 !default;
-// $check-border-disabled: #BABEC2 !default;
-// $check-bg-svg: url("data:image/svg+xml,<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M2.70711 8.29289C3.09763 7.90237 3.7308 7.90237 4.12132 8.29289L6.24264 10.4142L11.1924 5.46447C11.5829 5.07394 12.2161 5.07394 12.6066 5.46447C12.9971 5.85499 12.9971 6.48816 12.6066 6.87868L6.94975 12.5355C6.55922 12.9261 5.92606 12.9261 5.53553 12.5355L2.70711 9.70711C2.31658 9.31658 2.31658 8.68342 2.70711 8.29289Z' fill='#{$check-checked-color}'/></svg>") !default;
-// $check-bg-size-checked: 100% !default;
-
-// $check-label-font-family: $radios-label-font-family !default;
-// $check-label-font-weight: $radios-label-font-weight !default;
-// $check-label-line-height: $radios-label-line-height !default;
-// $check-label-font-size: $radios-label-font-size !default;
-// $check-label-letter-spacing: $radios-label-letter-spacing !default;
-// $check-label-line-height: $radios-label-line-height !default;
-// $check-label-paragraph-spacing: $radios-label-paragraph-spacing !default;
-// $check-label-text-decoration: $radios-label-text-decoration !default;
-// $check-label-text-case: $radios-label-text-case !default;
-
-// $checkboxes: (
-//     width: $check-width,
-//     height: $check-height,
-//     width-lg: $check-width-lg,
-//     height-lg: $check-height-lg,
-//     margin-right: $check-margin-right,
-//     margin-top: $check-margin-top,
-//     border-radius: $check-radius,
-//     border-radius-lg: $check-radius-lg,
-//     border-width: $check-border-width,
-//     bg: $check-bg,
-//     hover-bg: $check-bg-hover,
-//     checked-color: $check-checked-color,
-//     border: $check-border,
-//     hover-border: $check-border-hover,
-//     checked-bg: $check-bg-checked,
-//     checked-border: $check-border-checked,
-//     disabled-bg: $check-bg-disabled,
-//     disabled-border: $check-border-disabled,
-//     bg-svg: $check-bg-svg,
-//     checked-bg-size: $check-bg-size-checked,
-//     label-font-family: $check-label-font-family,
-//     label-font-weight: $check-label-font-weight,
-//     label-font-size: $check-label-font-size,
-//     label-letter-spacing: $check-label-letter-spacing,
-//     label-line-height: $check-label-line-height,
-//     label-margin-bottom: $check-label-paragraph-spacing,
-//     label-text-decoration: $check-label-text-decoration,
-//     label-text-transform: $check-label-text-case,
-// );
-
 $form-check-input-bg: $white !default;
 $form-check-input-bg-checked: #003778 !default;
 $form-check-input-bg-checked-hover: #00549A !default;
@@ -914,33 +792,24 @@ $form-check-input-bg-disabled: #f4f4f4 !default;
 $form-check-input-border-disabled: #BABEC2 !default;
 $form-check-input-borde-invalid: #BD2025 !default;
 
-// $form-check-label-font-family: $font-family-base !default;
-// $form-check-label-font-weight: 400 !default;
-// $form-check-label-line-height: 18px !default;
-// $form-check-label-font-size: 14px !default;
-// $form-check-label-letter-spacing: 0px !default;
-// $form-check-label-paragraph-spacing: 0px !default;
-// $form-check-label-text-decoration: none !default;
-// $form-check-label-text-case: none !default;
-
 $check-bg-svg: url("data:image/svg+xml,<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M2.70711 8.29289C3.09763 7.90237 3.7308 7.90237 4.12132 8.29289L6.24264 10.4142L11.1924 5.46447C11.5829 5.07394 12.2161 5.07394 12.6066 5.46447C12.9971 5.85499 12.9971 6.48816 12.6066 6.87868L6.94975 12.5355C6.55922 12.9261 5.92606 12.9261 5.53553 12.5355L2.70711 9.70711C2.31658 9.31658 2.31658 8.68342 2.70711 8.29289Z' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 $check-bg-size-checked: 100% !default;
 
 $radios-bg-svg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
-// <Temp>
-$check-width: 16px !default;
-$check-height: 16px !default;
-$check-width-lg: 22px !default;
-$check-height-lg: 22px !default;
-$check-margin-right: 8px !default;
-$check-margin-top: 4px !default;
+// nomenclature should be $form-check-input-width
+$form-check-width: 16px !default;
+$form-check-height: 16px !default;
+$form-check-width-lg: 22px !default;
+$form-check-height-lg: 22px !default;
+$form-check-input-margin-right: 8px !default;
+$form-check-input-margin-top: 4px !default;
+$form-check-border-width: 1px !default;
+
+// Keep those tokens
 $check-radius: 4px !default;
 $check-radius-lg: 6px !default;
-$check-border-width: 1px !default;
-
 $radios-radius: 50px !default;
-// </Temp>
 
 $form-check: (
     bg: $form-check-input-bg,
@@ -952,27 +821,14 @@ $form-check: (
     disabled-border-color: $form-check-input-border-disabled,
     invalid-border-color: $form-check-input-borde-invalid,
     border-color-checked: $form-check-input-border-checked,
+    border-width: $form-check-border-width,
+    height: $form-check-height,
+    height-lg: $form-check-height-lg,
     icon-color: $form-check-input-checked-color,
-
-    // Temp
-    border-width: $check-border-width,
-    height: $check-height,
-    height-lg: $check-height-lg,
-    margin-right: $check-margin-right,
-    margin-top: $check-margin-top,
-    width: $check-width,
-    width-lg: $check-width-lg,
-
-    label: (
-        font-family: $form-check-label-font-family,
-        font-size: $form-check-label-font-size,
-        font-weight: $form-check-label-font-weight,
-        letter-spacing: $form-check-label-letter-spacing,
-        line-height: $form-check-label-line-height,
-        margin-bottom: $form-check-label-paragraph-spacing,
-        text-decoration: $form-check-label-text-decoration,
-        text-transform: $form-check-label-text-case,
-    ),
+    margin-right: $form-check-input-margin-right,
+    margin-top: $form-check-input-margin-top,
+    width: $form-check-width,
+    width-lg: $form-check-width-lg,
 
     checkbox: (
         bg-icon: $check-bg-svg,
