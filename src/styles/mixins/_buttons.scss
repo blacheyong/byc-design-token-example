@@ -37,9 +37,11 @@
         background: map-get($button, active-bg);
         color: map-get($button, active-color);
     }
-    &:focus {
+    &:focus, &:focus-visible {
         background: map-get($button, focus-bg);
         color: map-get($button, focus-color);
+        box-shadow: $buttons-drop-shadow-focus; // can't use map-get because token isn't from a variant
+        outline: none;
     }
     &:disabled, &.disabled {
         background: map-get($button, disabled-bg);

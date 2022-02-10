@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Wed, 09 Feb 2022 22:00:42 GMT
+// Generated on Thu, 10 Feb 2022 16:24:49 GMT
 
 $colors-primary: #cc0000;
 $colors-black: #000000;
@@ -50,6 +50,7 @@ $buttons-drop-shadow: 0px 0px 30px 0px #00000033;
 $buttons-lg-padding-x: 24px;
 $buttons-lg-padding-y: 10px;
 $buttons-lg-radius: 3px;
+$buttons-drop-shadow-focus: 0px 0px 0px 3px #ffffff,0px 0px 2px 3px #ffffff,0px 0px 4px 5px #5fb0fc,0px 0px 2px 5px #8ec6fc;
 $font-families-sans-serif: Helvetica Neue;
 $font-families-ultramagnetic: Ultramagnetic Virgin-Regular;
 $font-families-arial: Arial;
@@ -258,6 +259,7 @@ $form-check-input-checked-color: #ffffff;
 $form-check-input-bg-disabled: #f4f4f4;
 $form-check-input-border-disabled: #BABEC2;
 $form-check-input-borde-invalid: #BD2025;
+$form-check-input-bg-disabled-checked: #BABEC2;
 $form-check-input-width: 16px;
 $form-check-input-height: 16px;
 $form-check-input-width-lg: 22px;
@@ -293,3 +295,9 @@ $forms-label-letter-spacing: 0px;
 $forms-label-paragraph-spacing: 5px;
 $forms-label-text-decoration: none;
 $forms-label-text-case: none;
+$base-font-size: 16px;
+$base-font-size-sm: 14px;
+$base-font-size-lg: 20px;
+$base-line-heigth: 21px;
+$base-font-family: Arial;
+$body-color: #555555;
