@@ -1,7 +1,7 @@
 // ------------------------------------------
 // Modern-Normalize
 // ------------------------------------------
-@import '~modern-normalize/modern-normalize.css';
+// @import '~modern-normalize/modern-normalize.css';
 
 
 // ------------------------------------------
@@ -16,6 +16,7 @@
 @import "settings/tokens";
 @import "settings/colors";
 @import "settings/font-face";
+@import "settings/normalize"; // <-- normalize / reboot
 @import "settings/variables";
 
 // ------------------------------------------
