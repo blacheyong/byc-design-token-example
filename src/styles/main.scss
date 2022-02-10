@@ -16,7 +16,6 @@
 @import "settings/tokens";
 @import "settings/colors";
 @import "settings/font-face";
-@import "settings/normalize"; // <-- normalize / reboot
 @import "settings/variables";
 
 // ------------------------------------------
@@ -47,6 +46,7 @@
 // Base
 //-------------------------------------------
 @import "base/demo";
+@import "base/normalize"; // <-- normalize / reboot
 @import "base/typography";
 
 // ------------------------------------------
