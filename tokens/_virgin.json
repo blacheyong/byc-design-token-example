@@ -214,6 +214,43 @@
     "lg-radius": {
       "value": 3,
       "type": "borderRadius"
+    },
+    "drop-shadow-focus": {
+      "value": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 0,
+          "spread": 3,
+          "color": "#ffffff",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 2,
+          "spread": 3,
+          "color": "#ffffff",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 4,
+          "spread": 5,
+          "color": "#5fb0fc",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 2,
+          "spread": 5,
+          "color": "#8ec6fc",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
     }
   },
   "fontFamilies": {
@@ -1028,6 +1065,10 @@
       "borde-invalid": {
         "value": "#BD2025",
         "type": "color"
+      },
+      "bg-disabled-checked": {
+        "value": "#BABEC2",
+        "type": "color"
       }
     },
     "input-width": {
@@ -1161,6 +1202,34 @@
       "textCase": {
         "value": "none"
       }
+    }
+  },
+  "base": {
+    "font-size": {
+      "value": 16,
+      "type": "fontSizes"
+    },
+    "font-size-sm": {
+      "value": 14,
+      "type": "fontSizes"
+    },
+    "font-size-lg": {
+      "value": 20,
+      "type": "fontSizes"
+    },
+    "line-heigth": {
+      "value": 21,
+      "type": "lineHeights"
+    },
+    "font-family": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    }
+  },
+  "_body": {
+    "color": {
+      "value": "#555555",
+      "type": "color"
     }
   }
 }

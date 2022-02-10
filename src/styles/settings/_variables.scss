@@ -75,6 +75,7 @@ $btn-active-border-tint-amount: 20% !default;
 // Base Variables, overriden by tokens
 $buttons-default-border-width: 0 !default; // no token atm
 $buttons-drop-shadow: $box-shadow-base !default;
+$buttons-drop-shadow-focus: 0px 0px 0px 3px #ffffff,0px 0px 2px 3px #ffffff,0px 0px 4px 5px #5fb0fc,0px 0px 2px 5px #8ec6fc !default;
 $buttons-text-font-family: $font-family-base !default;
 $buttons-text-font-size: $font-size-base !default;
 $buttons-text-font-weight: normal !default;
@@ -174,6 +175,7 @@ $buttons: (
     padding-y: $buttons-padding-y,
     text-decoration: $buttons-text-text-decoration,
     transition: all .3s ease-in-out,
+    focus-drop-shadow: $buttons-drop-shadow-focus,
 
     primary: (
         active-bg: $buttons-primary-bg-active,
@@ -768,6 +770,7 @@ $form-check-input-class: 'custom-check';
 $form-check-input-bg: $white !default;
 $form-check-input-bg-checked: #003778 !default;
 $form-check-input-bg-checked-hover: #00549A !default;
+$form-check-input-bg-disabled-checked: #BABEC2 !default;
 $form-check-input-border: #555555 !default;
 $form-check-input-border-checked: #003778 !default;
 $form-check-input-border-checked-hover: #00549A !default;
@@ -817,6 +820,7 @@ $form-check: (
     bg-checked: $form-check-input-bg-checked,
     hover-bg-checked: $form-check-input-bg-checked-hover,
     disabled-bg: $form-check-input-bg-disabled,
+    disabled-bg-checked: $form-check-input-bg-disabled-checked,
     border-color: $form-check-input-border,
     hover-border-color: $form-check-input-border-checked-hover,
     disabled-border-color: $form-check-input-border-disabled,
