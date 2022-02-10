@@ -1022,7 +1022,7 @@
       "type": "borderRadius"
     },
     "margin-bottom": {
-      "value": 4,
+      "value": 8,
       "type": "spacing"
     },
     "input": {
@@ -1089,10 +1089,6 @@
     },
     "input-margin-right": {
       "value": 8,
-      "type": "spacing"
-    },
-    "input-margin-top": {
-      "value": 4,
       "type": "spacing"
     },
     "input-border-width": {
