@@ -28,7 +28,7 @@ body {
     color: $body-color;
     font-family: $base-font-family;
     font-size: $base-font-size;
-    line-height: $base-line-heigth;
+    line-height: $base-line-height;
 	margin: 0;
     -webkit-text-size-adjust: 100%; // 3
     -webkit-tap-highlight-color: rgba($black, 0); // 4
@@ -127,7 +127,7 @@ select,
 textarea {
 	font-family: $base-font-family;
 	font-size: $base-font-size;
-	line-height: $base-line-heigth;
+	line-height: $base-line-height;
 	margin: 0;
 }
 

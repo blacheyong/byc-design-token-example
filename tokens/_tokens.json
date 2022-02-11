@@ -1256,7 +1256,7 @@
       "value": 20,
       "type": "fontSizes"
     },
-    "line-heigth": {
+    "line-height": {
       "value": 21,
       "type": "lineHeights"
     },
@@ -1289,6 +1289,10 @@
     "text-decoration-hover": {
       "value": "underline",
       "type": "textDecoration"
+    },
+    "font-weight": {
+      "value": "Bold",
+      "type": "fontWeights"
     }
   }
 }
