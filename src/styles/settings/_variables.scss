@@ -14,7 +14,7 @@ $base-font-family: Arial !default;
 $body-color: #555555 !default;
 
 // Need to keep $line-height-base for bootstrap variables...
-$line-height-base: 1.5 !default;
+// $line-height-base: 1.5 !default;
 
 // Animation
 $default-timing: .2s !default;
@@ -737,7 +737,7 @@ $inputs-padding-x: $padding-x-base !default;
 $inputs-padding-y: $padding-y-base !default;
 $inputs-text-font-family: $font-family-base !default;
 $inputs-text-font-weight: 400 !default;
-$inputs-text-line-height: $line-height-base !default;
+$inputs-text-line-height: $base-line-heigth !default;
 $inputs-text-font-size: $base-font-size !default;
 $inputs-text-letter-spacing: 0px !default;
 $inputs-text-paragraph-spacing: 0px !default;
