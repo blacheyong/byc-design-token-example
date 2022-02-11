@@ -7,7 +7,9 @@
 $base-font-size: 16px !default;
 $base-font-size-sm: 14px !default;
 $base-font-size-lg: 20px !default;
-$base-line-heigth: 21px !default;
+$base-line-heigth: 21px !default; // <-- fix typo "heigth"
+$base-line-heigth-sm: $base-line-heigth * .75 !default;
+$base-line-heigth-lg: $base-line-heigth * 1.33 !default;
 $base-font-family: Arial !default;
 $body-color: #555555 !default;
 
@@ -35,13 +37,10 @@ $padding-y-lg: .5rem !default;
 
 $font-family-base: Arial, Helvetica, sans-serif;
 
+// Need to keep line-heights below for bootstrap variables...
 $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
-
-$font-size-base: 1rem !default;
-$font-size-sm: .75rem !default;
-$font-size-lg: 1.25rem !default;
 
 // ------------------------------------------
 // Breakpoints
@@ -85,9 +84,9 @@ $buttons-default-border-width: 0 !default; // no token atm
 $buttons-drop-shadow: $box-shadow-base !default;
 $buttons-drop-shadow-focus: 0px 0px 0px 3px #ffffff,0px 0px 2px 3px #ffffff,0px 0px 4px 5px #5fb0fc,0px 0px 2px 5px #8ec6fc !default;
 $buttons-text-font-family: $font-family-base !default;
-$buttons-text-font-size: $font-size-base !default;
+$buttons-text-font-size: $base-font-size !default;
 $buttons-text-font-weight: normal !default;
-$buttons-text-line-height: $line-height-base !default;
+$buttons-text-line-height: $base-line-heigth !default;
 $buttons-text-letter-spacing: normal !default;
 $buttons-text-paragraph-spacing: 0 !default;
 $buttons-text-text-case: none !default;
@@ -153,20 +152,20 @@ $buttons-icon-gap: 6px !default;
 
 // Size
 $buttons-sm-text-font-family: $font-family-base !default;
-$buttons-sm-text-font-size: $font-size-sm !default;
+$buttons-sm-text-font-size: $base-font-size-sm !default;
 $buttons-sm-text-font-weight: normal !default;
 $buttons-sm-text-letter-spacing: normal !default;
-$buttons-sm-text-line-height: $line-height-sm !default;
+$buttons-sm-text-line-height: $base-line-heigth-sm !default;
 $buttons-sm-text-text-decoration: none !default;
 $buttons-sm-padding-x: $padding-x-sm !default;
 $buttons-sm-padding-y: $padding-y-sm !default;
 $buttons-sm-radius: $border-radius-sm !default;
 
 $buttons-lg-text-font-family: $font-family-base !default;
-$buttons-lg-text-font-size: $font-size-lg !default;
+$buttons-lg-text-font-size: $base-font-size-lg !default;
 $buttons-lg-text-font-weight: normal !default;
 $buttons-lg-text-letter-spacing: normal !default;
-$buttons-lg-text-line-height: $line-height-lg !default;
+$buttons-lg-text-line-height: $base-line-heigth-lg !default;
 $buttons-lg-text-text-decoration: none !default;
 $buttons-lg-padding-x: $padding-x-lg !default;
 $buttons-lg-padding-y: $padding-y-lg !default;
@@ -282,8 +281,8 @@ $cards: (
 // ------------------------------------------
 $body-regular-font-family: $font-family-base !default;
 $body-regular-font-weight: 400 !default;
-$body-regular-line-height: $line-height-base !default;
-$body-regular-font-size: $font-size-base !default;
+$body-regular-line-height: $base-line-heigth !default;
+$body-regular-font-size: $base-font-size !default;
 $body-regular-letter-spacing: 0px !default;
 $body-regular-paragraph-spacing: 18px !default;
 $body-regular-text-decoration: none !default;
@@ -291,8 +290,8 @@ $body-regular-text-case: none !default;
 
 $body-large-font-family: $font-family-base !default;
 $body-large-font-weight: 400 !default;
-$body-large-line-height: $line-height-lg !default;
-$body-large-font-size: $font-size-lg !default;
+$body-large-line-height: $base-line-heigth-lg !default;
+$body-large-font-size: $base-font-size-lg !default;
 $body-large-letter-spacing: 0px !default;
 $body-large-paragraph-spacing: 22px !default;
 $body-large-text-decoration: none !default;
@@ -300,8 +299,8 @@ $body-large-text-case: none !default;
 
 $body-small-font-family: $font-family-base !default;
 $body-small-font-weight: 400 !default;
-$body-small-line-height: $line-height-sm !default;
-$body-small-font-size: $font-size-sm !default;
+$body-small-line-height: $base-line-heigth-sm !default;
+$body-small-font-size: $base-font-size-sm !default;
 $body-small-letter-spacing: 0px !default;
 $body-small-paragraph-spacing: 14px !default;
 $body-small-text-decoration: none !default;
@@ -342,17 +341,17 @@ $body-text: (
     ),
 );
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h1-font-size: $base-font-size * 2.5 !default;
+$h2-font-size: $base-font-size * 2 !default;
+$h3-font-size: $base-font-size * 1.75 !default;
+$h4-font-size: $base-font-size * 1.5 !default;
+$h5-font-size: $base-font-size * 1.25 !default;
+$h6-font-size: $base-font-size !default;
 
 // H1 - Headings 1
 $headings-desktop-h1-font-family: $font-family-base !default;
 $headings-desktop-h1-font-weight: bold !default;
-$headings-desktop-h1-line-height: $line-height-base !default;
+$headings-desktop-h1-line-height: $base-line-heigth !default;
 $headings-desktop-h1-font-size: $h1-font-size !default;
 $headings-desktop-h1-letter-spacing: normal !default;
 $headings-desktop-h1-paragraph-spacing: null !default;
@@ -410,7 +409,7 @@ $h1: (
 // H2 - Headings 2
 $headings-desktop-h2-font-family: $font-family-base !default;
 $headings-desktop-h2-font-weight: bold !default;
-$headings-desktop-h2-line-height: $line-height-base !default;
+$headings-desktop-h2-line-height: $base-line-heigth !default;
 $headings-desktop-h2-font-size: $h2-font-size !default;
 $headings-desktop-h2-letter-spacing: normal !default;
 $headings-desktop-h2-paragraph-spacing: null !default;
@@ -468,7 +467,7 @@ $h2: (
 // H3 - Headings 3
 $headings-desktop-h3-font-family: $font-family-base !default;
 $headings-desktop-h3-font-weight: bold !default;
-$headings-desktop-h3-line-height: $line-height-base !default;
+$headings-desktop-h3-line-height: $base-line-heigth !default;
 $headings-desktop-h3-font-size: $h3-font-size !default;
 $headings-desktop-h3-letter-spacing: normal !default;
 $headings-desktop-h3-paragraph-spacing: null !default;
@@ -526,7 +525,7 @@ $h3: (
 // H4 - Headings 4
 $headings-desktop-h4-font-family: $font-family-base !default;
 $headings-desktop-h4-font-weight: bold !default;
-$headings-desktop-h4-line-height: $line-height-base !default;
+$headings-desktop-h4-line-height: $base-line-heigth !default;
 $headings-desktop-h4-font-size: $h4-font-size !default;
 $headings-desktop-h4-letter-spacing: normal !default;
 $headings-desktop-h4-paragraph-spacing: null !default;
@@ -584,8 +583,8 @@ $h4: (
 // H5 - Headings 5
 $headings-desktop-h5-font-family: $font-family-base !default;
 $headings-desktop-h5-font-weight: bold !default;
-$headings-desktop-h5-line-height: $line-height-sm !default;
-$headings-desktop-h5-font-size: null !default;
+$headings-desktop-h5-line-height: $base-line-heigth-sm !default;
+$headings-desktop-h5-font-size: $h5-font-size !default;
 $headings-desktop-h5-letter-spacing: normal !default;
 $headings-desktop-h5-paragraph-spacing: null !default;
 $headings-desktop-h5-text-decoration: none !default;
@@ -642,7 +641,7 @@ $h5: (
 // H6 - Headings 6
 $headings-desktop-h6-font-family: $font-family-base !default;
 $headings-desktop-h6-font-weight: bold !default;
-$headings-desktop-h6-line-height: $line-height-sm !default;
+$headings-desktop-h6-line-height: $base-line-heigth-sm !default;
 $headings-desktop-h6-font-size: $h6-font-size !default;
 $headings-desktop-h6-letter-spacing: normal !default;
 $headings-desktop-h6-paragraph-spacing: null !default;
@@ -758,7 +757,7 @@ $inputs-padding-y: $padding-y-base !default;
 $inputs-text-font-family: $font-family-base !default;
 $inputs-text-font-weight: 400 !default;
 $inputs-text-line-height: $line-height-base !default;
-$inputs-text-font-size: $font-size-base !default;
+$inputs-text-font-size: $base-font-size !default;
 $inputs-text-letter-spacing: 0px !default;
 $inputs-text-paragraph-spacing: 0px !default;
 $inputs-text-text-decoration: none !default;
