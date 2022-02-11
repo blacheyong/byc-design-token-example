@@ -976,6 +976,61 @@
       "type": "boxShadow"
     }
   },
+  "_links": {
+    "drop-shadow-focus": {
+      "value": [
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 0,
+          "spread": 3,
+          "color": "#ffffff",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 2,
+          "spread": 3,
+          "color": "#ffffff",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 4,
+          "spread": 5,
+          "color": "#5fb0fc",
+          "type": "dropShadow"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "blur": 2,
+          "spread": 5,
+          "color": "#8ec6fc",
+          "type": "dropShadow"
+        }
+      ],
+      "type": "boxShadow"
+    },
+    "color-hover": {
+      "value": "#003778",
+      "type": "color"
+    },
+    "color": {
+      "value": "#cc0000",
+      "type": "color"
+    },
+    "text-decoration": {
+      "value": "underline",
+      "type": "textDecoration"
+    },
+    "text-decoration-hover": {
+      "value": "none",
+      "type": "textDecoration"
+    }
+  },
   "inputs": {
     "text": {
       "fontFamily": {
