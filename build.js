@@ -35,7 +35,7 @@ StyleDictionaryPackage.registerTransform({
         if (String(value).includes('%')) {
             return value;
         } else {
-            return parseFloat(value + 'px');
+            return parseFloat(value) + 'px';
         }
     }
 });
