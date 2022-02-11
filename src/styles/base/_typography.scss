@@ -22,6 +22,10 @@ h6, .h6, .heading-6, %h6 {
     @include heading-types($h6);
 }
 
+a {
+    @include link-text($links);
+}
+
 p {
     @include body-text(map-get($body-text, regular));
 
