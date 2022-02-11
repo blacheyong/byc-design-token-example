@@ -13,9 +13,6 @@ $base-line-height-lg: $base-line-height * 1.33 !default;
 $base-font-family: Arial !default;
 $body-color: #555555 !default;
 
-// Need to keep $line-height-base for bootstrap variables...
-// $line-height-base: 1.5 !default;
-
 // Characters which are escaped by the escape-svg function
 $escaped-characters: (
   ("<", "%3c"),
@@ -154,6 +151,13 @@ $buttons-secondary-dark-text-hover: #C2CEDF !default;
 $buttons-secondary-dark-border-disabled: #c2cedf80 !default;
 $buttons-secondary-dark-text-disabled: #c2cedf80 !default;
 
+// Link
+$buttons-link-padding-x: 2px !default;
+$buttons-link-padding-y: 0px !default;
+$button-links-text-decoration: none !default;
+$button-links-text-decoration-hover: underline !default;
+$button-links-font-weight: Bold !default;
+
 // Icon
 $buttons-icon-gap: 6px !default;
 
@@ -240,6 +244,15 @@ $buttons: (
         hover-color: $buttons-secondary-dark-text-hover,
         disabled-border: $buttons-secondary-dark-border-disabled,
         disabled-color: $buttons-secondary-dark-text-disabled,
+    ),
+
+    link: (
+        color: $buttons-secondary-text,
+        font-weight: $button-links-font-weight,
+        padding-x: $buttons-link-padding-x,
+        padding-y: $buttons-link-padding-y,
+        text-decoration: $button-links-text-decoration,
+        hover-text-decoration: $button-links-text-decoration-hover,
     ),
 
     icon: (

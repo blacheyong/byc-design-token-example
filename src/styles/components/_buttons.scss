@@ -46,6 +46,10 @@ fieldset:disabled a.btn {
     }
 }
 
+.btn-link {
+    @include btn-variants(map-get($buttons, link));
+}
+
 .btn-icon {
     @include btn-variants(map-get($buttons, icon));
 }
