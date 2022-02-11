@@ -15,6 +15,31 @@ body {
     }
     .card {
         margin-top: 32px;
+        .card-img-top {
+            max-width: 245px;
+        }
+        &__prices {
+            div:first-child {
+                margin-right: 20px;
+            }
+            h3 {
+                color: $primary;
+                margin-bottom: 0;
+                margin-top: 24px;
+            }
+            h6 {
+                color: $buttons-secondary-text-disabled;
+                margin: 0;
+            }
+        }
+        &__buttons {
+            margin-top: 24px;
+            .btn {
+                &:not(:last-child) {
+                    margin-right: 24px;
+                }
+            }
+        }
     }
 }
 

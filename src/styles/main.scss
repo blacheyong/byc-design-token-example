@@ -13,10 +13,9 @@
 // ------------------------------------------
 // Settings
 //-------------------------------------------
-@import "settings/tokens";
+// @import "settings/tokens";
 @import "settings/colors";
 @import "settings/font-face";
-@import "settings/normalize"; // <-- normalize / reboot
 @import "settings/variables";
 
 // ------------------------------------------
@@ -32,21 +31,19 @@
 // Bootstrap
 // ------------------------------------------
 // Required
-@import "~bootstrap/scss/variables";
+// @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
 // Include custom variable default overrides here
 
 // Optional
-@import "~bootstrap/scss/card";
-// @import "~bootstrap/scss/containers";
-// @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/bootstrap-grid";
 
 // ------------------------------------------
 // Base
 //-------------------------------------------
 @import "base/demo";
+@import "base/normalize"; // <-- normalize / reboot
 @import "base/typography";
 
 // ------------------------------------------

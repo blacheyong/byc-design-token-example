@@ -4,6 +4,8 @@
     border-radius: map-get($cards, border-radius);
     border-width: map-get($cards, border-width);
     box-shadow: map-get($cards, box-shadow);
+    overflow: hidden;
+    position: relative;
     transition: all .3s ease-in-out;
 
     &--hoverable {
@@ -19,16 +21,25 @@
         box-shadow: map-get($cards, selected-box-shadow);
     }
 
+    .card-img, .card-img-top, .card-img-bottom {
+        width: 100%;
+    }
     .card-img-top {
         display: block;
         margin: auto;
-        max-width: 245px;
         width: 100%;
     }
 
     .card-img-overlay {
         background-color: map-get($cards, background-overlay);
+        border-radius: 7px;
+        bottom: 0;
         color: $white;
+        left: 0;
+        padding: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     .card-body {
@@ -37,29 +48,6 @@
         .card-title {
             margin: 24px 0 0;
             text-align: center;
-        }
-    }
-
-    &__prices {
-        div:first-child {
-            margin-right: 20px;
-        }
-        h3 {
-            color: $primary;
-            margin-bottom: 0;
-            margin-top: 24px;
-        }
-        h6 {
-            color: $buttons-secondary-text-disabled;
-            margin: 0;
-        }
-    }
-    &__buttons {
-        margin-top: 24px;
-        .btn {
-            &:not(:last-child) {
-                margin-right: 24px;
-            }
         }
     }
 }
