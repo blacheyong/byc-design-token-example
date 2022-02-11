@@ -1270,5 +1270,25 @@
       "value": "#555555",
       "type": "color"
     }
+  },
+  "_buttons-link": {
+    "padding-x": {
+      "value": 2,
+      "type": "spacing"
+    },
+    "padding-y": {
+      "value": 0,
+      "type": "spacing"
+    }
+  },
+  "_button-links": {
+    "text-decoration": {
+      "value": "none",
+      "type": "textDecoration"
+    },
+    "text-decoration-hover": {
+      "value": "underline",
+      "type": "textDecoration"
+    }
   }
 }
