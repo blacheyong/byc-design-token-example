@@ -1,4 +1,5 @@
 @mixin label-styles($label) {
+    display: block;
     font-family: map-get($label, font-family);
     font-size: map-get($label, font-size);
     font-weight: map-get($label, font-weight);
@@ -22,11 +23,13 @@
         border-width: map-get($check, border-width);
         border-radius: map-get($check, border-radius);
         height: map-get($check, height);
-        margin-right: map-get($check, margin-right);
+        // margin-right: map-get($check, margin-right);
+        // margin-top: map-get($check, margin-top);
         transition: $default-animation;
         width: map-get($check, width);
 
         &--lg {
+            border-radius: map-get($check, border-radius-lg);
             height: map-get($check, height-lg);
             width: map-get($check, width-lg);
         }
@@ -34,8 +37,10 @@
         &:not(.disabled):not(:disabled):hover {
             border-color: map-get($check, hover-border-color);
         }
+
         &:not(.disabled):not(:disabled):focus {
             box-shadow: map-get($check, focus-box-shadow);
+            outline: 0;
         }
 
         &:checked {
