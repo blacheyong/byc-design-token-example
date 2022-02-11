@@ -49,6 +49,16 @@
         color: map-get($button, disabled-color);
     }
 
+    &.btn-link {
+        color: map-get($button, color);
+        font-weight: map-get($button, font-weight);
+        padding: map-get($button, padding-y) map-get($button, padding-x);
+        text-decoration: map-get($button, text-decoration);
+        &:hover {
+            text-decoration: map-get($button, hover-text-decoration);
+        }
+    }
+
     &.btn-icon {
         align-items: center;
         display: flex;

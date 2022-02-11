@@ -1301,6 +1301,10 @@
     "text-decoration-hover": {
       "value": "underline",
       "type": "textDecoration"
+    },
+    "font-weight": {
+      "value": "Bold",
+      "type": "fontWeights"
     }
   }
 }
