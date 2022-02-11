@@ -716,6 +716,20 @@ $h6: (
     )
 );
 
+$links-drop-shadow-focus: 0px 0px 0px 3px #ffffff,0px 0px 2px 3px #ffffff,0px 0px 4px 5px #5fb0fc,0px 0px 2px 5px #8ec6fc !default;
+$links-color-hover: #003778 !default;
+$links-color: #00549A !default;
+$links-text-decoration: underline !default;
+$links-text-decoration-hover: none !default;
+
+$links: (
+    color: $links-color,
+    hover-color: $links-color-hover,
+    text-decoration: $links-text-decoration,
+    hover-text-decoration: $links-text-decoration-hover,
+    focus-box-shadow: $links-drop-shadow-focus,
+);
+
 // ------------------------------------------
 // Labels
 // ------------------------------------------
