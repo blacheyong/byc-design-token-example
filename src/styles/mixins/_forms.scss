@@ -23,8 +23,6 @@
         border-width: map-get($check, border-width);
         border-radius: map-get($check, border-radius);
         height: map-get($check, height);
-        // margin-right: map-get($check, margin-right);
-        // margin-top: map-get($check, margin-top);
         transition: $default-animation;
         width: map-get($check, width);
 

@@ -1,0 +1,26 @@
+blockquote, .blockquote {
+    font-family: map-get($blockquotes, text-font-family);
+    font-size: map-get($blockquotes, text-font-size);
+    font-weight: map-get($blockquotes, text-font-weight);
+    letter-spacing: map-get($blockquotes, text-letter-spacing);
+    line-height: map-get($blockquotes, text-line-height);
+    font-family: map-get($blockquotes, text-font-family);
+    margin: map-get($blockquotes, margin-y) map-get($blockquotes, margin-x);
+    text-decoration: map-get($blockquotes, text-text-decoration);
+    text-transform: map-get($blockquotes, text-text-transform);
+
+    p:not(:last-child) {
+        margin-bottom: map-get($blockquotes, text-margin-bottom);
+    }
+}
+
+figcaption, .blockquote-footer {
+    font-family: map-get($blockquotes, footer-font-family);
+    font-size: map-get($blockquotes, footer-font-size);
+    font-weight: map-get($blockquotes, footer-font-weight);
+    letter-spacing: map-get($blockquotes, footer-letter-spacing);
+    line-height: map-get($blockquotes, footer-line-height);
+    font-family: map-get($blockquotes, footer-font-family);
+    text-decoration: map-get($blockquotes, footer-text-decoration);
+    text-transform: map-get($blockquotes, footer-text-transform);
+}

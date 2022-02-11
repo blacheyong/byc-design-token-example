@@ -45,7 +45,7 @@
     }
     &:disabled, &.disabled {
         background: map-get($button, disabled-bg);
-        border-color: map-get($button, disabled-border-color);
+        border-color: map-get($button, disabled-border);
         color: map-get($button, disabled-color);
     }
 

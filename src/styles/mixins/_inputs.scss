@@ -16,7 +16,6 @@
         @if(map-get($input, line-height) != normal) {
             line-height: map-get($input, line-height);
         }
-        // margin-bottom: map-get($input, margin-bottom);
         padding: map-get($input, padding-y) map-get($input, padding-x);
         @if(map-get($input, text-decoration) != none ) {
             text-decoration: map-get($input, text-decoration);

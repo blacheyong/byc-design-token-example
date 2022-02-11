@@ -1,7 +1,7 @@
 .btn {
     background-color: transparent;
     border: $buttons-default-border-width solid transparent;
-    color: #fff; // TODO should not be hardcoded - $body-color like Bootstrap?
+    color: $body-color;
     display: inline-block;
     font-family: $buttons-text-font-family;
     font-weight: $buttons-text-font-weight;
@@ -14,7 +14,6 @@
     // Disabled comes first so active can properly restyle
     &.disabled,
     &:disabled {
-        // opacity: $buttons-disabled-opacity;
         pointer-events: none;
     }
 }

@@ -1,5 +1,4 @@
 label {
-    // @include form-styles(map-get($forms, label));
     @include label-styles(map-get($labels, regular));
 }
 

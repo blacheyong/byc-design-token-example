@@ -27,6 +27,7 @@ const Template = ({ label, ...args }) => {
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
+  secondary: false,
   disabled: false,
   label: 'Primary Button',
 };
@@ -34,6 +35,7 @@ Primary.args = {
 export const PrimaryOnDarkBackground = Template.bind({});
 PrimaryOnDarkBackground.args = {
   primary: true,
+  secondary: false,
   darkBg: true,
   disabled: false,
   label: 'Primary Button',
@@ -45,6 +47,7 @@ PrimaryOnDarkBackground.parameters = {
 export const PrimaryDisabled = Template.bind({});
 PrimaryDisabled.args = {
   primary: true,
+  secondary: false,
   disabled: true,
   label: 'Primary Button',
 };
@@ -52,6 +55,7 @@ PrimaryDisabled.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   primary: false,
+  secondary: true,
   disabled: false,
   label: 'Secondary Button',
 };
@@ -59,6 +63,7 @@ Secondary.args = {
 export const SecondaryOnDarkBackground = Template.bind({});
 SecondaryOnDarkBackground.args = {
   primary: false,
+  secondary: true,
   darkBg: true,
   disabled: false,
   label: 'Secondary Button',
@@ -70,12 +75,15 @@ SecondaryOnDarkBackground.parameters = {
 export const SecondaryDisabled = Template.bind({});
 SecondaryDisabled.args = {
   primary: false,
+  secondary: true,
   disabled: true,
   label: 'Secondary Button',
 };
 
 export const Small = Template.bind({});
 Small.args = {
+  primary: true,
+  secondary: false,
   disabled: false,
   size: 'sm',
   label: 'Small Button',
@@ -83,9 +91,19 @@ Small.args = {
 
 export const Large = Template.bind({});
 Large.args = {
+  primary: true,
+  secondary: false,
   disabled: false,
   size: 'lg',
   label: 'Large Button',
+};
+
+export const Link = Template.bind({});
+Link.args = {
+  primary: false,
+  disabled: false,
+  link: true,
+  label: 'Link Button',
 };
 
 export const IconOnTheLeft = ({ label }) => `<a class="btn btn-icon btn-icon--icon-left" href="#">

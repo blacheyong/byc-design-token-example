@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Fri, 11 Feb 2022 15:40:05 GMT
+// Generated on Fri, 11 Feb 2022 21:04:47 GMT
 
 $colors-primary: #cc0000;
 $colors-black: #000000;
@@ -250,7 +250,7 @@ $inputs-text-paragraph-spacing: 0px;
 $inputs-text-text-decoration: none;
 $inputs-text-text-case: none;
 $orange: #f6911a;
-$form-check-radios-radius: 50px;
+$form-check-radios-radius: 50%;
 $form-check-check-radius: 4px;
 $form-check-check-radius-lg: 6px;
 $form-check-margin-bottom: 8px;
@@ -291,7 +291,7 @@ $form-check-label-letter-spacing: 0px;
 $form-check-label-paragraph-spacing: 0px;
 $form-check-label-text-decoration: none;
 $form-check-label-text-case: none;
-$forms-label-font-family: '$fontFamilies';
+$forms-label-font-family: 'Arial';
 $forms-label-font-weight: 700;
 $forms-label-line-height: 18px;
 $forms-label-font-size: 14px;
@@ -310,3 +310,28 @@ $buttons-link-padding-y: 0px;
 $button-links-text-decoration: none;
 $button-links-text-decoration-hover: underline;
 $button-links-font-weight: Bold;
+$lists-buttlet-gap: 20px;
+$lists-item-margin-bottom: 8px;
+$lists-margin-bottom: 16px;
+$lists-bullet-width: 6px;
+$lists-bullet-height: 6px;
+$lists-bullet-radius: 50%;
+$list-bullet-color: #cc0000;
+$blockquote-margin-y: 16px;
+$blockquote-margin-x: 32px;
+$blockquote-text-font-family: 'Arial';
+$blockquote-text-font-weight: 400;
+$blockquote-text-line-height: 28px;
+$blockquote-text-font-size: 20px;
+$blockquote-text-letter-spacing: 0px;
+$blockquote-text-paragraph-spacing: 0px;
+$blockquote-text-text-decoration: none;
+$blockquote-text-text-case: none;
+$blockquote-footer-text-font-family: 'Arial';
+$blockquote-footer-text-font-weight: 400;
+$blockquote-footer-text-line-height: 16px;
+$blockquote-footer-text-font-size: 14px;
+$blockquote-footer-text-letter-spacing: 0px;
+$blockquote-footer-text-paragraph-spacing: 0px;
+$blockquote-footer-text-text-decoration: none;
+$blockquote-footer-text-text-case: none;

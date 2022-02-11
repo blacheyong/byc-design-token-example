@@ -108,3 +108,38 @@
         box-shadow: map-get($link, focus-box-shadow);
     }
 }
+
+@mixin list-styles($list, $type) {
+    counter-reset: item;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        align-items: center;
+        counter-increment: item;
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: map-get($list, margin-bottom);
+        }
+        @if($type == "ul") {
+            &::before {
+                background: map-get($list, bullet-color);
+                border-radius: map-get($list, bullet-radius);
+                content: '';
+                display: inline-block;
+                height: map-get($list, bullet-height);
+                margin-right: map-get($list, bullet-gap);
+                width: map-get($list, bullet-width);
+            }
+        }
+        @else {
+            &::before {
+                color: map-get($list, bullet-color);
+                content: counter(item)'.';
+                display: inline-block;
+                margin-right: map-get($list, bullet-gap);
+            }
+        }
+    }
+}
