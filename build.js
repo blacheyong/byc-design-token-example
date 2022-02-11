@@ -16,11 +16,27 @@ StyleDictionaryPackage.registerTransform({
     type: 'value',
     matcher: function (prop) {
         // You can be more specific here if you only want 'em' units for font sizes    
-        return ["fontSizes", "lineHeights", "spacing", "borderRadius", "borderWidth", "sizing"].includes(prop.type);
+        return ["fontSizes", "lineHeights", "spacing", "borderWidth", "sizing"].includes(prop.type);
     },
     transformer: function (prop) {
         // You can also modify the value here if you want to convert pixels to ems
         return parseFloat(prop.original.value) + 'px';
+    }
+});
+
+StyleDictionaryPackage.registerTransform({
+    name: 'borderRadius',
+    type: 'value',
+    matcher: function (prop) {
+        return prop.type === "borderRadius";
+    },
+    transformer: function(prop) {
+        const value = prop.value;
+        if (String(value).includes('%')) {
+            return value;
+        } else {
+            return parseFloat(value + 'px');
+        }
     }
 });
 
@@ -131,7 +147,7 @@ function getStyleDictionaryConfig(theme) {
                 }]
             }, */
             "scss": {
-                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "shadow/spreadShadow","typography/px", "typography/fontWeight", "typography/family"],
+                "transforms": ["attribute/cti", "name/cti/kebab", "sizes/px", "borderRadius", "shadow/spreadShadow","typography/px", "typography/fontWeight", "typography/family"],
                 "buildPath": `src/styles/settings/`,
                 "files": [{
                     "destination": `${theme}.scss`,
