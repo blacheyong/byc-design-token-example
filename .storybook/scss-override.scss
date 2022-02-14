@@ -17,3 +17,12 @@ h5.sbdocs-h5 {
 h6.sbdocs-h6 {
     @extend %h6;
 }
+
+// Reset Storybook styles
+div.css-14m39zm {
+    font-family: unset;
+    font-size: unset;
+}
+a.sbdocs-a {
+    @include link-text($links);
+}

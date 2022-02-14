@@ -44,11 +44,3 @@ ol {
     @include list-styles($lists, "ol");
 }
 
-// Reset Storybook styles
-div.css-14m39zm {
-    font-family: unset;
-    font-size: unset;
-}
-a.sbdocs-a {
-    @include link-text($links);
-}
