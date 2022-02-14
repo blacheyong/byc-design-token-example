@@ -116,9 +116,9 @@
     padding: 0;
     
     li {
-        align-items: center;
         counter-increment: item;
-        display: flex;
+        padding-left: map-get($list, bullet-gap);
+        position: relative;
         &:not(:last-child) {
             margin-bottom: map-get($list, margin-bottom);
         }
@@ -129,7 +129,10 @@
                 content: '';
                 display: inline-block;
                 height: map-get($list, bullet-height);
-                margin-right: map-get($list, bullet-gap);
+                left: 0;
+                position: absolute;
+                // top: calc(($body-regular-line-height - #{map-get($list, bullet-height)}) / 2);
+                top: calc((#{$base-font-size} - (#{map-get($list, bullet-height)} / 2)) / 2);
                 width: map-get($list, bullet-width);
             }
         }
@@ -138,7 +141,8 @@
                 color: map-get($list, bullet-color);
                 content: counter(item)'.';
                 display: inline-block;
-                margin-right: map-get($list, bullet-gap);
+                left: 0;
+                position: absolute;
             }
         }
     }
