@@ -152,6 +152,10 @@
         "value": "#ffffff00",
         "type": "color"
       },
+      "bg-disabled": {
+        "value": "#ffffff",
+        "type": "color"
+      },
       "text": {
         "value": "#003778",
         "type": "color"
