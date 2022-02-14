@@ -1,14 +1,26 @@
 blockquote, .blockquote {
-    font-family: map-get($blockquotes, text-font-family);
-    font-size: map-get($blockquotes, text-font-size);
-    font-weight: map-get($blockquotes, text-font-weight);
-    letter-spacing: map-get($blockquotes, text-letter-spacing);
-    line-height: map-get($blockquotes, text-line-height);
-    font-family: map-get($blockquotes, text-font-family);
     margin: map-get($blockquotes, margin-y) map-get($blockquotes, margin-x);
-    text-decoration: map-get($blockquotes, text-text-decoration);
-    text-transform: map-get($blockquotes, text-text-transform);
 
+    p {
+        font-family: map-get($blockquotes, text-font-family);
+        font-size: map-get($blockquotes, text-font-size);
+        @if(map-get($blockquotes, text-font-weight) != 400) {
+            font-weight: map-get($blockquotes, text-font-weight);
+        }
+        @if(map-get($blockquotes, text-letter-spacing) != 0px) {
+            letter-spacing: map-get($blockquotes, text-letter-spacing);
+        }
+        @if(map-get($blockquotes, text-line-height) != normal) {
+            line-height: map-get($blockquotes, text-line-height);
+        }
+        font-family: map-get($blockquotes, text-font-family);
+        @if(map-get($blockquotes, text-text-decoration) != none) {
+            text-decoration: map-get($blockquotes, text-text-decoration);
+        }
+        @if(map-get($blockquotes, text-text-transform) != none) {
+            text-transform: map-get($blockquotes, text-text-transform);
+        }
+    }
     p:not(:last-child) {
         margin-bottom: map-get($blockquotes, text-margin-bottom);
     }
@@ -17,10 +29,21 @@ blockquote, .blockquote {
 figcaption, .blockquote-footer {
     font-family: map-get($blockquotes, footer-font-family);
     font-size: map-get($blockquotes, footer-font-size);
-    font-weight: map-get($blockquotes, footer-font-weight);
-    letter-spacing: map-get($blockquotes, footer-letter-spacing);
-    line-height: map-get($blockquotes, footer-line-height);
+    @if(map-get($blockquotes, footer-font-weight) != 400) {
+       font-weight: map-get($blockquotes, footer-font-weight); 
+    }
+    @if(map-get($blockquotes, footer-letter-spacing) != 0px) {
+       letter-spacing: map-get($blockquotes, footer-letter-spacing); 
+    }
+    @if(map-get($blockquotes, footer-line-height) != normal) {
+        line-height: map-get($blockquotes, footer-line-height);
+    }
     font-family: map-get($blockquotes, footer-font-family);
-    text-decoration: map-get($blockquotes, footer-text-decoration);
-    text-transform: map-get($blockquotes, footer-text-transform);
+    margin: 0 map-get($blockquotes, margin-x);
+    @if(map-get($blockquotes, footer-text-decoration) != none) {
+        text-decoration: map-get($blockquotes, footer-text-decoration);
+    }
+    @if(map-get($blockquotes, footer-text-transform) != none) {
+        text-transform: map-get($blockquotes, footer-text-transform);
+    }
 }

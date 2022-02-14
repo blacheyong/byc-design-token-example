@@ -22,7 +22,7 @@ h6, .h6, .heading-6, %h6 {
     @include heading-types($h6);
 }
 
-a {
+a:not(.btn) {
     @include link-text($links);
 }
 

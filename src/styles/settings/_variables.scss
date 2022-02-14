@@ -7,7 +7,7 @@
 $base-font-size: 16px !default;
 $base-font-size-sm: 14px !default;
 $base-font-size-lg: 20px !default;
-$base-line-height: 21px !default; // <-- fix typo "height"
+$base-line-height: 21px !default;
 $base-line-height-sm: $base-line-height * .75 !default;
 $base-line-height-lg: $base-line-height * 1.33 !default;
 $base-font-family: Arial !default;
@@ -434,7 +434,7 @@ $h6-font-size: $base-font-size !default;
 // H1 - Headings 1
 $headings-desktop-h1-font-family: $font-family-base !default;
 $headings-desktop-h1-font-weight: bold !default;
-$headings-desktop-h1-line-height: $base-line-height !default;
+$headings-desktop-h1-line-height: $h1-font-size * 1.2 !default;
 $headings-desktop-h1-font-size: $h1-font-size !default;
 $headings-desktop-h1-letter-spacing: normal !default;
 $headings-desktop-h1-paragraph-spacing: null !default;
@@ -492,7 +492,7 @@ $h1: (
 // H2 - Headings 2
 $headings-desktop-h2-font-family: $font-family-base !default;
 $headings-desktop-h2-font-weight: bold !default;
-$headings-desktop-h2-line-height: $base-line-height !default;
+$headings-desktop-h2-line-height: $h2-font-size * 1.2 !default;
 $headings-desktop-h2-font-size: $h2-font-size !default;
 $headings-desktop-h2-letter-spacing: normal !default;
 $headings-desktop-h2-paragraph-spacing: null !default;
@@ -550,7 +550,7 @@ $h2: (
 // H3 - Headings 3
 $headings-desktop-h3-font-family: $font-family-base !default;
 $headings-desktop-h3-font-weight: bold !default;
-$headings-desktop-h3-line-height: $base-line-height !default;
+$headings-desktop-h3-line-height: $h3-font-size * 1.2 !default;
 $headings-desktop-h3-font-size: $h3-font-size !default;
 $headings-desktop-h3-letter-spacing: normal !default;
 $headings-desktop-h3-paragraph-spacing: null !default;
@@ -608,7 +608,7 @@ $h3: (
 // H4 - Headings 4
 $headings-desktop-h4-font-family: $font-family-base !default;
 $headings-desktop-h4-font-weight: bold !default;
-$headings-desktop-h4-line-height: $base-line-height !default;
+$headings-desktop-h4-line-height: $h4-font-size * 1.2 !default;
 $headings-desktop-h4-font-size: $h4-font-size !default;
 $headings-desktop-h4-letter-spacing: normal !default;
 $headings-desktop-h4-paragraph-spacing: null !default;
@@ -666,7 +666,7 @@ $h4: (
 // H5 - Headings 5
 $headings-desktop-h5-font-family: $font-family-base !default;
 $headings-desktop-h5-font-weight: bold !default;
-$headings-desktop-h5-line-height: $base-line-height-sm !default;
+$headings-desktop-h5-line-height: $h5-font-size * 1.2 !default;
 $headings-desktop-h5-font-size: $h5-font-size !default;
 $headings-desktop-h5-letter-spacing: normal !default;
 $headings-desktop-h5-paragraph-spacing: null !default;
@@ -724,7 +724,7 @@ $h5: (
 // H6 - Headings 6
 $headings-desktop-h6-font-family: $font-family-base !default;
 $headings-desktop-h6-font-weight: bold !default;
-$headings-desktop-h6-line-height: $base-line-height-sm !default;
+$headings-desktop-h6-line-height: $h6-font-size * 1.2 !default;
 $headings-desktop-h6-font-size: $h6-font-size !default;
 $headings-desktop-h6-letter-spacing: normal !default;
 $headings-desktop-h6-paragraph-spacing: null !default;
