@@ -117,6 +117,10 @@
         "value": "#ffffff00",
         "type": "color"
       },
+      "bg-disabled": {
+        "value": "#ffffff",
+        "type": "color"
+      },
       "border-width": {
         "value": 2,
         "type": "borderWidth"
