@@ -1308,7 +1308,7 @@
     }
   },
   "_lists": {
-    "buttlet-gap": {
+    "bullet-gap": {
       "value": 20,
       "type": "spacing"
     },
@@ -1331,9 +1331,7 @@
     "bullet-radius": {
       "value": "50%",
       "type": "borderRadius"
-    }
-  },
-  "_list": {
+    },
     "bullet-color": {
       "value": "#cc0000",
       "type": "color"

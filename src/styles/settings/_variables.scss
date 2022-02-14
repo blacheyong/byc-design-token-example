@@ -342,17 +342,17 @@ $cards: (
 // ------------------------------------------
 // List
 // ------------------------------------------
-$lists-buttlet-gap: 20px !default; // <-- should be "bullet"
+$lists-bullet-gap: 20px !default;
 $lists-item-margin-bottom: 8px !default;
 $lists-margin-bottom: 16px !default;
 $lists-bullet-width: 6px !default;
 $lists-bullet-height: 6px !default;
 $lists-bullet-radius: 50% !default;
-$list-bullet-color: #00549A !default; // <-- should be plural: "lists"
+$lists-bullet-color: #00549A !default;
 
 $lists: (
-    bullet-color: $list-bullet-color,
-    bullet-gap: $lists-buttlet-gap,
+    bullet-color: $lists-bullet-color,
+    bullet-gap: $lists-bullet-gap,
     bullet-height: $lists-bullet-height,
     bullet-radius: $lists-bullet-radius,
     bullet-width: $lists-bullet-width,
