@@ -29,3 +29,6 @@ export const parameters = {
     maxWidth: '1024px',
   },
 }
+
+// var checkbox = document.getElementById("exampleIndeterminateCheckbox");
+// checkbox.indeterminate = true;

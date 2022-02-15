@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Mon, 14 Feb 2022 16:01:41 GMT
+// Generated on Tue, 15 Feb 2022 16:01:42 GMT
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -234,6 +234,7 @@ $inputs-border-invalid: #BD2025;
 $inputs-padding-x: 10px;
 $inputs-padding-y: 9px;
 $inputs-drop-shadow-focus: 0px 0px 0px 3px #ffffff,0px 0px 2px 3px #ffffff,0px 0px 4px 5px #5fb0fc,0px 0px 2px 5px #8ec6fc;
+$inputs-icon-gap: 10px;
 $links-drop-shadow-focus: 0px 0px 0px 3px #ffffff,0px 0px 2px 3px #ffffff,0px 0px 4px 5px #5fb0fc,0px 0px 2px 5px #8ec6fc;
 $links-color-hover: #003778;
 $links-color: #00549A;
@@ -333,3 +334,19 @@ $blockquote-footer-text-letter-spacing: 0px;
 $blockquote-footer-text-paragraph-spacing: 0px;
 $blockquote-footer-text-text-decoration: none;
 $blockquote-footer-text-text-case: none;
+$switch-width: 46px;
+$switch-height: 22px;
+$switch-toggle-width: 16px;
+$switch-toggle-height: 16px;
+$switch-radius: 11px;
+$switch-toggle-radius: 50%;
+$switch-border-width: 0px;
+$switch-toggle-top: 3px;
+$switch-toggle-left-right: 3px;
+$switch-unchecked-bg:  #D4D4D4;
+$switch-unchecked-bg-hover: #999999;
+$switch-unchecked-bg-disabled: #d4d4d480;
+$switch-checked-bg: #00549A;
+$switch-checked-bg-hover: #003778;
+$switch-checked-bg-disabled: #C2CEDF;
+$switch-toggle-color: #ffffff;

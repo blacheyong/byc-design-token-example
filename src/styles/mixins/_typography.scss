@@ -117,6 +117,8 @@
     
     li {
         counter-increment: item;
+        font-size: $body-regular-font-size;
+        line-height: $body-regular-line-height;
         padding-left: map-get($list, bullet-gap);
         position: relative;
         &:not(:last-child) {
@@ -131,8 +133,7 @@
                 height: map-get($list, bullet-height);
                 left: 0;
                 position: absolute;
-                // top: calc(($body-regular-line-height - #{map-get($list, bullet-height)}) / 2);
-                top: calc((#{$base-font-size} - (#{map-get($list, bullet-height)} / 2)) / 2);
+                top: ($body-regular-line-height - map-get($list, bullet-height)) / 2;
                 width: map-get($list, bullet-width);
             }
         }

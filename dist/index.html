@@ -16,6 +16,14 @@
           <div class="col-6 mb-4">
             <a href="#" class="btn btn-link">Button link</a>
           </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="custom-check" type="checkbox" name="examplecheckboxs" id="exampleIndeterminateCheckbox" value="option1">
+              <label class="form-check-label" for="exampleIndeterminateCheckbox">
+                  Indeterminate checkbox
+              </label>
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-4 col-6">
@@ -209,5 +217,9 @@
       </div>
     </div>
     <script src="assets/js/app.js"></script>
+    <script>
+      var checkbox = document.getElementById("exampleIndeterminateCheckbox");
+      checkbox.indeterminate = true;
+    </script>
   </body>
 </html>

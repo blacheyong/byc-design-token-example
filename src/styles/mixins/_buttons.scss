@@ -61,10 +61,9 @@
 
     &.btn-icon {
         align-items: center;
-        display: flex;
-        padding: 0;
+        display: inline-flex;
         svg {
-            fill: map-get($button, color);
+            fill: map-get($button, icon-color);
         }
         &--icon-left {
             svg {

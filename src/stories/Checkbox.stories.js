@@ -61,3 +61,11 @@ export const Disabled = ({  }) => `
         Third disabled checkbox
     </label>
 </div>`
+
+export const Indeterminate = ({  }) => `
+<div class="form-check">
+    <input class="custom-check" type="checkbox" name="examplecheckboxs" id="exampleIndeterminateCheckbox" value="option1">
+    <label class="form-check-label" for="exampleIndeterminateCheckbox">
+        Indeterminate checkbox
+    </label>
+</div>`
