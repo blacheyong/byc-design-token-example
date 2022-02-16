@@ -1,9 +1,26 @@
-import imageDevice from '../images/device-1.png';
+import imageDevice from '../../images/device-1.png';
 
 export default {
   title: 'Components/Card',
   argTypes: {
-    title: { control: 'text' }, // not working atm because of html component
+    hoverable: {
+      control: 'boolean',
+      description: 'True to make the card hoverable',
+      table: { 
+        defaultValue: { summary: 'false' } 
+      },
+    },
+    selected: {
+      control: 'boolean',
+      description: 'True to show selected style',
+      table: { 
+        defaultValue: { summary: 'false' } 
+      },
+    },
+    title: { 
+      control: 'text',
+      description: 'Slot content',
+    },
   },
 }
 
@@ -12,7 +29,7 @@ export const Default = ({ title, hoverable, selected }) => `
   <div class="col-6">
     <div class="card ${[hoverable ? `card--hoverable` : '']} ${[selected ? `card--selected` : '']}">
       <div class="card-body">
-        <img src="${imageDevice}" alt="Device" class="card-img-top">
+        <img src="${imageDevice}" alt="Device" class="card-img-top" style="max-width: 250px;">
         <h3 class="card-title">${title}</h3>
         <div class="card__prices d-flex align-items-center justify-content-center">
           <div>
@@ -43,7 +60,7 @@ export const Hoverable = ({ title, hoverable, selected }) => `
   <div class="col-6">
     <div class="card ${[hoverable ? `card--hoverable` : '']} ${[selected ? `card--selected` : '']}">
       <div class="card-body">
-        <img src="${imageDevice}" alt="Device" class="card-img-top">
+        <img src="${imageDevice}" alt="Device" class="card-img-top" style="max-width: 250px;">
         <h3 class="card-title">${title}</h3>
         <div class="card__prices d-flex align-items-center justify-content-center">
           <div>
@@ -74,7 +91,7 @@ export const Selected = ({ title, hoverable, selected }) => `
   <div class="col-6">
     <div class="card ${[hoverable ? `card--hoverable` : '']} ${[selected ? `card--selected` : '']}">
       <div class="card-body">
-        <img src="${imageDevice}" alt="Device" class="card-img-top">
+        <img src="${imageDevice}" alt="Device" class="card-img-top" style="max-width: 250px;">
         <h3 class="card-title">${title}</h3>
         <div class="card__prices d-flex align-items-center justify-content-center">
           <div>
