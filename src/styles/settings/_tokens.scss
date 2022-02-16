@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Tue, 15 Feb 2022 16:01:42 GMT
+// Generated on Tue, 15 Feb 2022 21:22:12 GMT
 
 $colors-blue-bell: #00549A;
 $colors-blue-dark: #00215E;
@@ -339,10 +339,16 @@ $switch-height: 22px;
 $switch-toggle-width: 16px;
 $switch-toggle-height: 16px;
 $switch-radius: 11px;
+$switch-radius-lg: 22px;
 $switch-toggle-radius: 50%;
 $switch-border-width: 0px;
 $switch-toggle-top: 3px;
 $switch-toggle-left-right: 3px;
+$switch-width-lg: 62px;
+$switch-height-lg: 30px;
+$switch-toggle-width-lg: 24px;
+$switch-toggle-height-lg: 24px;
+$switch-margin-x: 10px;
 $switch-unchecked-bg:  #D4D4D4;
 $switch-unchecked-bg-hover: #999999;
 $switch-unchecked-bg-disabled: #d4d4d480;
@@ -350,3 +356,31 @@ $switch-checked-bg: #00549A;
 $switch-checked-bg-hover: #003778;
 $switch-checked-bg-disabled: #C2CEDF;
 $switch-toggle-color: #ffffff;
+$chips-padding-x: 5px;
+$chips-padding-y: 5px;
+$chips-border-width: 1px;
+$chips-indicator-width: 4px;
+$chips-border-radius: 2px;
+$chips-text-font-family: 'Arial';
+$chips-text-font-weight: 400;
+$chips-text-line-height: 10px;
+$chips-text-font-size: 10px;
+$chips-text-letter-spacing: 0px;
+$chips-text-paragraph-spacing: 0px;
+$chips-text-text-decoration: none;
+$chips-text-text-case: Uppercase;
+$theme-success: #339043;
+$theme-warning: #F9AC28;
+$theme-danger: #BD2025;
+$theme-info: #0099FF;
+$badges-padding-x: 5px;
+$badges-padding-y: 3px;
+$badges-border-radius: 8px;
+$badges-text-font-family: 'Arial';
+$badges-text-font-weight: 700;
+$badges-text-line-height: 10px;
+$badges-text-font-size: 10px;
+$badges-text-letter-spacing: 0px;
+$badges-text-paragraph-spacing: 0px;
+$badges-text-text-decoration: none;
+$badges-text-text-case: none;

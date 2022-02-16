@@ -1,0 +1,61 @@
+.chip {
+    border-color: $primary;
+    border-radius: map-get($chips, border-radius);
+    border-style: solid;
+    border-width: map-get($chips, border-width);
+    font-family: map-get($chips, font-family);
+    font-size: map-get($chips, font-size);
+    font-weight: map-get($chips, font-weight);
+    letter-spacing: map-get($chips, letter-spacing);
+    line-height: map-get($chips, line-height);
+    padding: map-get($chips, padding-y) map-get($chips, padding-x) map-get($chips, padding-y) (map-get($chips, padding-x) + 3px);
+    position: relative;
+    text-decoration: map-get($chips, text-decoration);
+    text-transform: map-get($chips, text-transform);
+
+    svg, img {
+        max-width: map-get($chips, indicator-width);
+    }
+
+    &::before {
+        background: $primary;
+        bottom: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 3px;
+    }
+
+    &--action {
+        
+    }
+    &--dismissible {
+        
+    }
+
+    &--danger {
+        border-color: $theme-danger;
+        &::before {
+            background: $theme-danger;
+        }
+    }
+    &--info {
+        border-color: $theme-info;
+        &::before {
+            background: $theme-info;
+        }
+    }
+    &--success {
+        border-color: $theme-success;
+        &::before {
+            background: $theme-success;
+        }
+    }
+    &--warning {
+        border-color: $theme-warning;
+        &::before {
+            background: $theme-warning;
+        }
+    }
+}

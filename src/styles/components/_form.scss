@@ -68,94 +68,110 @@ textarea {
             }
         }
     }
+}
 
-    &.form-switch {
-        padding-left: 0;
+.form-switch {
+    padding-left: 0;
 
-        label {
-            align-items: center;
-            display: flex;
-        }
+    label {
+        align-items: center;
+        display: flex;
+    }
 
-        .switch-control {
+    .switch-control {
+        display: inline-block;
+        flex-shrink: 0;
+        height: map-get($switches, height);
+        margin-right: map-get($switches, margin-x);
+        position: relative;
+        width: map-get($switches, width);
+        &::before {
+            background-color: map-get($switches, bg-unchecked);
+            border-radius: map-get($switches, border-radius);
+            border-width: map-get($switches, border-width);
+            content: '';
             display: inline-block;
-            flex-shrink: 0;
             height: map-get($switches, height);
-            margin-right: 13px; // <-- TOKEN NEEDED (?)
-            position: relative;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: $default-animation;
             width: map-get($switches, width);
+        }
+        &::after {
+            background-color: map-get($switches, toggle-color);
+            border-radius: map-get($switches, toggle-border-radius);
+            content: '';
+            display: inline-block;
+            height: map-get($switches, toggle-height);
+            left: map-get($switches, toggle-left-right);
+            position: absolute;
+            top: map-get($switches, toggle-top);
+            transition: $default-animation;
+            width: map-get($switches, toggle-width);
+        }
+    }
+    
+    input {
+        &[type="checkbox"] {
+            border: 0;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: 0 -1px -1px 0;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap;
+        }
+        &:disabled {
+            + .switch-control {
+                &::before {
+                    background-color: map-get($switches, disabled-bg-unchecked);
+                }
+            }
+        }
+        &:checked:disabled {
+            + .switch-control {
+                &::before {
+                    background-color: map-get($switches, disabled-bg-checked);
+                }
+            }
+        }
+        &:checked {
+            + .switch-control {
+                &::before {
+                    background-color: map-get($switches, bg-checked);
+                }
+                &::after {
+                    left: calc(100% - #{map-get($switches, toggle-left-right)});
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+    &:hover {
+        .switch-control::before {
+            background-color: map-get($switches, hover-bg-unchecked);
+        }
+        input:checked:not(:disabled) + .switch-control::before {
+            background-color: map-get($switches, hover-bg-checked);
+        }
+    }
+
+    &--lg {
+        .switch-control {
+            height: map-get($switches, height-lg);
+            width: map-get($switches, width-lg);
             &::before {
-                background-color: map-get($switches, bg-unchecked);
-                border-radius: map-get($switches, border-radius);
-                border-width: map-get($switches, border-width);
-                content: '';
-                display: inline-block;
-                height: map-get($switches, height);
-                left: 0;
-                position: absolute;
-                top: 0;
-                transition: $default-animation;
-                width: map-get($switches, width);
+                border-radius: map-get($switches, border-radius-lg);
+                height: map-get($switches, height-lg);
+                width: map-get($switches, width-lg);
             }
             &::after {
-                background-color: map-get($switches, toggle-color);
-                border-radius: map-get($switches, toggle-border-radius);
-                content: '';
-                display: inline-block;
-                height: map-get($switches, toggle-height);
-                left: map-get($switches, toggle-left-right);
-                position: absolute;
-                top: map-get($switches, toggle-top);
-                transition: $default-animation;
-                width: map-get($switches, toggle-width);
-            }
-        }
-        
-        input {
-            &[type="checkbox"] {
-                border: 0;
-                clip: rect(0 0 0 0);
-                clip-path: inset(50%);
-                height: 1px;
-                margin: 0 -1px -1px 0;
-                overflow: hidden;
-                padding: 0;
-                position: absolute;
-                width: 1px;
-                white-space: nowrap;
-            }
-            &:disabled {
-                + .switch-control {
-                    &::before {
-                        background-color: map-get($switches, disabled-bg-unchecked);
-                    }
-                }
-            }
-            &:checked:disabled {
-                + .switch-control {
-                    &::before {
-                        background-color: map-get($switches, disabled-bg-checked);
-                    }
-                }
-            }
-            &:checked {
-                + .switch-control {
-                    &::before {
-                        background-color: map-get($switches, bg-checked);
-                    }
-                    &::after {
-                        left: calc(100% - #{map-get($switches, toggle-left-right)});
-                        transform: translateX(-100%);
-                    }
-                }
-            }
-        }
-        &:hover {
-            .switch-control::before {
-                background-color: map-get($switches, hover-bg-unchecked);
-            }
-            input:checked + .switch-control::before {
-                background-color: map-get($switches, hover-bg-checked);
+                height: map-get($switches, toggle-height-lg);
+                width: map-get($switches, toggle-width-lg);
             }
         }
     }

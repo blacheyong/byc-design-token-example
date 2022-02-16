@@ -69,11 +69,40 @@ $grid-breakpoints: (
 );
 
 // ------------------------------------------
+// Badges
+// ------------------------------------------
+$badges-padding-x: 5px !default;
+$badges-padding-y: 3px !default;
+$badges-border-radius: 8px !default;
+$badges-text-font-family: $base-font-family !default;
+$badges-text-font-weight: 700 !default;
+$badges-text-line-height: $base-line-height-sm !default;
+$badges-text-font-size: $base-font-size-sm !default;
+$badges-text-letter-spacing: 0px !default;
+$badges-text-paragraph-spacing: 0px !default;
+$badges-text-text-decoration: none !default;
+$badges-text-text-case: none !default;
+
+$badges: (
+    border-radius: $badges-border-radius,
+    font-family: $badges-text-font-family,
+    font-size: $badges-text-font-size,
+    font-weight: $badges-text-font-weight,
+    letter-spacing: $badges-text-letter-spacing,
+    line-height: $badges-text-line-height,
+    margin-bottom: $badges-text-paragraph-spacing,
+    padding-x: $badges-padding-x,
+    padding-y: $badges-padding-y,
+    text-decoration: $badges-text-text-decoration,
+    text-transform: $badges-text-text-case,
+);
+
+// ------------------------------------------
 // Blockquote
 // ------------------------------------------
 $blockquote-margin-y: 16px;
 $blockquote-margin-x: 32px;
-$blockquote-text-font-family: 'Arial';
+$blockquote-text-font-family: $base-font-family;
 $blockquote-text-font-weight: 400;
 $blockquote-text-line-height: 28px;
 $blockquote-text-font-size: 20px;
@@ -81,7 +110,7 @@ $blockquote-text-letter-spacing: 0px;
 $blockquote-text-paragraph-spacing: 0px;
 $blockquote-text-text-decoration: none;
 $blockquote-text-text-case: none;
-$blockquote-footer-text-font-family: 'Arial';
+$blockquote-footer-text-font-family: $base-font-family;
 $blockquote-footer-text-font-weight: 400;
 $blockquote-footer-text-line-height: 16px;
 $blockquote-footer-text-font-size: 14px;
@@ -337,6 +366,39 @@ $cards: (
     selected-background: $cards-bg-selected,
     selected-border-color: $cards-border-selected, 
     selected-box-shadow: $cards-drop-shadow-selected,
+);
+
+// ------------------------------------------
+// Chips
+// ------------------------------------------
+$chips-padding-x: 5px !default;
+$chips-padding-y: 5px !default;
+$chips-border-width: 1px !default;
+$chips-indicator-width: 4px !default;
+$chips-border-radius: 2px !default;
+$chips-text-font-family: $base-font-family !default;
+$chips-text-font-weight: 400 !default;
+$chips-text-line-height: $base-line-height-sm !default;
+$chips-text-font-size: $base-font-size-sm !default;
+$chips-text-letter-spacing: 0px !default;
+$chips-text-paragraph-spacing: 0px !default;
+$chips-text-text-decoration: none !default;
+$chips-text-text-case: Uppercase !default;
+
+$chips: (
+    border-radius: $chips-border-radius,
+    border-width: $chips-border-width,
+    font-famiy: $chips-text-font-family,
+    font-size: $chips-text-font-size,
+    font-weight: $chips-text-font-weight,
+    letter-spacing: $chips-text-letter-spacing,
+    line-height: $chips-text-line-height,
+    margin-bottom: $chips-text-paragraph-spacing,
+    padding-x: $chips-padding-x,
+    padding-y: $chips-padding-y,
+    text-decoration: $chips-text-text-decoration,
+    text-transform: $chips-text-text-case,
+    indicator-width: $chips-indicator-width,
 );
 
 // ------------------------------------------
@@ -1036,6 +1098,13 @@ $switch-checked-bg: #00549A !default;
 $switch-checked-bg-hover: #003778 !default;
 $switch-checked-bg-disabled: #C2CEDF !default;
 $switch-toggle-color: $white !default;
+$switch-margin-x: 10px !default;
+
+$switch-radius-lg: 22px !default;
+$switch-width-lg: 62px !default;
+$switch-height-lg: 30px !default;
+$switch-toggle-width-lg: 24px !default;
+$switch-toggle-height-lg: 30px !default;
 
 $switches: (
     bg-checked: $switch-checked-bg,
@@ -1047,6 +1116,7 @@ $switches: (
     border-width: $switch-border-width,
     border-radius: $switch-radius,
     height: $switch-height,
+    margin-x: $switch-margin-x,
     width: $switch-width,
     toggle-border-radius: $switch-toggle-radius,
     toggle-color: $switch-toggle-color,
@@ -1054,4 +1124,9 @@ $switches: (
     toggle-left-right: $switch-toggle-left-right,
     toggle-top: $switch-toggle-top,
     toggle-width: $switch-toggle-width,
+    border-radius-lg: $switch-radius-lg,
+    height-lg: $switch-height-lg,
+    width-lg: $switch-width-lg,
+    toggle-height-lg: $switch-toggle-height-lg,
+    toggle-width-lg: $switch-toggle-width-lg,
 );

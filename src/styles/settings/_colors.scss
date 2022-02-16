@@ -37,11 +37,20 @@ $colors: map-merge(
   $colors
 );
 
+$theme-danger: #BD2025 !default;
+$theme-info: #0099FF !default;
+$theme-success: #339043 !default;
+$theme-warning: #F9AC28 !default;
+
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "primary": $primary,
     "secondary": $grey,
+    "bg-danger": $theme-danger,
+    "bg-info": $theme-info,
+    "bg-success": $theme-success,
+    "bg-warning": $theme-warning,
   ),
   $theme-colors
 );

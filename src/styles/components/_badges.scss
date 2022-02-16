@@ -1,0 +1,26 @@
+.badge {
+    border-radius: map-get($badges, border-radius);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); // <-- token needed?
+    color: $white; // <-- token needed?
+    font-family: map-get($badges, font-family);
+    font-size: map-get($badges, font-size);
+    font-weight: map-get($badges, font-weight);
+    letter-spacing: map-get($badges, letter-spacing);
+    line-height: map-get($badges, line-height);
+    padding: map-get($badges, padding-y) map-get($badges, padding-x);
+    text-decoration: map-get($badges, text-decoration);
+    text-transform: map-get($badges, text-transform);
+
+    &--danger {
+        background: $theme-danger;
+    }
+    &--info {
+        background: $theme-info;
+    }
+    &--success {
+        background: $theme-success;
+    }
+    &--warning {
+        background: $theme-warning;
+    }
+}

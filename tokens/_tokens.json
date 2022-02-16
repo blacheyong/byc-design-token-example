@@ -1418,6 +1418,10 @@
       "value": 11,
       "type": "borderRadius"
     },
+    "radius-lg": {
+      "value": 22,
+      "type": "borderRadius"
+    },
     "toggle-radius": {
       "value": "50%",
       "type": "borderRadius"
@@ -1432,6 +1436,26 @@
     },
     "toggle-left-right": {
       "value": 3,
+      "type": "spacing"
+    },
+    "width-lg": {
+      "value": 62,
+      "type": "sizing"
+    },
+    "height-lg": {
+      "value": 30,
+      "type": "sizing"
+    },
+    "toggle-width-lg": {
+      "value": 24,
+      "type": "sizing"
+    },
+    "toggle-height-lg": {
+      "value": 24,
+      "type": "sizing"
+    },
+    "margin-x": {
+      "value": 10,
       "type": "spacing"
     }
   },
@@ -1463,6 +1487,116 @@
     "toggle-color": {
       "value": "#ffffff",
       "type": "color"
+    }
+  },
+  "_chips": {
+    "padding-x": {
+      "value": 5,
+      "type": "spacing"
+    },
+    "padding-y": {
+      "value": 5,
+      "type": "spacing"
+    },
+    "border-width": {
+      "value": 1,
+      "type": "borderWidth"
+    },
+    "indicator-width": {
+      "value": 4,
+      "type": "sizing"
+    },
+    "border-radius": {
+      "value": 2,
+      "type": "borderRadius"
+    }
+  },
+  "chips": {
+    "text": {
+      "fontFamily": {
+        "value": "Arial"
+      },
+      "fontWeight": {
+        "value": "Regular"
+      },
+      "lineHeight": {
+        "value": 10
+      },
+      "fontSize": {
+        "value": 10
+      },
+      "letterSpacing": {
+        "value": 0
+      },
+      "paragraphSpacing": {
+        "value": 0
+      },
+      "textDecoration": {
+        "value": "none"
+      },
+      "textCase": {
+        "value": "Uppercase"
+      }
+    }
+  },
+  "_theme": {
+    "success": {
+      "value": "#339043",
+      "type": "color"
+    },
+    "warning": {
+      "value": "#F9AC28",
+      "type": "color"
+    },
+    "danger": {
+      "value": "#BD2025",
+      "type": "color"
+    },
+    "info": {
+      "value": "#0099FF",
+      "type": "color"
+    }
+  },
+  "_badges": {
+    "padding-x": {
+      "value": 5,
+      "type": "spacing"
+    },
+    "padding-y": {
+      "value": 3,
+      "type": "spacing"
+    },
+    "border-radius": {
+      "value": "8px",
+      "type": "borderRadius"
+    }
+  },
+  "badges": {
+    "text": {
+      "fontFamily": {
+        "value": "Arial"
+      },
+      "fontWeight": {
+        "value": "Bold"
+      },
+      "lineHeight": {
+        "value": 10
+      },
+      "fontSize": {
+        "value": 10
+      },
+      "letterSpacing": {
+        "value": 0
+      },
+      "paragraphSpacing": {
+        "value": 0
+      },
+      "textDecoration": {
+        "value": "none"
+      },
+      "textCase": {
+        "value": "none"
+      }
     }
   }
 }
