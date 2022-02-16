@@ -18,66 +18,77 @@ export default {
             },
         },
         borderRadius: {
+            control: {type: null},
             description: '$badges-border-radius',
             table: {
                 category: 'Tokens',
             }
         },
         fontFamily: {
+            control: {type: null},
             description: '$badges-text-font-family',
             table: {
                 category: 'Tokens',
             }
         },
         fontSize: {
+            control: {type: null},
             description: '$badges-text-font-size',
             table: {
                 category: 'Tokens',
             }
         },
         fontWeight: {
+            control: {type: null},
             description: '$badges-text-font-weight',
             table: {
                 category: 'Tokens',
             }
         },
         horizontalPadding: {
+            control: {type: null},
             description: '$badges-padding-x',
             table: {
                 category: 'Tokens',
             }
         },
         letterSpacing: {
+            control: {type: null},
             description: '$badges-text-letter-spacing',
             table: {
                 category: 'Tokens',
             }
         },
         lineHeight: {
+            control: {type: null},
             description: '$badges-text-line-height',
             table: {
                 category: 'Tokens',
             }
         },
         paragraphSpacing: {
+            control: {type: null},
             description: '$badges-text-paragraph-spacing',
             table: {
                 category: 'Tokens',
             }
         },
         textDecoration: {
+            control: {type: null},
             description: '$badges-text-text-decoration',
             table: {
                 category: 'Tokens',
             }
         },
         textTransform: {
+            control: {type: null},
             description: '$badges-text-text-case',
             table: {
                 category: 'Tokens',
             }
         },
         VerticalPadding: {
+            control: {type: null},
             description: '$badges-padding-y',
             table: {
                 category: 'Tokens',

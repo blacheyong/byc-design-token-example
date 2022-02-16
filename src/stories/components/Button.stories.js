@@ -1,4 +1,5 @@
 import { createButton } from './Button';
+import buttonDoc from './buttonDoc.mdx';
 
 export default {
   title: 'Components/Button',
@@ -18,6 +19,11 @@ export default {
       options: ['sm', 'md', 'lg'],
     },
   },
+  parameters: {  // specify the docs MDX content here
+    docs: {
+      page: buttonDoc, 
+    }
+  }
 };
 
 const Template = ({ label, ...args }) => {
