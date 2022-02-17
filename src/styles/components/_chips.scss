@@ -3,6 +3,7 @@
     border-radius: map-get($chips, border-radius);
     border-style: solid;
     border-width: map-get($chips, border-width);
+    color: $black; // <-- token needed? take link color if chip is used on <a> + tokens for hover / disabled state
     font-family: map-get($chips, font-family);
     font-size: map-get($chips, font-size);
     font-weight: map-get($chips, font-weight);
@@ -28,10 +29,26 @@
     }
 
     &--action {
-        
+        align-items: center;
+        display: inline-flex;
+        svg, img {
+            margin-left: 3px;
+        }
     }
     &--dismissible {
-        
+        align-items: center;
+        display: inline-flex;
+        button {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            line-height: unset;
+            font-size: unset;
+            padding: 0;
+        }
+        svg, img {
+            margin-left: 5px;
+        }
     }
 
     &--danger {

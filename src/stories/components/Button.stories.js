@@ -19,7 +19,7 @@ export default {
       options: ['sm', 'md', 'lg'],
     },
   },
-  parameters: {  // specify the docs MDX content here
+  parameters: {
     docs: {
       page: buttonDoc, 
     }
