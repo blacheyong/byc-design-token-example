@@ -76,6 +76,40 @@
             }
         }
     }
+
+    &.close-btn {
+        align-items: center;
+        background-color: map-get($button, bg);
+        border-radius: map-get($button, border-radius);
+        border-width: map-get($button, border-width);
+        box-sizing: content-box;
+        height: map-get($button, height);
+        display: flex;
+        justify-content: center;
+        padding: map-get($button, padding-y) map-get($button, padding-x);
+        width: map-get($button, width);
+
+        svg path {
+            fill: map-get($button, icon);
+        }
+
+        &:hover {
+            svg path {
+                fill: map-get($button, hover-icon);
+            }
+        }
+        &:disabled, &.disabled {
+            svg path {
+                fill: map-get($button, disabled-icon);
+            }
+        }
+
+        &--sm {
+            height: map-get($button, height-sm);
+            padding: map-get($button, padding-y-sm) map-get($button, padding-x-sm);
+            width: map-get($button, width-sm);
+        }
+    }
 }
 
 @mixin btn-sizes($padding-y, $padding-x, $font-size, $border-radius, $line-height) {

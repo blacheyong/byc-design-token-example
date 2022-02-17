@@ -1,7 +1,8 @@
 .badge {
     border-radius: map-get($badges, border-radius);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25); // <-- token needed?
-    color: $white; // <-- token needed?
+    box-shadow: map-get($badges, box-shadow);
+    color: map-get($badges, color);
+    display: inline-block;
     font-family: map-get($badges, font-family);
     font-size: map-get($badges, font-size);
     font-weight: map-get($badges, font-weight);

@@ -1,6 +1,6 @@
 
 // Do not edit directly
-// Generated on Tue, 15 Feb 2022 21:22:12 GMT
+// Generated on Thu, 17 Feb 2022 16:51:31 GMT
 
 $colors-primary: #cc0000;
 $colors-black: #000000;
@@ -364,6 +364,8 @@ $chips-padding-y: 5px;
 $chips-border-width: 1px;
 $chips-indicator-width: 4px;
 $chips-border-radius: 2px;
+$chips-text-color: #111;
+$chips-border-disabled: #BABEC2;
 $chips-text-font-family: 'Arial';
 $chips-text-font-weight: 400;
 $chips-text-line-height: 10px;
@@ -379,6 +381,9 @@ $theme-info: #0099FF;
 $badges-padding-x: 5px;
 $badges-padding-y: 3px;
 $badges-border-radius: 8px;
+$badges-min-width: 16px;
+$badges-text-color: #ffffff;
+$badges-box-shadow: 0px 1px 3px 0px #00000040;
 $badges-text-font-family: 'Arial';
 $badges-text-font-weight: 700;
 $badges-text-line-height: 10px;
@@ -387,3 +392,17 @@ $badges-text-letter-spacing: 0px;
 $badges-text-paragraph-spacing: 0px;
 $badges-text-text-decoration: none;
 $badges-text-text-case: none;
+$close-width: 16px;
+$close-height: 16px;
+$close-sm-width: 10px;
+$close-sm-height: 10px;
+$close-sm-padding-x: 2px;
+$close-sm-padding-y: 2px;
+$close-padding-x: 6px;
+$close-padding-y: 6px;
+$close-icon-default: #003778;
+$close-icon-hover: #cc0000;
+$close-icon-disabled: #BABEC2;
+$close-border-radius: 0px;
+$close-bg: #ffffff00;
+$close-border-width: 0px;

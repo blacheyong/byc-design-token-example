@@ -53,6 +53,10 @@ fieldset:disabled a.btn {
     @include btn-variants(map-get($buttons, icon));
 }
 
+.close-btn {
+    @include btn-variants(map-get($buttons, close-btn));
+}
+
 // Button sizes
 .btn-lg {
     @include btn-sizes($buttons-lg-padding-y, $buttons-lg-padding-x, $buttons-lg-text-font-size, $buttons-lg-radius, $buttons-lg-text-line-height);

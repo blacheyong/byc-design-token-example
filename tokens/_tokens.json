@@ -1509,6 +1509,14 @@
     "border-radius": {
       "value": 2,
       "type": "borderRadius"
+    },
+    "text-color": {
+      "value": "#111",
+      "type": "color"
+    },
+    "border-disabled": {
+      "value": "#BABEC2",
+      "type": "color"
     }
   },
   "chips": {
@@ -1569,6 +1577,25 @@
     "border-radius": {
       "value": "8px",
       "type": "borderRadius"
+    },
+    "min-width": {
+      "value": 16,
+      "type": "sizing"
+    },
+    "text-color": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "box-shadow": {
+      "value": {
+        "x": 0,
+        "y": 1,
+        "blur": 3,
+        "spread": 0,
+        "color": "#00000040",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow"
     }
   },
   "badges": {
@@ -1597,6 +1624,66 @@
       "textCase": {
         "value": "none"
       }
+    }
+  },
+  "_close": {
+    "width": {
+      "value": 16,
+      "type": "sizing"
+    },
+    "height": {
+      "value": 16,
+      "type": "sizing"
+    },
+    "sm": {
+      "width": {
+        "value": 10,
+        "type": "sizing"
+      },
+      "height": {
+        "value": 10,
+        "type": "sizing"
+      },
+      "padding-x": {
+        "value": 2,
+        "type": "spacing"
+      },
+      "padding-y": {
+        "value": 2,
+        "type": "spacing"
+      }
+    },
+    "padding-x": {
+      "value": 6,
+      "type": "spacing"
+    },
+    "padding-y": {
+      "value": 6,
+      "type": "spacing"
+    },
+    "icon-default": {
+      "value": "#003778",
+      "type": "color"
+    },
+    "icon-hover": {
+      "value": "#00549A",
+      "type": "color"
+    },
+    "icon-disabled": {
+      "value": "#BABEC2",
+      "type": "color"
+    },
+    "border-radius": {
+      "value": 0,
+      "type": "borderRadius"
+    },
+    "bg": {
+      "value": "#ffffff00",
+      "type": "color"
+    },
+    "border-width": {
+      "value": 0,
+      "type": "borderWidth"
     }
   }
 }

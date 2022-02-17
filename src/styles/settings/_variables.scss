@@ -74,6 +74,8 @@ $grid-breakpoints: (
 $badges-padding-x: 5px !default;
 $badges-padding-y: 3px !default;
 $badges-border-radius: 8px !default;
+$badges-box-shadow: 0px 1px 3px 0px #00000040 !default;
+$badges-text-color: $white;
 $badges-text-font-family: $base-font-family !default;
 $badges-text-font-weight: 700 !default;
 $badges-text-line-height: $base-line-height-sm !default;
@@ -85,6 +87,8 @@ $badges-text-text-case: none !default;
 
 $badges: (
     border-radius: $badges-border-radius,
+    box-shadow: $badges-box-shadow,
+    color: $badges-text-color,
     font-family: $badges-text-font-family,
     font-size: $badges-text-font-size,
     font-weight: $badges-text-font-weight,
@@ -254,6 +258,21 @@ $buttons-lg-padding-x: $padding-x-lg !default;
 $buttons-lg-padding-y: $padding-y-lg !default;
 $buttons-lg-radius: $border-radius-lg !default;
 
+$close-width: 16px !default;
+$close-height: 16px !default;
+$close-sm-width: 10px !default;
+$close-sm-height: 10px !default;
+$close-sm-padding-x: 2px !default;
+$close-sm-padding-y: 2px !default;
+$close-padding-x: 6px !default;
+$close-padding-y: 6px !default;
+$close-icon-default: #003778 !default;
+$close-icon-hover: #00549A !default;
+$close-icon-disabled: #BABEC2 !default;
+$close-border-radius: 0px !default;
+$close-bg: #ffffff00 !default;
+$close-border-width: 0px !default;
+
 
 $buttons: (
     border-radius: $buttons-radius,
@@ -330,7 +349,24 @@ $buttons: (
     icon: (
         icon-color: $buttons-primary-dark-text,
         icon-gap: $buttons-icon-gap,
-    )
+    ),
+
+    close-btn: (
+        border-radius: $close-border-radius,
+        border-width: $close-border-width,
+        bg: $close-bg,
+        height: $close-height,
+        height-sm: $close-sm-height,
+        padding-x: $close-padding-x,
+        padding-x-sm: $close-sm-padding-x,
+        padding-y: $close-padding-y,
+        padding-y-sm: $close-sm-padding-y,
+        width: $close-width,
+        width-sm: $close-sm-width,
+        icon: $close-icon-default,
+        hover-icon: $close-icon-hover,
+        disabled-icon: $close-icon-disabled,
+    ),
 );
 
 // ------------------------------------------
@@ -376,6 +412,8 @@ $chips-padding-y: 5px !default;
 $chips-border-width: 1px !default;
 $chips-indicator-width: 4px !default;
 $chips-border-radius: 2px !default;
+$chips-border-disabled: #BABEC2 !default;
+$chips-text-color: #111 !default;
 $chips-text-font-family: $base-font-family !default;
 $chips-text-font-weight: 400 !default;
 $chips-text-line-height: $base-line-height-sm !default;
@@ -388,6 +426,7 @@ $chips-text-text-case: Uppercase !default;
 $chips: (
     border-radius: $chips-border-radius,
     border-width: $chips-border-width,
+    color: $chips-text-color,
     font-famiy: $chips-text-font-family,
     font-size: $chips-text-font-size,
     font-weight: $chips-text-font-weight,
@@ -399,6 +438,7 @@ $chips: (
     text-decoration: $chips-text-text-decoration,
     text-transform: $chips-text-text-case,
     indicator-width: $chips-indicator-width,
+    disabled-border-color: $chips-border-disabled,
 );
 
 // ------------------------------------------

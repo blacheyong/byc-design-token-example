@@ -67,13 +67,23 @@ ActionChip.args = {
 export const DismissibleChip = ({ text, variant }) => `
 <span class="chip chip--${variant} chip--dismissible">
     <span class="chip__text">${text}</span>
-    <button type="button">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.03033 2.03033C9.32322 1.73744 9.32322 1.26256 9.03033 0.96967C8.73744 0.676777 8.26256 0.676777 7.96967 0.96967L5 3.93934L2.03033 0.96967C1.73744 0.676777 1.26256 0.676777 0.96967 0.96967C0.676777 1.26256 0.676777 1.73744 0.96967 2.03033L3.93934 5L0.96967 7.96967C0.676777 8.26256 0.676777 8.73744 0.96967 9.03033C1.26256 9.32322 1.73744 9.32322 2.03033 9.03033L5 6.06066L7.96967 9.03033C8.26256 9.32322 8.73744 9.32322 9.03033 9.03033C9.32322 8.73744 9.32322 8.26256 9.03033 7.96967L6.06066 5L9.03033 2.03033Z" fill="#003778"/>
-        </svg>
+    <button type="button" class="close-btn close-btn--sm">
+        <svg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.586 0.979221C1.28037 0.673593 0.784848 0.673593 0.479221 0.979221C0.173593 1.28485 0.173593 1.78037 0.479221 2.086L5.14322 6.75L0.479221 11.414C0.173593 11.7196 0.173593 12.2152 0.479221 12.5208C0.784848 12.8264 1.28037 12.8264 1.586 12.5208L6.25 7.85678L10.914 12.5208C11.2196 12.8264 11.7152 12.8264 12.0208 12.5208C12.3264 12.2152 12.3264 11.7196 12.0208 11.414L7.35678 6.75L12.0208 2.086C12.3264 1.78037 12.3264 1.28485 12.0208 0.979221C11.7152 0.673593 11.2196 0.673593 10.914 0.979221L6.25 5.64322L1.586 0.979221Z' fill='#003778'/></svg>
     </button>
 </span>`
 DismissibleChip.args = {
     text: 'Dismissible chip',
+    variant: 'primary',
+};
+
+export const DisabledDismissibleChip = ({ text, variant }) => `
+<span class="chip chip--${variant} chip--dismissible disabled">
+    <span class="chip__text">${text}</span>
+    <button type="button" class="close-btn close-btn--sm">
+        <svg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.586 0.979221C1.28037 0.673593 0.784848 0.673593 0.479221 0.979221C0.173593 1.28485 0.173593 1.78037 0.479221 2.086L5.14322 6.75L0.479221 11.414C0.173593 11.7196 0.173593 12.2152 0.479221 12.5208C0.784848 12.8264 1.28037 12.8264 1.586 12.5208L6.25 7.85678L10.914 12.5208C11.2196 12.8264 11.7152 12.8264 12.0208 12.5208C12.3264 12.2152 12.3264 11.7196 12.0208 11.414L7.35678 6.75L12.0208 2.086C12.3264 1.78037 12.3264 1.28485 12.0208 0.979221C11.7152 0.673593 11.2196 0.673593 10.914 0.979221L6.25 5.64322L1.586 0.979221Z' fill='#003778'/></svg>
+    </button>
+</span>`
+DisabledDismissibleChip.args = {
+    text: 'Disabled chip',
     variant: 'primary',
 };
