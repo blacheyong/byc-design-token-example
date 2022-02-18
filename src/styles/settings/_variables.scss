@@ -75,6 +75,7 @@ $badges-padding-x: 5px !default;
 $badges-padding-y: 3px !default;
 $badges-border-radius: 8px !default;
 $badges-box-shadow: 0px 1px 3px 0px #00000040 !default;
+$badges-min-width: 16px !default;
 $badges-text-color: $white;
 $badges-text-font-family: $base-font-family !default;
 $badges-text-font-weight: 700 !default;
@@ -95,6 +96,7 @@ $badges: (
     letter-spacing: $badges-text-letter-spacing,
     line-height: $badges-text-line-height,
     margin-bottom: $badges-text-paragraph-spacing,
+    min-width: $badges-min-width,
     padding-x: $badges-padding-x,
     padding-y: $badges-padding-y,
     text-decoration: $badges-text-text-decoration,

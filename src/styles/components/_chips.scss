@@ -54,6 +54,7 @@
             border-color: map-get($chips, disabled-border-color);
             pointer-events: none;
             .close-btn {
+                // background-size: 10px;
                 pointer-events: none;
             }
         }

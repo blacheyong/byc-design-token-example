@@ -8,6 +8,7 @@
     font-weight: map-get($badges, font-weight);
     letter-spacing: map-get($badges, letter-spacing);
     line-height: map-get($badges, line-height);
+    min-width: map-get($badges, min-width);
     padding: map-get($badges, padding-y) map-get($badges, padding-x);
     text-decoration: map-get($badges, text-decoration);
     text-transform: map-get($badges, text-transform);
