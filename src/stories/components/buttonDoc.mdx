@@ -1,5 +1,10 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { DesignTokenDocBlock } from 'storybook-design-token/dist/doc-blocks';
+import Button from './Button.stories.js';
 
 <h2>Tokens</h2>
 <DesignTokenDocBlock categoryName="Buttons Base" viewType="card" />
+
+<hr />
+
+<ArgsTable of={Button} />

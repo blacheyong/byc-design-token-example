@@ -273,7 +273,6 @@ $close-border-radius: 0px !default;
 $close-bg: #ffffff00 !default;
 $close-border-width: 0px !default;
 
-
 $buttons: (
     border-radius: $buttons-radius,
     font-size: $buttons-text-font-size,
@@ -363,9 +362,9 @@ $buttons: (
         padding-y-sm: $close-sm-padding-y,
         width: $close-width,
         width-sm: $close-sm-width,
-        icon: $close-icon-default,
-        hover-icon: $close-icon-hover,
-        disabled-icon: $close-icon-disabled,
+        icon-color: $close-icon-default,
+        hover-icon-color: $close-icon-hover,
+        disabled-icon-color: $close-icon-disabled,
     ),
 );
 

@@ -10,6 +10,7 @@ module.exports = {
     "storybook-addon-pseudo-states",
     'storybook-design-token',
     require.resolve('storybook-addon-grid/preset'),
+    './addon-tab/register.js',
   ],
   "framework": "@storybook/html"
 }
