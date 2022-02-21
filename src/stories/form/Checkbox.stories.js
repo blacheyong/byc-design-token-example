@@ -12,6 +12,7 @@ export default {
     }
 }
 
+
 export const Default = ({ size }) => `
 <div class="form-check">
     <input class="custom-check custom-check--${size}" type="checkbox" name="examplecheckboxs" id="examplecheckboxs1" value="option1" checked>
@@ -87,7 +88,8 @@ export const Indeterminate = ({ size }) => `
     <label class="form-check-label" for="exampleIndeterminateCheckbox">
         Indeterminate checkbox
     </label>
-</div>`
+</div>
+<script>document.getElementById("exampleIndeterminateCheckbox").indeterminate = true</script>`
 Indeterminate.args = {
     size: 'md',
 };
